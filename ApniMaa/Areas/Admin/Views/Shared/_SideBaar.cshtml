@@ -1,0 +1,103 @@
+﻿@{
+    var user = (UserModel)ViewBag.LOGGEDIN_USER;
+    var assignerModules = (List<ModulesModel>)ViewBag.USER_PERMISSONS;
+
+}
+
+<div class="cl-sidebar" data-position="right" data-step="1" data-intro="">
+    <div class="cl-navblock">
+        <div class="menu-space">
+            <div class="content">
+                <ul class="cl-vnavigation">
+                    <li>
+                        <a href="#"><i class="fa fa-adn"></i><span> Admin Employees</span></a>
+                        <ul class="sub-menu" style="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "display:block;" : "display:none;")">
+                            <li><a href="@Url.Action("ManageAdminEmployees", "User", new { area = "Admin" })">  Manage   Employees</a></li>
+                            <li><a href="@Url.Action("AddAdminEmployee", "User", new { area = "Admin" })">  Add Employee</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+
+
+                @*<ul class="cl-vnavigation">
+                        @if(assignerModules != null)
+                        {
+
+                        @if (assignerModules.Where(X => X.ControllerName == "User").ToList().Count() > 0)
+                            {
+                                if (user.IsSuperAdmin)
+                                {
+
+                                    <li>
+                                        <a href="#"><i class="fa fa-adn"></i><span> Admin Employees</span></a>
+                                        <ul class="sub-menu" style="@(ViewBag.SelectedTab == SelectedAdminTab.AdminEmployees ? "display:block;" : "display:none;")">
+                                            <li><a href="@Url.Action("ManageAdminEmployees", "User", new { area = "Admin" })">  Manage   Employees</a></li>
+                                            <li><a href="@Url.Action("AddAdminEmployee", "User", new { area = "Admin" })">  Add Employee</a></li>
+                                        </ul>
+                                    </li>
+                                }
+                            }
+
+                        <li><a href="@Url.Action("Dashboard", "Home", new { area = "Admin" })"><i class="fa fa-home"></i><span>Dashboard</span></a></li>
+
+                        if (assignerModules.Where(X => X.ControllerName == "User").ToList().Count() > 0)
+                        {
+
+                            <li class="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "open" : "")">
+                                <a href="#"><i class="fa fa-users"></i><span>Customers</span></a>
+                                <ul class="sub-menu" style="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "display:block;" : "display:none;")">
+                                    <li><a href="@Url.Action("ManageUsers", "user", new { area = "Admin" })">Manage Customers</a></li>
+                                    <li><a href="@Url.Action("AddUser", "user", new { area = "Admin" })">Add Customers</a></li>
+                                    <li><a href="@Url.Action("ManageUserQuery", "user", new { area = "Admin" })">Manage User Query</a></li>
+                                </ul>
+                            </li>
+                        }
+
+                        if (assignerModules.Where(X => X.ControllerName == "Appointment").ToList().Count() > 0)
+                        {
+
+                            <li>
+                                <a href="#"><i class="fa fa-bookmark"></i><span> Appointments</span></a>
+                                <ul class="sub-menu" style="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "display:block;" : "display:none;")">
+                                    <li><a href="@Url.Action("ManageAppointments", "Appointment", new { area = "Admin" })">  Manage Appointments</a></li>
+                                </ul>
+                            </li>
+                        }
+
+                        if (assignerModules.Where(X => X.ControllerName == "Driver").ToList().Count() > 0)
+                        {
+
+                            <li class="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "open" : "")">
+                                <a href="#"><i class="fa fa-gear"></i><span>Drivers</span></a>
+                                <ul class="sub-menu" style="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "display:block;" : "display:none;")">
+                                    <li><a href="@Url.Action("ManageDriver", "Driver", new { area = "Admin" })">Manage Driver</a></li>
+                                    <li><a href="@Url.Action("AddDriver", "Driver", new { area = "Admin" })">Add Drivers</a></li>
+
+                                </ul>
+                            </li>
+                        }
+
+                        <li>
+                            <a href="#"><i class="fa fa-file"></i><span>CMS Manager</span></a>
+                            <ul class="sub-menu" style="@(ViewBag.SelectedTab == SelectedAdminTab.CMSManager ? "display:block;" : "display:none;")">
+                                <li><a href="@Url.Action("CMSManager", "cms", new { area = "Admin" })">CMS Manager</a></li>
+                            </ul>
+                        </li>
+                        }
+                    </ul>*@
+
+            </div>
+        </div>
+        <div class="text-right collapse-button" style="padding:7px 9px;">
+            <input type="text" class="form-control search" placeholder="Search..." />
+            <button id="sidebar-collapse" class="btn btn-default" style=""><i style="color:#fff;" class="fa fa-angle-left"></i></button>
+        </div>
+    </div>
+</div>
+
+
+
+
+

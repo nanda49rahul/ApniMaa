@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA1C6F91-21F7-4318-95A6-06624EC3BB52}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ApniMaa.BLL</RootNamespace>
+    <AssemblyName>ApniMaa.BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=7.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Excel, Version=2.1.2.3, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Handlebars, Version=1.8.1.0, Culture=neutral, PublicKeyToken=22225d0bf33cd661, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Handlebars.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqKit, Version=1.1.15.0, Culture=neutral, PublicKeyToken=bc217f8844052a91, processorArchitecture=MSIL">
+      <HintPath>..\packages\LinqKit.1.1.15\lib\net45\LinqKit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PagedList.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPal, Version=1.9.0.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\PayPal.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=2.3.2.0, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Linq.Dynamic">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.4\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Twilio, Version=5.28.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.28.0\lib\net35\Twilio.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CommonMethods.cs" />
+    <Compile Include="Common\Commons.cs" />
+    <Compile Include="Common\Config.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\EncryptionHelper.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\IUserInfo.cs" />
+    <Compile Include="Common\PracticeHelper.cs" />
+    <Compile Include="Common\RoleManagementService.cs" />
+    <Compile Include="Common\Utilities.cs" />
+    <Compile Include="Common\WebResource.cs" />
+    <Compile Include="DbContext.cs" />
+    <Compile Include="Helpers\AuthenticationToken.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\MapperConfiguration.cs" />
+    <Compile Include="Interfaces\Admin Interfaces\ICategoryManager.cs" />
+    <Compile Include="Interfaces\Admin Interfaces\IDishManager.cs" />
+    <Compile Include="Interfaces\Admin Interfaces\IHomeManager.cs" />
+    <Compile Include="Interfaces\Admin Interfaces\IMotherManager.cs" />
+    <Compile Include="Interfaces\Admin Interfaces\IUserManager.cs" />
+    <Compile Include="Interfaces\Common Interfaces\IEmailProvider.cs" />
+    <Compile Include="Interfaces\ICMSManager.cs" />
+    <Compile Include="Interfaces\IEmailTemplateManager.cs" />
+    <Compile Include="Interfaces\IErrorLogManager.cs" />
+    <Compile Include="Interfaces\IDashboardManager.cs" />
+    <Compile Include="Managers\Admin Manager\CategoryManager.cs" />
+    <Compile Include="Managers\Admin Manager\DishManager.cs" />
+    <Compile Include="Managers\Admin Manager\HomeManager.cs" />
+    <Compile Include="Managers\Admin Manager\MotherManager.cs" />
+    <Compile Include="Managers\Admin Manager\UserManager.cs" />
+    <Compile Include="Managers\ApiPagingResult.cs" />
+    <Compile Include="Managers\BaseManager.cs" />
+    <Compile Include="Managers\CMSManager.cs" />
+    <Compile Include="Managers\Common Manager\EmailProvider.cs" />
+    <Compile Include="Managers\EmailTemplateManager.cs" />
+    <Compile Include="Managers\ErrorLogManager.cs" />
+    <Compile Include="Managers\DashboardManager.cs" />
+    <Compile Include="Managers\Scheduler\EmailProviderForReminder.cs" />
+    <Compile Include="Managers\Scheduler\NotificationJob.cs" />
+    <Compile Include="Managers\Scheduler\NotificationSchedularTasks.cs" />
+    <Compile Include="Models\Admin Models\ApplicationModel.cs" />
+    <Compile Include="Models\Admin Models\AuditLogModel.cs" />
+    <Compile Include="Models\Admin Models\AuditModel.cs" />
+    <Compile Include="Models\Admin Models\BulkImportModel.cs" />
+    <Compile Include="Models\Admin Models\CaseDetailsModel.cs" />
+    <Compile Include="Models\Admin Models\ComissionModel.cs" />
+    <Compile Include="Models\Admin Models\ContactModel.cs" />
+    <Compile Include="Models\Admin Models\ContactTypeList.cs" />
+    <Compile Include="Models\Admin Models\CountryModel.cs" />
+    <Compile Include="Models\Admin Models\DishModel.cs" />
+    <Compile Include="Models\Admin Models\DriverModel.cs" />
+    <Compile Include="Models\Admin Models\DriverReportModel.cs" />
+    <Compile Include="Models\Admin Models\EmailTemplateModel.cs" />
+    <Compile Include="Models\Admin Models\FirmNotesModel.cs" />
+    <Compile Include="Models\Admin Models\FleetModel.cs" />
+    <Compile Include="Models\Admin Models\IAuditableEntity.cs" />
+    <Compile Include="Models\Admin Models\InvoicePaymentViewModel.cs" />
+    <Compile Include="Models\Admin Models\InvoiceViewModel.cs" />
+    <Compile Include="Models\Admin Models\KnowledgeBaseModel.cs" />
+    <Compile Include="Models\Admin Models\KnowledgeCategoryModel.cs" />
+    <Compile Include="Models\Admin Models\LesseChangeModel.cs" />
+    <Compile Include="Models\Admin Models\LiscNews.cs" />
+    <Compile Include="Models\Admin Models\MotherDishScheduleModel.cs" />
+    <Compile Include="Models\Admin Models\MotherModel.cs" />
+    <Compile Include="Models\Admin Models\MotherScheduleModel.cs" />
+    <Compile Include="Models\Admin Models\PolicyModel.cs" />
+    <Compile Include="Models\Admin Models\PremiumBordereauModel.cs" />
+    <Compile Include="Models\Admin Models\QuickLinksModel.cs" />
+    <Compile Include="Models\Admin Models\RenewalReportModel.cs" />
+    <Compile Include="Models\Admin Models\SectionCodesModel.cs" />
+    <Compile Include="Models\Admin Models\SectionReportModel.cs" />
+    <Compile Include="Models\Admin Models\TransactionDetailsModel.cs" />
+    <Compile Include="Models\Admin Models\TypeModel.cs" />
+    <Compile Include="Models\Admin Models\UserModel.cs" />
+    <Compile Include="Models\Admin Models\VehicleDetailsModel.cs" />
+    <Compile Include="Models\Admin Models\VINResponseModel.cs" />
+    <Compile Include="Models\ApprovalStatusCodeModel.cs" />
+    <Compile Include="Models\CaptchaResponse.cs" />
+    <Compile Include="Models\ChangePassword.cs" />
+    <Compile Include="Models\CMSPageModels.cs" />
+    <Compile Include="Models\EmailTemplateModels.cs" />
+    <Compile Include="Models\Frontend Models\EmployeeModel.cs" />
+    <Compile Include="Models\Frontend Models\UserModel.cs" />
+    <Compile Include="Models\ImageViewModel.cs" />
+    <Compile Include="Models\Modules.cs" />
+    <Compile Include="Models\PagingCustomModel.cs" />
+    <Compile Include="Models\ProspectModels.cs" />
+    <Compile Include="Models\RatingMatrixModel.cs" />
+    <Compile Include="Models\WebApi\ApiUserModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApniMaa.DAL\ApniMaa.DAL.csproj">
+      <Project>{630910cd-1125-4e90-86df-9b42b0e82de2}</Project>
+      <Name>ApniMaa.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ApniMaa.Globalization\ApniMaa.Globalization.csproj">
+      <Project>{37e0a7f1-33b5-4dce-bda2-71d13eb2b11c}</Project>
+      <Name>ApniMaa.Globalization</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

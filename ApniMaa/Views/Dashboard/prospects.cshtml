@@ -1,0 +1,142 @@
+﻿@model PagingResult<ProspectListingModel>
+
+@{
+    ViewBag.Title = "prospects";
+    Layout = "~/Views/Shared/_LayoutAfterLogin.cshtml";
+}
+
+<div class="main-section prospects-page">
+    <div class="wrapper">
+        <div class="campaigns-full">
+            <h1 class="heading">Prospects </h1>
+            <div class="campaagin-leftside">
+                <form>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>Prospect's Email</option>
+                            <option>Prospect Name</option>
+                            <option>Prospect Phone</option>
+                            <option>Campaign Name</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group search">
+                        <input type="text" class="form-control" placeholder="Search here">
+                    </div>
+
+                    <div class="form-group filter">
+                        <button type="button" class="btn btn-gray">Filters <img src="~/content/images/arrow-white.png"></button>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <div class="campaagin-rightside">
+                Select One :  <span>7 days</span>  <span class="selected">30 days</span>   <span>All</span>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#prospectmodal">
+                    + Prospect
+                </button>
+
+            </div>
+
+
+        </div>
+
+        @Html.Partial("_partials/_AddProspectModal", new AddProspectModel())
+
+        <div class="subsrviber-area">
+            <div class="full-div">
+                <div class="form-group cutom-check">
+                    <input type="radio" name="subscribe" class="form-control">	<label class="custom-span">Show prospects who responded</label>
+                </div>
+
+                <div class="form-group cutom-check">
+                    <input type="radio" name="subscribe" class="form-control">	<label class="custom-span">Show Prospects Who Did not responded </label>
+                </div>
+
+                <button class="btn btn-primary">Clear filters</button>
+
+            </div>
+
+        </div>
+
+        <div class="table-responsive">
+            <div id="divResult">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Prospect</th>
+                            <th>Campaign</th>
+                            <th>STATUS</th>
+                            <th>ADDED</th>
+                            <th>Last Modified</th>
+                            <th></th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @Html.Partial("_partials/_ProspectListing", Model)
+                        @*<tr>
+                                <td><a href="prospects-detail.html">Chitvan Seth</a></td>
+                                <td>Healthcare Professionals</td>
+                                <td>Stopped</td>
+                                <td>Oct 16,2018</td>
+                                <td>Oct 16,2018</td>
+                                <td>
+                                    <button><img src="~/content/images/edit-table.png"></button>
+                                    <button><img src="~/content/images/cross-table.png"></button>
+                                </td>
+                            </tr>*@
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        @Html.Partial("_Paging")
+        <div class="pagination-upper pull-right">
+            <nav aria-label="...">
+                <ul class="pagination">
+
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item ">
+                        <a href="#" class="page-link">2 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item bt">
+                        <a href="#" class="page-link"><img src="~/content/images/right-arrow.png"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script src="~/Scripts/UserDefinedScripts/paging.js"></script>
+    <script src="~/Scripts/FrontEndScripts/prospect.js"></script>
+    @*<script type="text/javascript">
+            $(document).ready(function () {
+                snapAPP.Urls = snapAPP.Urls || {};
+                snapAPP.Urls.AddEmployee = '@Url.Action("AddEmployeeDetails", "Employee", new { area = "Admin" })';
+                snapAPP.Urls.manageEmployee = '@Url.Action("ManageEmployee", "Employee", new { area = "Admin" })';
+                snapAPP.Urls.editEmployee = '@Url.Action("UpdateEmployeeDetails", "Employee", new { area = "Admin" })';
+
+                App.init();
+            });
+        </script>*@
+    <script type="text/javascript">
+        $(document).ready(function () {
+            followUp.Urls = followUp.Urls || {};
+            followUp.Urls.AddEmployee = '@Url.Action("AddEmployeeDetails", "Employee", new { area = "Admin" })';
+            followUp.Urls.ManageProspect = '@Url.Action("GetProspectPagedList", "Dashboard")';
+            followUp.Urls.editEmployee = '@Url.Action("UpdateEmployeeDetails", "Employee", new { area = "Admin" })';
+            followUp.Urls.pagingRecords = '@Url.Action("GetProspectPagedList", "Dashboard")';
+
+            App.init();
+        });
+    </script>
+}
+
+

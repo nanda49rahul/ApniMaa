@@ -1,0 +1,83 @@
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.dll.config
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.pdb
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\Newtonsoft.Json.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.BLL.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\System.Web.Http.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.DAL.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.Globalization.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\EntityFramework.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\System.Linq.Dynamic.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\System.Net.Http.Formatting.dll
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.BLL.pdb
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\System.Web.Http.xml
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.DAL.pdb
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\OzzieLeads.Globalization.pdb
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\EntityFramework.xml
+D:\OzzieLeads\OzzieLeads.Framework\bin\Debug\System.Net.Http.Formatting.xml
+D:\OzzieLeads\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.csprojResolveAssemblyReference.cache
+D:\OzzieLeads\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.dll
+D:\OzzieLeads\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.csprojResolveAssemblyReference.cache
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.dll.config
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Newtonsoft.Json.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.BLL.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\System.Web.Http.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\AutoMapper.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Quartz.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Ninject.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\PayPal.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.DAL.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\EntityFramework.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.Globalization.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\JWT.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\itextsharp.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\itextsharp.xmlworker.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\System.Linq.Dynamic.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Twilio.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\System.Net.Http.Formatting.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Common.Logging.Core.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Common.Logging.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.BLL.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\System.Web.Http.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.DAL.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\EntityFramework.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\OzzieLeads.Globalization.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\Twilio.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\bin\Debug\System.Net.Http.Formatting.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.pdb
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.dll.config
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.Framework.pdb
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Newtonsoft.Json.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.BLL.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\System.Web.Http.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\AutoMapper.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Quartz.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Ninject.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\PayPal.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.DAL.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\EntityFramework.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.Globalization.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\JWT.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\itextsharp.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\itextsharp.xmlworker.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\System.Linq.Dynamic.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Twilio.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\System.Net.Http.Formatting.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Common.Logging.Core.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Common.Logging.dll
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.BLL.pdb
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\System.Web.Http.xml
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.DAL.pdb
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\EntityFramework.xml
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\OzzieLeads.Globalization.pdb
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Twilio.xml
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\System.Net.Http.Formatting.xml
+F:\ApniMaa\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.csprojResolveAssemblyReference.cache
+F:\ApniMaa\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.dll
+F:\ApniMaa\OzzieLeads.Framework\obj\Debug\OzzieLeads.Framework.pdb
+F:\ApniMaa\OzzieLeads.Framework\bin\Debug\Newtonsoft.Json.xml

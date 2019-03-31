@@ -1,0 +1,772 @@
+Exception of type 'System.Exception' was thrown.
+http://jsonformat.com/
+
+
+
+Exception of type 'System.Exception' was thrown.
+http://jsonformat.com/
+
+
+
+Exception of type 'System.Exception' was thrown.
+http://jsonformat.com/
+
+
+
+Exception of type 'System.Exception' was thrown.
+http://jsonformat.com/
+
+
+
+Exception of type 'System.Exception' was thrown.
+http://jsonformat.com/
+
+
+
+Exception of type 'System.Exception' was thrown.
+http://jsonformat.com/
+
+
+
+c:\Windows\Microsoft.NET\Framework\v4.0.30319\Temporary ASP.NET Files\root\a9761a11\7577a8d3\App_Web_index.cshtml.7befced2.x8otybls.0.cs(29): error CS0234: The type or namespace name 'Models' does not exist in the namespace 'followup' (are you missing an assembly reference?)
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "pageStyles".
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "pageStyles".
+http://jsonformat.com/
+
+
+
+d:\GIT-ALL-PROJECTS\followup-net\followup\followup\Areas\Admin\Views\Home\Partials\_userListing.cshtml(19): error CS1061: 'followup.BLL.Models.UserListingModel' does not contain a definition for 'LasttName' and no extension method 'LasttName' accepting a first argument of type 'followup.BLL.Models.UserListingModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+No property or field 'Desc' exists in type 'User'
+http://jsonformat.com/
+
+
+
+No property or field 'Desc' exists in type 'User'
+http://jsonformat.com/
+
+
+
+No property or field 'Desc' exists in type 'User'
+http://jsonformat.com/
+
+
+
+No property or field 'Desc' exists in type 'User'
+http://jsonformat.com/
+
+
+
+Error occurred during a cryptographic operation.
+http://jsonformat.com/
+
+
+
+Error occurred during a cryptographic operation.
+http://jsonformat.com/
+
+
+
+The underlying provider failed on Open.
+http://jsonformat.com/
+
+
+
+The underlying provider failed on Open.
+http://jsonformat.com/
+
+
+
+The view 'ForgetPassword' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/Home/ForgetPassword.aspx
+~/Areas/Admin/Views/Home/ForgetPassword.ascx
+~/Areas/Admin/Views/Shared/ForgetPassword.aspx
+~/Areas/Admin/Views/Shared/ForgetPassword.ascx
+~/Views/Home/ForgetPassword.aspx
+~/Views/Home/ForgetPassword.ascx
+~/Views/Shared/ForgetPassword.aspx
+~/Views/Shared/ForgetPassword.ascx
+~/Areas/Admin/Views/Home/ForgetPassword.cshtml
+~/Areas/Admin/Views/Home/ForgetPassword.vbhtml
+~/Areas/Admin/Views/Shared/ForgetPassword.cshtml
+~/Areas/Admin/Views/Shared/ForgetPassword.vbhtml
+~/Views/Home/ForgetPassword.cshtml
+~/Views/Home/ForgetPassword.vbhtml
+~/Views/Shared/ForgetPassword.cshtml
+~/Views/Shared/ForgetPassword.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ResetPassword' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/ResetPassword.aspx
+~/Areas/Admin/Views/user/ResetPassword.ascx
+~/Areas/Admin/Views/Shared/ResetPassword.aspx
+~/Areas/Admin/Views/Shared/ResetPassword.ascx
+~/Views/user/ResetPassword.aspx
+~/Views/user/ResetPassword.ascx
+~/Views/Shared/ResetPassword.aspx
+~/Views/Shared/ResetPassword.ascx
+~/Areas/Admin/Views/user/ResetPassword.cshtml
+~/Areas/Admin/Views/user/ResetPassword.vbhtml
+~/Areas/Admin/Views/Shared/ResetPassword.cshtml
+~/Areas/Admin/Views/Shared/ResetPassword.vbhtml
+~/Views/user/ResetPassword.cshtml
+~/Views/user/ResetPassword.vbhtml
+~/Views/Shared/ResetPassword.cshtml
+~/Views/Shared/ResetPassword.vbhtml
+http://jsonformat.com/
+
+
+
+The "RenderBody" method has not been called for layout page "~/Views/Shared/_Layout.cshtml".
+http://jsonformat.com/
+
+
+
+The "RenderBody" method has not been called for layout page "~/Views/Shared/_Layout.cshtml".
+http://jsonformat.com/
+
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\d4d51b8b\4d3e6b6f\App_Web_index.cshtml.a8d08dba.lsso2dic.0.cs(31): error CS0246: The type or namespace name 'LoginModal' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "scripts".
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "scripts".
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "scripts".
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "scripts".
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "scripts".
+http://jsonformat.com/
+
+
+
+The following sections have been defined but have not been rendered for the layout page "~/Views/Shared/_Layout.cshtml": "scripts".
+http://jsonformat.com/
+
+
+
+The "RenderSection" method has already been called for the section named "scripts".
+http://jsonformat.com/
+
+
+
+The partial view '_FunctionCallMessage' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Home/_FunctionCallMessage.aspx
+~/Views/Home/_FunctionCallMessage.ascx
+~/Views/Shared/_FunctionCallMessage.aspx
+~/Views/Shared/_FunctionCallMessage.ascx
+~/Views/Home/_FunctionCallMessage.cshtml
+~/Views/Home/_FunctionCallMessage.vbhtml
+~/Views/Shared/_FunctionCallMessage.cshtml
+~/Views/Shared/_FunctionCallMessage.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'index' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/dashboard/index.aspx
+~/Views/dashboard/index.ascx
+~/Views/Shared/index.aspx
+~/Views/Shared/index.ascx
+~/Views/dashboard/index.cshtml
+~/Views/dashboard/index.vbhtml
+~/Views/Shared/index.cshtml
+~/Views/Shared/index.vbhtml
+http://jsonformat.com/
+
+
+
+Could not find any resources appropriate for the specified culture or the neutral culture.  Make sure "SNAP.Globalization.en-US.resources" was correctly embedded or linked into assembly "followup.Globalization" at compile time, or that all the satellite assemblies required are loadable and fully signed.
+http://jsonformat.com/
+
+
+
+Could not find any resources appropriate for the specified culture or the neutral culture.  Make sure "SNAP.Globalization.en-US.resources" was correctly embedded or linked into assembly "followup.Globalization" at compile time, or that all the satellite assemblies required are loadable and fully signed.
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'followup.BLL.Models.ActionOutput', but this dictionary requires a model item of type 'followup.BLL.Models.ResetPassword'.
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'followup.BLL.Models.ActionOutput', but this dictionary requires a model item of type 'followup.BLL.Models.ResetPassword'.
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'followup.BLL.Models.ActionOutput', but this dictionary requires a model item of type 'followup.BLL.Models.ResetPassword'.
+http://jsonformat.com/
+
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\d4d51b8b\4d3e6b6f\App_Web__addprospectmodal.cshtml.8440743d.7cutkgxk.0.cs(32): error CS0246: The type or namespace name 'AddProspectModel' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\baseproject-master\baseproject-master\BaseProject\followup\Views\Dashboard\prospects.cshtml(45): error CS0246: The type or namespace name 'AddProspectModel' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The partial view '_Paging' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/dashboard/_Paging.aspx
+~/Views/dashboard/_Paging.ascx
+~/Views/Shared/_Paging.aspx
+~/Views/Shared/_Paging.ascx
+~/Views/dashboard/_Paging.cshtml
+~/Views/dashboard/_Paging.vbhtml
+~/Views/Shared/_Paging.cshtml
+~/Views/Shared/_Paging.vbhtml
+http://jsonformat.com/
+
+
+
+Could not load file or assembly 'System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+http://jsonformat.com/
+
+
+
+Could not load file or assembly 'System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+http://jsonformat.com/
+
+
+
+Could not load file or assembly 'System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+http://jsonformat.com/
+
+
+
+Could not load file or assembly 'System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+http://jsonformat.com/
+
+
+
+Could not load file or assembly 'System.Web.Mvc, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35' or one of its dependencies. The located assembly's manifest definition does not match the assembly reference. (Exception from HRESULT: 0x80131040)
+http://jsonformat.com/
+
+
+
+Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+http://jsonformat.com/
+System.FormatException: Guid should contain 32 digits with 4 dashes (xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx).
+   at System.Guid.TryParseGuidWithNoStyle(String guidString, GuidResult& result)
+   at System.Guid.TryParseGuid(String g, GuidStyles flags, GuidResult& result)
+   at System.Guid..ctor(String g)
+   at followup.BLL.Managers.UserManager.followup.BLL.Interfaces.IUserManager.IsSessionValid(String sessionId) in d:\mohit\TheGarage\followup.BLL\Managers\UserManager.cs:line 34
+   at ApniMaa.Areas.API.AccountController.login(registerModel model) in d:\mohit\TheGarage\followup\Areas\API\AccountController.cs:line 75
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+http://jsonformat.com/
+System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at followup.BLL.Managers.UserManager.followup.BLL.Interfaces.IUserManager.RegisterUser(registerModel model) in d:\mohit\TheGarage\followup.BLL\Managers\UserManager.cs:line 29
+   at ApniMaa.Areas.API.AccountController.login(registerModel model) in d:\mohit\TheGarage\followup\Areas\API\AccountController.cs:line 78
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+An error occurred while updating the entries. See the inner exception for details.
+http://jsonformat.com/
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The conversion of a datetime2 data type to a datetime data type resulted in an out-of-range value.
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at followup.BLL.Managers.UserManager.followup.BLL.Interfaces.IUserManager.RegisterUser(registerModel model) in d:\mohit\TheGarage\followup.BLL\Managers\UserManager.cs:line 31
+   at ApniMaa.Areas.API.AccountController.login(registerModel model) in d:\mohit\TheGarage\followup\Areas\API\AccountController.cs:line 78
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+An error occurred while updating the entries. See the inner exception for details.
+http://jsonformat.com/
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_Users_Email'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (test@gmail.com).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at followup.BLL.Managers.UserManager.followup.BLL.Interfaces.IUserManager.RegisterUser(registerModel model) in d:\mohit\TheGarage\followup.BLL\Managers\UserManager.cs:line 32
+   at ApniMaa.Areas.API.AccountController.login(registerModel model) in d:\mohit\TheGarage\followup\Areas\API\AccountController.cs:line 78
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+An error occurred while updating the entries. See the inner exception for details.
+http://jsonformat.com/
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Violation of UNIQUE KEY constraint 'UK_Users_Email'. Cannot insert duplicate key in object 'dbo.Users'. The duplicate key value is (test@gmail.com).
+The statement has been terminated.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at System.Data.SqlClient.SqlDataReader.get_MetaData()
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   at System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<Reader>b__c(DbCommand t, DbCommandInterceptionContext`1 c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext,TResult](TTarget target, Func`3 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   at System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction)
+   at System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update()
+   at System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__35()
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass2a.<SaveChangesInternal>b__27()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChangesInternal(SaveOptions options, Boolean executeInExistingTransaction)
+   at System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Internal.InternalContext.SaveChanges()
+   at System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   at System.Data.Entity.DbContext.SaveChanges()
+   at followup.BLL.Managers.UserManager.followup.BLL.Interfaces.IUserManager.RegisterUser(registerModel model) in d:\mohit\TheGarage\followup.BLL\Managers\UserManager.cs:line 32
+   at ApniMaa.Areas.API.AccountController.RegisterUser(registerModel model) in d:\mohit\TheGarage\followup\Areas\API\AccountController.cs:line 78
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Value cannot be null.
+Parameter name: input
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: input
+   at System.Guid.Parse(String input)
+   at ApniMaa.Areas.API.AccountController.RegisterUser(registerModel model) in d:\mohit\TheGarage\followup\Areas\API\AccountController.cs:line 82
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\9e79238a\7ea628bb\App_Web_index.cshtml.7befced2.jhmayomf.0.cs(28): error CS0246: The type or namespace name 'followup' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\9e79238a\7ea628bb\App_Web_index.cshtml.7befced2.oemklhqi.0.cs(28): error CS0246: The type or namespace name 'followup' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\9e79238a\7ea628bb\App_Web_index.cshtml.7befced2.9ey-odhu.0.cs(28): error CS0246: The type or namespace name 'followup' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\9e79238a\7ea628bb\App_Web_index.cshtml.7befced2.sn3cyvii.0.cs(30): error CS0234: The type or namespace name 'WebApi' does not exist in the namespace 'ApniMaa.BLL.Models' (are you missing an assembly reference?)
+http://jsonformat.com/
+
+
+
+c:\Users\Mohit Sharma\AppData\Local\Temp\Temporary ASP.NET Files\vs\9e79238a\7ea628bb\App_Web_index.cshtml.7befced2.lkafxwjt.0.cs(30): error CS0234: The type or namespace name 'WebApi' does not exist in the namespace 'ApniMaa.BLL.Models' (are you missing an assembly reference?)
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: source
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: source
+http://jsonformat.com/
+
+
+
+Unexpected "if" keyword after "@" character.  Once inside code, you do not need to prefix constructs like "if" with "@".
+
+http://jsonformat.com/
+
+
+
+f:\ApniMaa\ApniMaa\Areas\Admin\Views\Shared\_SideBaar.cshtml(15): error CS0117: 'ApniMaa.BLL.Models.SelectedAdminTab' does not contain a definition for 'AdminEmployees'
+http://jsonformat.com/
+
+
+
+f:\ApniMaa\ApniMaa\Areas\Admin\Views\Shared\_SideBaar.cshtml(15): error CS0117: 'ApniMaa.BLL.Models.SelectedAdminTab' does not contain a definition for 'AdminEmployees'
+http://jsonformat.com/
+
+
+
+f:\ApniMaa\ApniMaa\Areas\Admin\Views\Shared\_SideBaar.cshtml(15): error CS0117: 'ApniMaa.BLL.Models.SelectedAdminTab' does not contain a definition for 'AdminEmployees'
+http://jsonformat.com/
+
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+
+
+
+Cannot convert type 'ApniMaa.BLL.Models.UserModel' to 'ApniMaa.BLL.Models.UserDetails'
+http://jsonformat.com/
+
+
+
+Cannot convert type 'ApniMaa.BLL.Models.UserModel' to 'ApniMaa.BLL.Models.PermissonAndDetailModel'
+http://jsonformat.com/
+
+
+
+f:\ApniMaa\ApniMaa\Areas\Admin\Views\Shared\_Header.cshtml(63): error CS1061: 'ApniMaa.BLL.Models.UserModel' does not contain a definition for 'UserDetails' and no extension method 'UserDetails' accepting a first argument of type 'ApniMaa.BLL.Models.UserModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+f:\ApniMaa\ApniMaa\Areas\Admin\Views\Shared\_SideBaar.cshtml(15): error CS0117: 'ApniMaa.BLL.Models.SelectedAdminTab' does not contain a definition for 'AdminEmployees'
+http://jsonformat.com/
+
+
+
+Cannot convert type 'ApniMaa.BLL.Models.UserModel' to 'ApniMaa.BLL.Models.UserDetails'
+http://jsonformat.com/
+
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in f:\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in f:\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in f:\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+
+

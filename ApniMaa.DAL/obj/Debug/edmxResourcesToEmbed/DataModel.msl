@@ -1,0 +1,592 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ApniMaaDBModelStoreContainer" CdmEntityContainer="ApniMaaDBEntities">
+    <EntitySetMapping Name="Achievements">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Achievement">
+        <MappingFragment StoreEntitySet="Achievements">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdminUsers">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.AdminUser">
+        <MappingFragment StoreEntitySet="AdminUsers">
+          <ScalarProperty Name="AdminUserId" ColumnName="AdminUserId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="IsSuperAdmin" ColumnName="IsSuperAdmin" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="Token" ColumnName="Token" />
+          <ScalarProperty Name="ForgotPassword" ColumnName="ForgotPassword" />
+          <ScalarProperty Name="IsPermissonUpdated" ColumnName="IsPermissonUpdated" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Carts">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Cart">
+        <MappingFragment StoreEntitySet="Cart">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Packing" ColumnName="Packing" />
+          <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ProvinceId" ColumnName="ProvinceId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CMSPages">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.CMSPage">
+        <MappingFragment StoreEntitySet="CMSPages">
+          <ScalarProperty Name="PageId" ColumnName="PageId" />
+          <ScalarProperty Name="PageName" ColumnName="PageName" />
+          <ScalarProperty Name="PageTitle" ColumnName="PageTitle" />
+          <ScalarProperty Name="PageContent" ColumnName="PageContent" />
+          <ScalarProperty Name="MetaTitle" ColumnName="MetaTitle" />
+          <ScalarProperty Name="MetaKeywords" ColumnName="MetaKeywords" />
+          <ScalarProperty Name="MetaDescription" ColumnName="MetaDescription" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryID" ColumnName="CountryID" />
+          <ScalarProperty Name="CountryName" ColumnName="CountryName" />
+          <ScalarProperty Name="CountryShortCode" ColumnName="CountryShortCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Coupons">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Coupon">
+        <MappingFragment StoreEntitySet="Coupons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Discount" ColumnName="Discount" />
+          <ScalarProperty Name="CouponType" ColumnName="CouponType" />
+          <ScalarProperty Name="MinOrderValue" ColumnName="MinOrderValue" />
+          <ScalarProperty Name="IsAvailableForAll" ColumnName="IsAvailableForAll" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Enddate" ColumnName="Enddate" />
+          <ScalarProperty Name="AvailType" ColumnName="AvailType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Dishes">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Dish">
+        <MappingFragment StoreEntitySet="Dishes">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CategoryId" ColumnName="CategoryId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmailTemplates">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.EmailTemplate">
+        <MappingFragment StoreEntitySet="EmailTemplates">
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="TemplateName" ColumnName="TemplateName" />
+          <ScalarProperty Name="EmailSubject" ColumnName="EmailSubject" />
+          <ScalarProperty Name="TemplateContent" ColumnName="TemplateContent" />
+          <ScalarProperty Name="TemplateStatus" ColumnName="TemplateStatus" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="UpdatedOn" ColumnName="UpdatedOn" />
+          <ScalarProperty Name="TemplateType" ColumnName="TemplateType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ErrorLogs">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.ErrorLog">
+        <MappingFragment StoreEntitySet="ErrorLog">
+          <ScalarProperty Name="ErrorLogID" ColumnName="ErrorLogID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="StackTrace" ColumnName="StackTrace" />
+          <ScalarProperty Name="InnerException" ColumnName="InnerException" />
+          <ScalarProperty Name="LoggedInDetails" ColumnName="LoggedInDetails" />
+          <ScalarProperty Name="QueryData" ColumnName="QueryData" />
+          <ScalarProperty Name="FormData" ColumnName="FormData" />
+          <ScalarProperty Name="RouteData" ColumnName="RouteData" />
+          <ScalarProperty Name="LoggedAt" ColumnName="LoggedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Favourites">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Favourite">
+        <MappingFragment StoreEntitySet="Favourites">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Guests">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Guest">
+        <MappingFragment StoreEntitySet="Guest">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Longitute" ColumnName="Longitute" />
+          <ScalarProperty Name="Latitute" ColumnName="Latitute" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Levels">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Level">
+        <MappingFragment StoreEntitySet="Levels">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Modules">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Module">
+        <MappingFragment StoreEntitySet="Modules">
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="ModuleName" ColumnName="ModuleName" />
+          <ScalarProperty Name="ControllerName" ColumnName="ControllerName" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsAdmin" ColumnName="IsAdmin" />
+          <ScalarProperty Name="IsSubUser" ColumnName="IsSubUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MortherOrders">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MortherOrder">
+        <MappingFragment StoreEntitySet="MortherOrders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Packing" ColumnName="Packing" />
+          <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherAnswers">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherAnswer">
+        <MappingFragment StoreEntitySet="MotherAnswers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="QuestionId" ColumnName="QuestionId" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherBankDetails">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherBankDetail">
+        <MappingFragment StoreEntitySet="MotherBankDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="AccountNo" ColumnName="AccountNo" />
+          <ScalarProperty Name="BankName" ColumnName="BankName" />
+          <ScalarProperty Name="AccountHolderName" ColumnName="AccountHolderName" />
+          <ScalarProperty Name="IFSC_Code" ColumnName="IFSC_Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherCarts">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherCart">
+        <MappingFragment StoreEntitySet="MotherCart">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="CartId" ColumnName="CartId" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Packing" ColumnName="Packing" />
+          <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherCartDetails">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherCartDetail">
+        <MappingFragment StoreEntitySet="MotherCartDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherCartId" ColumnName="MotherCartId" />
+          <ScalarProperty Name="MotherDishId" ColumnName="MotherDishId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherCoupons">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherCoupon">
+        <MappingFragment StoreEntitySet="MotherCoupons">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherDailySchedules">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherDailySchedule">
+        <MappingFragment StoreEntitySet="MotherDailySchedule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Availabilty" ColumnName="Availabilty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherDishes">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherDish">
+        <MappingFragment StoreEntitySet="MotherDish">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="DishId" ColumnName="DishId" />
+          <ScalarProperty Name="Limit" ColumnName="Limit" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="IsMainDish" ColumnName="IsMainDish" />
+          <ScalarProperty Name="IsSignatureDish" ColumnName="IsSignatureDish" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherDishDailySchedules">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherDishDailySchedule">
+        <MappingFragment StoreEntitySet="MotherDishDailySchedule">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherDishId" ColumnName="MotherDishId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="Availabilty" ColumnName="Availabilty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherDishReviews">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherDishReview">
+        <MappingFragment StoreEntitySet="MotherDishReviews">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherDishId" ColumnName="MotherDishId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Review" ColumnName="Review" />
+          <ScalarProperty Name="Image1" ColumnName="Image1" />
+          <ScalarProperty Name="Image2" ColumnName="Image2" />
+          <ScalarProperty Name="Image3" ColumnName="Image3" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherGalleries">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherGallery">
+        <MappingFragment StoreEntitySet="MotherGallery">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="Caption" ColumnName="Caption" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherOrderDetails">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherOrderDetail">
+        <MappingFragment StoreEntitySet="MotherOrderDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherOrderId" ColumnName="MotherOrderId" />
+          <ScalarProperty Name="MotherDishId" ColumnName="MotherDishId" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherQuestions">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherQuestion">
+        <MappingFragment StoreEntitySet="MotherQuestions">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Question" ColumnName="Question" />
+          <ScalarProperty Name="Answertype" ColumnName="Answertype" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherStatements">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherStatement">
+        <MappingFragment StoreEntitySet="MotherStatement">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MotherId" ColumnName="MotherId" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="TransactionNo" ColumnName="TransactionNo" />
+          <ScalarProperty Name="AmountReceived" ColumnName="AmountReceived" />
+          <ScalarProperty Name="Remarks" ColumnName="Remarks" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MotherTbls">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.MotherTbl">
+        <MappingFragment StoreEntitySet="MotherTbl">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ApplicationNo" ColumnName="ApplicationNo" />
+          <ScalarProperty Name="Ratings" ColumnName="Ratings" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LOfflineTime" ColumnName="LOfflineTime" />
+          <ScalarProperty Name="DOfflineTime" ColumnName="DOfflineTime" />
+          <ScalarProperty Name="LDeliveryTime" ColumnName="LDeliveryTime" />
+          <ScalarProperty Name="DDeliveryTime" ColumnName="DDeliveryTime" />
+          <ScalarProperty Name="ProfilePhoto" ColumnName="ProfilePhoto" />
+          <ScalarProperty Name="CoverPhoto" ColumnName="CoverPhoto" />
+          <ScalarProperty Name="Commision" ColumnName="Commision" />
+          <ScalarProperty Name="WalletAmount" ColumnName="WalletAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Notificationsses">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Notificationss">
+        <MappingFragment StoreEntitySet="Notificationss">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GuestId" ColumnName="GuestId" />
+          <ScalarProperty Name="Subtotal" ColumnName="Subtotal" />
+          <ScalarProperty Name="Tax" ColumnName="Tax" />
+          <ScalarProperty Name="Packing" ColumnName="Packing" />
+          <ScalarProperty Name="Delivery" ColumnName="Delivery" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="OrderStatus" ColumnName="OrderStatus" />
+          <ScalarProperty Name="CouponId" ColumnName="CouponId" />
+          <ScalarProperty Name="DiscountAmount" ColumnName="DiscountAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OTPs">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.OTP">
+        <MappingFragment StoreEntitySet="OTP">
+          <ScalarProperty Name="OTPId" ColumnName="OTPId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="OTPCode" ColumnName="OTPCode" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentDetails">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.PaymentDetail">
+        <MappingFragment StoreEntitySet="PaymentDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OrderId" ColumnName="OrderId" />
+          <ScalarProperty Name="TransactionId" ColumnName="TransactionId" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="InvoiceNo" ColumnName="InvoiceNo" />
+          <ScalarProperty Name="InvoiceLink" ColumnName="InvoiceLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Provinces">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.Province">
+        <MappingFragment StoreEntitySet="Province">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="lastModified" ColumnName="lastModified" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PushNotificationsMessageLogs">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.PushNotificationsMessageLog">
+        <MappingFragment StoreEntitySet="PushNotificationsMessageLogs">
+          <ScalarProperty Name="PushNotificationsMessageLogsId" ColumnName="PushNotificationsMessageLogsId" />
+          <ScalarProperty Name="DeviceToken" ColumnName="DeviceToken" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DateProcessed" ColumnName="DateProcessed" />
+          <ScalarProperty Name="FKReceiverUserId" ColumnName="FKReceiverUserId" />
+          <ScalarProperty Name="FKQueuedPushNotificationsId" ColumnName="FKQueuedPushNotificationsId" />
+          <ScalarProperty Name="ErrorMessage" ColumnName="ErrorMessage" />
+          <ScalarProperty Name="JsonData" ColumnName="JsonData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QueuedPushNotifications">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.QueuedPushNotification">
+        <MappingFragment StoreEntitySet="QueuedPushNotifications">
+          <ScalarProperty Name="QueuedPushNotificationsId" ColumnName="QueuedPushNotificationsId" />
+          <ScalarProperty Name="NotificationType" ColumnName="NotificationType" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="Badge" ColumnName="Badge" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DateCreated" ColumnName="DateCreated" />
+          <ScalarProperty Name="DateProcessed" ColumnName="DateProcessed" />
+          <ScalarProperty Name="JsonData" ColumnName="JsonData" />
+          <ScalarProperty Name="FKSenderUserId" ColumnName="FKSenderUserId" />
+          <ScalarProperty Name="FKReceiverUserId" ColumnName="FKReceiverUserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAchievements">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.UserAchievement">
+        <MappingFragment StoreEntitySet="UserAchievements">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="AchievementId" ColumnName="AchievementId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAddressTbls">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.UserAddressTbl">
+        <MappingFragment StoreEntitySet="UserAddressTbl">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Longitute" ColumnName="Longitute" />
+          <ScalarProperty Name="Latitute" ColumnName="Latitute" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserAssignedModules">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.UserAssignedModule">
+        <MappingFragment StoreEntitySet="UserAssignedModules">
+          <ScalarProperty Name="UserAssignedModuleId" ColumnName="UserAssignedModuleId" />
+          <ScalarProperty Name="AdminUserID" ColumnName="AdminUserID" />
+          <ScalarProperty Name="ModuleId" ColumnName="ModuleId" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDate" ColumnName="UpdatedDate" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserEnquiries">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.UserEnquiry">
+        <MappingFragment StoreEntitySet="UserEnquiry">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="Reply" ColumnName="Reply" />
+          <ScalarProperty Name="IsReplied" ColumnName="IsReplied" />
+          <ScalarProperty Name="IsResolved" ColumnName="IsResolved" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLoginSessions">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.UserLoginSession">
+        <MappingFragment StoreEntitySet="UserLoginSessions">
+          <ScalarProperty Name="UserLoginSessionID" ColumnName="UserLoginSessionID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="LoggedInTime" ColumnName="LoggedInTime" />
+          <ScalarProperty Name="LoggedOutTime" ColumnName="LoggedOutTime" />
+          <ScalarProperty Name="SessionExpired" ColumnName="SessionExpired" />
+          <ScalarProperty Name="LastActivityTime" ColumnName="LastActivityTime" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="UniqueDeviceId" ColumnName="UniqueDeviceId" />
+          <ScalarProperty Name="DeviceToken" ColumnName="DeviceToken" />
+          <ScalarProperty Name="DeviceType" ColumnName="DeviceType" />
+          <ScalarProperty Name="TokenVOIP" ColumnName="TokenVOIP" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.User">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="LastLogin" ColumnName="LastLogin" />
+          <ScalarProperty Name="LastLogout" ColumnName="LastLogout" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="DeletedOn" ColumnName="DeletedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTbls">
+      <EntityTypeMapping TypeName="ApniMaaDBModel.UserTbl">
+        <MappingFragment StoreEntitySet="UserTbl">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="RoleId" ColumnName="RoleId" />
+          <ScalarProperty Name="Latitute" ColumnName="Latitute" />
+          <ScalarProperty Name="Longitute" ColumnName="Longitute" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Province" ColumnName="Province" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="OTP" ColumnName="OTP" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

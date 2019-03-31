@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4d70a582ad9b4686a9178415d39e4161" Name="Diagram1" ZoomLevel="73">
+        <EntityTypeShape EntityType="ApniMaaDBModel.Achievement" Width="1.5" PointX="0.75" PointY="27" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.AdminUser" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Cart" Width="1.5" PointX="6" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Category" Width="1.5" PointX="3.75" PointY="62.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.City" Width="1.5" PointX="8" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.CMSPage" Width="1.5" PointX="2.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Country" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Coupon" Width="1.5" PointX="6" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Dish" Width="1.5" PointX="6" PointY="62" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.EmailTemplate" Width="1.5" PointX="7.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.ErrorLog" Width="1.5" PointX="4.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Favourite" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Guest" Width="1.5" PointX="3.75" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Level" Width="1.5" PointX="6.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Module" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MortherOrder" Width="1.5" PointX="5.25" PointY="36.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherAnswer" Width="1.5" PointX="8.25" PointY="39.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherBankDetail" Width="1.5" PointX="5.25" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherCart" Width="1.5" PointX="11.25" PointY="35.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherCartDetail" Width="1.5" PointX="13.5" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherCoupon" Width="1.5" PointX="8.25" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDailySchedule" Width="1.5" PointX="5.25" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDish" Width="1.5" PointX="8.25" PointY="42.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDishDailySchedule" Width="1.5" PointX="10.5" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDishReview" Width="1.5" PointX="6" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherGallery" Width="1.5" PointX="5.25" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherOrderDetail" Width="1.5" PointX="13.5" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherQuestion" Width="1.5" PointX="6" PointY="19.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherStatement" Width="1.5" PointX="5.25" PointY="58.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherTbl" Width="1.5" PointX="3" PointY="37.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Notificationss" Width="1.5" PointX="3" PointY="31.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Order" Width="1.5" PointX="9" PointY="31" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.OTP" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.PaymentDetail" Width="1.5" PointX="11.25" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Province" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.PushNotificationsMessageLog" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.QueuedPushNotification" Width="1.5" PointX="9" PointY="21.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserAchievement" Width="1.5" PointX="3" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserAddressTbl" Width="1.5" PointX="3" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserAssignedModule" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserEnquiry" Width="1.5" PointX="3" PointY="57.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserLoginSession" Width="1.5" PointX="9" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.User" Width="1.5" PointX="6.75" PointY="22.125" IsExpanded="true" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserAchievements_dbo__AchievementId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK__UserAssig__Admin__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Cart_dbo_Guests_GuestId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherCart_dbo_Orders_OrderId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_City_dbo_Province_ProvinceId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherCoupons_dbo_Coupons_CouponId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Orders_dbo_Guests_GuestId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherOrderDetails_dbo_Orders_MotherOrderId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherOrders_dbo_MotherTbl_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherOrders_dbo_Orders_OrderId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherAnswers_dbo_Mother_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherAnswers_dbo_MotherQuestions_QuestionId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherBankDetails_dbo_Mother_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherCart_dbo_MotherTbl_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherCartDetails_dbo_MotherCart_MothercartId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherCoupons_dbo_MotherTbl_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Favourites_dbo__MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDish_dbo__MotherDishId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_MotherTbl_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherGallery_dbo_MotherTbl_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherStatement_dbo_MotherTbl_MotherId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_PaymentDetails_dbo_Orders_OrderId" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_QueuedPushNotifications_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_UserLoginSessions_UserId_UserLoginSessions_UserId" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserTbl" Width="1.5" PointX="0.75" PointY="40.125" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Cart_dbo_UserTbl_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Favourites_dbo__UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishReviews_dbo_UserTbl_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherTbl_dbo_User_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Notifications_dbo_UserTbl_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Orders_dbo_UserTbl_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserAchievements_dbo__UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserAddress_dbo_User_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserEnquiry_dbo_UserTbl_UserId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

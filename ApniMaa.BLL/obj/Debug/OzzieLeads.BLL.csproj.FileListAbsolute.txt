@@ -1,0 +1,60 @@
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.dll.config
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.pdb
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\EntityFramework.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\LinqKit.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\Newtonsoft.Json.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.DAL.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.Globalization.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\System.Linq.Dynamic.dll
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.DAL.pdb
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\OzzieLeads.Globalization.pdb
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\EntityFramework.xml
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\OzzieLeads\OzzieLeads.BLL\bin\Debug\LinqKit.xml
+D:\OzzieLeads\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.csprojResolveAssemblyReference.cache
+D:\OzzieLeads\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.dll
+D:\OzzieLeads\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.dll.config
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\EntityFramework.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\EntityFramework.SqlServer.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\LinqKit.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\Newtonsoft.Json.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.DAL.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.Globalization.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\System.Linq.Dynamic.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\Twilio.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.DAL.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\OzzieLeads.Globalization.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\EntityFramework.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\LinqKit.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\Newtonsoft.Json.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\bin\Debug\Twilio.xml
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.csprojResolveAssemblyReference.cache
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.pdb
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.dll.config
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.BLL.pdb
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\EntityFramework.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\EntityFramework.SqlServer.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\LinqKit.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\Newtonsoft.Json.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.DAL.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.Globalization.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\System.Linq.Dynamic.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\Twilio.dll
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.DAL.pdb
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\OzzieLeads.Globalization.pdb
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\EntityFramework.xml
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\EntityFramework.SqlServer.xml
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\LinqKit.xml
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\Newtonsoft.Json.xml
+F:\ApniMaa\OzzieLeads.BLL\bin\Debug\Twilio.xml
+F:\ApniMaa\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.csprojResolveAssemblyReference.cache
+F:\ApniMaa\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.dll
+F:\ApniMaa\OzzieLeads.BLL\obj\Debug\OzzieLeads.BLL.pdb

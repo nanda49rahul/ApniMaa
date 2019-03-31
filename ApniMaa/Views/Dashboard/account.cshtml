@@ -1,0 +1,166 @@
+﻿
+@{
+    ViewBag.Title = "account";
+    Layout = "~/Views/Shared/_LayoutAfterLogin.cshtml";
+}
+
+<div class="main-section account-page">
+    <div class="wrapper">
+
+        <div class="account-tab">
+
+            <div class="row-div">
+                <div class="col-left">
+                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Profile</a>
+                        <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Email</a>
+                        <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Location &Time</a>
+                        <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Zapier & API</a>
+                    </div>
+                </div>
+                <div class="col-right">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="inn-tab">
+                                <h1 class="heading">Profile </h1>
+                                <form>
+                                    <div class="snd-example">
+                                        <img src="~/content/images/pics.png" alt="your image" id="blah" />
+                                        <span class="custom-file btn btn-secondry"><input type='file' onchange="readURL(this);" />Upload Image</span>
+
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label>First Name <em>*</em></label>
+                                        <input type="text" class="form-control" value="Chitvan" required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label>Last Name<em>*</em></label>
+                                        <input type="text" class="form-control" value="Seth" required>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label>Sender Name<em>*</em></label>
+                                        <input type="text" class="form-control" value="TestDemo" required>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label>Company Name</label>
+                                        <input type="text" class="form-control" value="Test Company">
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label>Email Footer</label>
+                                        <textarea class="form-control" value="Thanks"></textarea>
+                                    </div>
+
+                                    <input type="submit" value="Update" class="btn btn-primary btn-theme">
+
+
+                                </form>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="inn-tab">
+                                <h1 class="heading">Email </h1>
+                                <form>
+
+                                    <div class="form-group ">
+                                        <label>Account Email</label>
+                                        <input type="email" class="form-control" value="abc@gmail.com">
+                                        <small>This is the email used to log in to the account. Send a request to support@followupedge.com if you wish to change it.</small>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label>Notification Email</label>
+                                        <input type="email" class="form-control" value="abc@gmail.com">
+                                        <small>This is the email we will send Prospect responses.</small>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label>Campaign Email</label>
+                                        <input type="email" class="form-control" value="abcd@gmail.com">
+                                        <small>This is the email the system uses to track the conversations.</small>
+                                    </div>
+
+                                    <input type="submit" value="Update" class="btn btn-primary btn-theme">
+
+
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+
+                            <div class="inn-tab">
+                                <form>
+                                    <h1 class="heading">Location & Time </h1>
+
+
+                                    <div class="form-group ">
+                                        <label>City</label>
+                                        <input type="text" class="form-control" value="Enter Location to change">
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label>Time Zone</label>
+                                        <input type="text" class="form-control" value="Asia" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Cutoff Time (early)</label>
+                                        <select class="form-control">
+                                            <option>7 am</option>
+                                            <option>8 am</option>
+                                            <option>9 am</option>
+                                            <option>10 am</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Cutoff Time (late)</label>
+                                        <select class="form-control">
+                                            <option>5 pm</option>
+                                            <option>6 pm</option>
+                                            <option>7 pm</option>
+                                            <option>8 pm</option>
+                                        </select>
+                                    </div>
+                                    <input type="submit" value="Update" class="btn btn-primary btn-theme" />
+                                </form>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+
+                            <div class="inn-tab">
+                                <h1 class="heading">Zapier & API </h1>
+                                <form>
+
+                                    <div class="form-group ">
+                                        <label>User ID</label>
+                                        <input type="text" class="form-control" value="21542asdsfg21654" disabled>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label>API Key</label>
+                                        <input type="text" class="form-control" value="897564sadasdsa165sa" disabled>
+                                    </div>
+
+
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+

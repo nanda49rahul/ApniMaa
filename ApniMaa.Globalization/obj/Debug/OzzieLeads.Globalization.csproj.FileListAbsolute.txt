@@ -1,0 +1,15 @@
+D:\OzzieLeads\OzzieLeads.Globalization\bin\Debug\OzzieLeads.Globalization.dll
+D:\OzzieLeads\OzzieLeads.Globalization\bin\Debug\OzzieLeads.Globalization.pdb
+D:\OzzieLeads\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.csprojResolveAssemblyReference.cache
+D:\OzzieLeads\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.dll
+D:\OzzieLeads\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Globalization\bin\Debug\OzzieLeads.Globalization.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Globalization\bin\Debug\OzzieLeads.Globalization.pdb
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.csprojResolveAssemblyReference.cache
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.dll
+D:\Xicom Projects\baseprojectwithapi\BaseProjectWithApi\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.pdb
+F:\ApniMaa\OzzieLeads.Globalization\bin\Debug\OzzieLeads.Globalization.dll
+F:\ApniMaa\OzzieLeads.Globalization\bin\Debug\OzzieLeads.Globalization.pdb
+F:\ApniMaa\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.csprojResolveAssemblyReference.cache
+F:\ApniMaa\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.dll
+F:\ApniMaa\OzzieLeads.Globalization\obj\Debug\OzzieLeads.Globalization.pdb
