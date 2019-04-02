@@ -101,9 +101,5 @@ namespace ApniMaa.Areas.Admin.Controllers
         {
             return View(new ForgotPasswordModel());
         }
-
-
-
-
     }
 }

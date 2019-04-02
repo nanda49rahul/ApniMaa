@@ -20,7 +20,7 @@ namespace ApniMaa.BLL.Interfaces
         string CreateSession(CreateNewSession SessionModel);
         ActionOutput<UserModel> AuthenticateUser(LoginModel model);
         ActionOutput SetUserStatus(long userId, int statusId);
-        PagingResult<UserModel> GetUserPagedList(PagingModel model, long? UserRole = 0, long? UserStatus = 0);
+        PagingResult<UserModel> GetUserPagedList(PagingModel model);
         ActionOutput UpdateUserProfile(UserModel model);
         ActionOutput<UserModel> GetUserProfile(int Id);
 

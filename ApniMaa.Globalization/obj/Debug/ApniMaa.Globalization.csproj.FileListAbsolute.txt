@@ -8,3 +8,8 @@ F:\Freelance\apnimaa\ApniMaa.Globalization\bin\Debug\ApniMaa.Globalization.pdb
 F:\Freelance\apnimaa\ApniMaa.Globalization\obj\Debug\ApniMaa.Globalization.csprojResolveAssemblyReference.cache
 F:\Freelance\apnimaa\ApniMaa.Globalization\obj\Debug\ApniMaa.Globalization.dll
 F:\Freelance\apnimaa\ApniMaa.Globalization\obj\Debug\ApniMaa.Globalization.pdb
+D:\Freelance_Projects\ApniMaa\ApniMaa.Globalization\bin\Debug\ApniMaa.Globalization.dll
+D:\Freelance_Projects\ApniMaa\ApniMaa.Globalization\bin\Debug\ApniMaa.Globalization.pdb
+D:\Freelance_Projects\ApniMaa\ApniMaa.Globalization\obj\Debug\ApniMaa.Globalization.csprojResolveAssemblyReference.cache
+D:\Freelance_Projects\ApniMaa\ApniMaa.Globalization\obj\Debug\ApniMaa.Globalization.dll
+D:\Freelance_Projects\ApniMaa\ApniMaa.Globalization\obj\Debug\ApniMaa.Globalization.pdb

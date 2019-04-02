@@ -13,18 +13,19 @@
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="~/content/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="~/content/css/style.css">
-    
-    @Styles.Render("~/Content/beforeLoginAdminCss")
+    @*<link rel="stylesheet" type="text/css" href="~/content/css/style.css">*@
+
+    <link href="~/Content/CustomAdmin/css/animate.css" rel="stylesheet">
+    <link href="~/Content/CustomAdmin/css/style.css" rel="stylesheet" />
+
+    @*@Styles.Render("~/Content/beforeLoginAdminCss")*@
+
     @RenderSection("styles", required: false)
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
-<body class="texture">
+<body class="gray-bg">
 
     @RenderBody()
-
-
 
     <script type="text/javascript" src="~/content/js/jquery.min.js"></script>
     <script type="text/javascript" src="~/content/js/bootstrap.min.js"></script>

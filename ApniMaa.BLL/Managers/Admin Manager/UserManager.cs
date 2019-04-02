@@ -1404,21 +1404,21 @@ namespace ApniMaa.BLL.Managers
         //}
 
         #region UserManagement
-        PagingResult<UserModel> IUserManager.GetUserPagedList(PagingModel model, long? UserRole, long? UserStatus)
+        PagingResult<UserModel> IUserManager.GetUserPagedList(PagingModel model)
         {
             var result = new PagingResult<UserModel>();
             model.SortBy = model.SortBy == null ? "Id" : model.SortBy;
             model.SortOrder = model.SortOrder == null ? "Desc" : model.SortOrder;
             var query = Context.UserTbls.Where(p => p.RoleId != (int)UserRoleTypes.Admin).AsEnumerable().OrderBy(model.SortBy + " " + model.SortOrder).AsQueryable();
 
-            if (UserRole != 0)
-            {
-                query = query.Where(p => p.RoleId == UserRole);
-            }
-            if (UserStatus != 0)
-            {
-                query = query.Where(p => p.Status == UserStatus);
-            }
+            //if (UserRole != 0)
+            //{
+            //    query = query.Where(p => p.RoleId == UserRole);
+            //}
+            //if (UserStatus != 0)
+            //{
+            //    query = query.Where(p => p.Status == UserStatus);
+            //}
 
             if (!string.IsNullOrEmpty(model.Search))
             {

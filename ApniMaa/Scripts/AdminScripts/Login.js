@@ -17,7 +17,6 @@
 
 var Admin = {
     Login: function (sender) {
-        debugger;
 
         $.ajaxExt({
             url: 'admin/Home/Login',

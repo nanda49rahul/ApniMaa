@@ -24,7 +24,7 @@ namespace ApniMaa
                         "~/Scripts/html5.js",
                          "~/Scripts/UserDefinedScripts/Common.js",
                           "~/Content/themes/jquery.datatables/jqueryDataTable.js",
-						 "~/Content/themes/jquery.datatables/bootstrap-adapter/js/datatables.js"));
+                         "~/Content/themes/jquery.datatables/bootstrap-adapter/js/datatables.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                              "~/Content/themes/bootstrap/dist/js/bootstrap.js"));
@@ -84,8 +84,8 @@ namespace ApniMaa
                      "~/Content/style.css"));
 
             bundles.Add(new StyleBundle("~/Content/adminLayoutCSS").Include(
-                   "~/Content/themes/bootstrap/dist/css/bootstrap.css",
-                   "~/Content/fonts/font-awesome-4/css/font-awesome.min.css",
+                   //"~/Content/themes/bootstrap/dist/css/bootstrap.css",
+                   //"~/Content/fonts/font-awesome-4/css/font-awesome.min.css",
                    "~/Content/themes/jquery.gritter/css/jquery.gritter.css",
                    "~/Content/themes/jquery.nanoscroller/nanoscroller.css",
                    "~/Content/themes/jquery.easypiechart/jquery.easy-pie-chart.css",
@@ -99,13 +99,15 @@ namespace ApniMaa
                    "~/Content/themes/jquery.niftymodals/css/component.css",
                    "~/Content/themes/intro.js/bootstrap.summernote/dist/summernote.css",
                     "~/Content/themes/jquery.datatables/bootstrap-adapter/css/datatables.css",
-                    "~/Content/sweetalert.css",
-                   "~/Content/adminStyle.css"));
+                    "~/Content/sweetalert.css"
+                   //"~/Content/CustomAdmin/css/style.css"
+                   ));
+
+            //~/Content/adminStyle.css
 
             bundles.Add(new ScriptBundle("~/bundles/extendedjs").Include(
                  "~/Content/themes/jquery.gritter/js/jquery.gritter.js",
                  "~/Content/themes/jquery.nanoscroller/jquery.nanoscroller.js",
-
                  "~/Content/themes/jquery.ui/jquery-ui.js",
                  "~/Content/themes/jquery.sparkline/jquery.sparkline.min.js",
                  "~/Content/themes/jquery.easypiechart/jquery.easy-pie-chart.js",
@@ -137,6 +139,6 @@ namespace ApniMaa
             // visit http://go.microsoft.com/fwlink/?LinkId=301862
             BundleTable.EnableOptimizations = false;
         }
-       
+
     }
 }

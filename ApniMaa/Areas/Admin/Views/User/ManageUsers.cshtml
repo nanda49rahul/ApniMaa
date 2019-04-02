@@ -1,33 +1,136 @@
-﻿@model PagingResult<UserListingModel>
+﻿@model PagingResult<UserModel>
+
 @{
     ViewBag.Title = "Manage Users";
     Layout = "~/Areas/Admin/Views/Shared/_AdminLayOut.cshtml";
 }
 
-<div class="container-fluid" id="pcont">
-    <div class="page-head">
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
         <h2>Manage Users</h2>
-
+        @*<ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a href="index-2.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                    <a>Tables</a>
+                </li>
+                <li class="breadcrumb-item active">
+                    <strong>Static Tables</strong>
+                </li>
+            </ol>*@
     </div>
-    <div class="cl-mcont">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block-flat">
-                    <div class="header">
-                        <h3>Manage Users</h3>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="ibox ">
+                        <div class="ibox-title">
+                            <h5>Filter</h5>
+                            @*<div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="#" class="dropdown-item">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>*@
+                        </div>
+                        <div class="ibox-content">
+
+                            @*<div class="filter col-md-2">
+                                <label class="control-label">Show Records</label>
+                                <select class="form-control filter-select input-sm" id="showRecords">
+                                    <option value="10" selected="selected">10</option>
+                                    <option value="20">20</option>
+                                    <option value="50">50</option>
+                                    <option value="100">100</option>
+
+                                </select>
+                            </div>*@
+
+                            <div class="filter col-md-4">
+                                <label class="control-label">Search</label>
+                                <div class="input-group">
+                                    <input id="SortBy" name="SortBy" type="hidden" value="CreatedDate">
+                                    <input id="SortOrder" name="SortOrder" type="hidden" value="Desc">
+                                    <input class="form-control filter-textbox input-sm" id="Search" name="Search" placeholder="" type="text" value="">
+                                </div>
+                            </div>
+
+                            <div class="filter col-md-3">
+                                <label class="control-label">User Type</label>
+                                <select class="form-control filter-select input-sm" data-val="true" data-val-number="The field FortuneRank must be a number." id="FortuneRank" name="FortuneRank">
+                                    <option value="">--Select Fortune Rank--</option>
+                                    <option value="1">Fortune 100</option>
+                                    <option value="2">Fortune 500</option>
+                                    <option value="3">Fortune 1000</option>
+                                    <option value="4">Non-Fortune 1000</option>
+                                </select>
+                            </div>
+
+
+                            <div class="filter col-md-2">
+                                <label class="control-label displayBlock">&nbsp;</label>
+                                <input type="button" value="Search" id="btnFilterPeople" class="btn btn-primary btn-sm">
+                                <input type="button" value="Reset  " id="btnResetSearch" class="btn btn-primary btn-sm">
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="content">
-                        <div class="table-responsive">
-                            @Html.Partial("_SearchFilter", new PagingModel { SortBy = "FirstName", SortOrder = "Asc" })
-                            <div id="divResult">
-                                <table class="table table-bordered" id="datatable-icons">
+                </div>
+
+
+                <div class="col-lg-12">
+                    <div class="ibox ">
+
+
+
+                        @*<div class="ibox-title">
+                                <h5>Basic Data Tables example with responsive plugin</h5>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                        <i class="fa fa-wrench"></i>
+                                    </a>
+                                    <ul class="dropdown-menu dropdown-user">
+                                        <li>
+                                            <a href="#" class="dropdown-item">Config option 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="dropdown-item">Config option 2</a>
+                                        </li>
+                                    </ul>
+                                    <a class="close-link">
+                                        <i class="fa fa-times"></i>
+                                    </a>
+                                </div>
+                            </div>*@
+                        <div class="ibox-content">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th class="sorting" data-sortby="FirstName">First Name</th>
-                                            <th class="sorting" data-sortby="LastName">Last Name</th>
-                                            <th class="sorting" data-sortby="Email">Email</th>
-                                            <th class="sorting" data-sortby="CreatedAt">Created On</th>
-
+                                            <th>First Name</th>
+                                            <th>Last Name</th>
+                                            <th>Email</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -36,9 +139,8 @@
                                     </tbody>
                                 </table>
                             </div>
-
+                            @Html.Partial("_Paging")
                         </div>
-                        @Html.Partial("_Paging")
                     </div>
                 </div>
             </div>
@@ -46,18 +148,13 @@
     </div>
 </div>
 
-
 @section scripts{
     <script src="~/Scripts/UserDefinedScripts/paging.js"></script>
     <script type="text/javascript">
         var totalCount = "@Model.TotalCount";
     </script>
     <script src="~/Scripts/AdminScripts/users.js"></script>
-
-
-
     <script type="text/javascript">
-
         $(document).ready(function () {
             //initialize the javascript
             App.init();

@@ -40,7 +40,7 @@ namespace ApniMaa.BLL.Models
         public String Message { get; set; }
     }
 
-    public class PagingModel : CustomPagingModel
+    public class PagingModel
     {
         public int PageNo { get; set; }
         public int RecordsPerPage { get; set; }
@@ -60,33 +60,6 @@ namespace ApniMaa.BLL.Models
         public string SortOrder { get; set; }
         public string Search { get; set; }
        
-    }
-
-    public class CustomPagingModel 
-    {
-        public int? FirmID { get; set; }
-        public int? DateMonth { get; set; }
-        public int? DateYear { get; set; }
-        public bool IsProspect { get; set; }
-        public int? VehicleTypeId { get; set; }
-        public DateTime? StartDate { get; set; }
-        public DateTime? EndDate { get; set; }
-        public string DLNumber { get; set; }
-        public string PlateNumber { get; set; }
-        public string PolicyNumber { get; set; }
-        public string CertiicateNumber { get; set; }
-    }
-
-    public class CasePagingModel : PagingModel
-    {
-        public int CaseStatus { get; set; }
-        public int CaseFileStatus { get; set; }
-        public bool IsCaseRemoval { get; set; }
-        public bool IsCaseInvoice { get; set; }
-        public string CertNumber { get; set; }
-        public string PlateNumber { get; set; }
-        public string DriverName { get; set; }
-        public string DriverLicence { get; set; }
     }
     public class UserDetails
     {

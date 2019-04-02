@@ -770,3 +770,78 @@ System.InvalidOperationException: The given header was not found.
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in f:\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
 
 
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Home\Dashboard.cshtml(282): error CS0103: The name 'Alan' does not exist in the current context
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Home\Dashboard.cshtml(282): error CS0103: The name 'Alan' does not exist in the current context
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Home\Dashboard.cshtml(282): error CS0103: The name 'Alan' does not exist in the current context
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Home\Dashboard.cshtml(282): error CS0103: The name 'Alan' does not exist in the current context
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Home\Dashboard.cshtml(282): error CS0103: The name 'Alan' does not exist in the current context
+http://jsonformat.com/
+
+
+
+Index was outside the bounds of the array.
+http://jsonformat.com/
+
+
+
+c:\Users\MOHIT's\AppData\Local\Temp\Temporary ASP.NET Files\vs\de5fbaae\dac8803f\App_Web_manageusers.cshtml.a53873b7.10vzicha.0.cs(32): error CS0246: The type or namespace name 'UserListingModel' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+c:\Users\MOHIT's\AppData\Local\Temp\Temporary ASP.NET Files\vs\de5fbaae\dac8803f\App_Web_manageusers.cshtml.a53873b7.02o7l_u9.0.cs(32): error CS0246: The type or namespace name 'UserListingModel' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+c:\Users\MOHIT's\AppData\Local\Temp\Temporary ASP.NET Files\vs\de5fbaae\dac8803f\App_Web_manageusers.cshtml.a53873b7.02o7l_u9.0.cs(32): error CS0246: The type or namespace name 'UserListingModel' could not be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_userListing.cshtml(15): error CS1061: 'ApniMaa.BLL.Models.UserModel' does not contain a definition for 'UserId' and no extension method 'UserId' accepting a first argument of type 'ApniMaa.BLL.Models.UserModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_userListing.cshtml(15): error CS1061: 'ApniMaa.BLL.Models.UserModel' does not contain a definition for 'UserId' and no extension method 'UserId' accepting a first argument of type 'ApniMaa.BLL.Models.UserModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_userListing.cshtml(15): error CS1061: 'ApniMaa.BLL.Models.UserModel' does not contain a definition for 'UserId' and no extension method 'UserId' accepting a first argument of type 'ApniMaa.BLL.Models.UserModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_userListing.cshtml(15): error CS1061: 'ApniMaa.BLL.Models.UserModel' does not contain a definition for 'UserId' and no extension method 'UserId' accepting a first argument of type 'ApniMaa.BLL.Models.UserModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_userListing.cshtml(15): error CS1061: 'ApniMaa.BLL.Models.UserModel' does not contain a definition for 'UserId' and no extension method 'UserId' accepting a first argument of type 'ApniMaa.BLL.Models.UserModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\ManageUsers.cshtml(66): error CS0103: The name 'mdo' does not exist in the current context
+http://jsonformat.com/
+
+
+

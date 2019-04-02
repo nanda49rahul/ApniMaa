@@ -10,8 +10,8 @@ using System.Web;
 using System.Web.Mvc;
 
 namespace ApniMaa.Areas.Admin.Controllers
-{ 
-    public class UserController  : BaseController
+{
+    public class UserController : AdminBaseController
     {
 
         #region Private Data
@@ -35,13 +35,13 @@ namespace ApniMaa.Areas.Admin.Controllers
         }
 
         [HttpPost, AjaxOnly]
-        public JsonResult GetUserPagedList(PagingModel model, long UserRole, long UserStatus)
+        public JsonResult GetUsersPagingList(PagingModel model)
         {
-            PagingResult<UserModel> modal = _userManager.GetUserPagedList(model, UserRole, UserStatus);
+            var modal = _userManager.GetUserPagedList(model);
             List<string> resultString = new List<string>();
-            resultString.Add(RenderRazorViewToString("_UserListing", modal));
+            resultString.Add(RenderRazorViewToString("_partials/_ProspectListing", modal));
             resultString.Add(modal.TotalCount.ToString());
-            return Json(new ActionOutput { Status = ActionStatus.Successfull, Message = "", Results = resultString }, JsonRequestBehavior.AllowGet);
+            return JsonResult(resultString);
         }
     
         [HttpPost, AjaxOnly, Public]
