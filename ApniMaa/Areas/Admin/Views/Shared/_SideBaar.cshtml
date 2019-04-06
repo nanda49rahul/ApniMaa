@@ -37,17 +37,27 @@
                 <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
             </li>*@
             
-            <li>
+            <li class="@(ViewBag.SelectedTab == SelectedAdminTab.Users ? "active" : "")">
                 <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Manage Users</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level collapse">
                     <li><a href="/Admin/User/ManageUsers">Users</a></li>
-                    @*<li><a href="graph_morris.html">Morris.js Charts</a></li>
-                    <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
-                    <li><a href="graph_chartjs.html">Chart.js</a></li>
-                    <li><a href="graph_chartist.html">Chartist</a></li>
-                    <li><a href="c3.html">c3 charts</a></li>
-                    <li><a href="graph_peity.html">Peity Charts</a></li>
-                    <li><a href="graph_sparkline.html">Sparkline Charts</a></li>*@
+
+                </ul>
+            </li>
+
+            <li class="@(ViewBag.SelectedTab == SelectedAdminTab.Category ? "active" : "")">
+                <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Manage Category</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/Admin/Category/ManageCategory">Category</a></li>
+                    <li><a href="/Admin/Category/AddCategory">Add Category</a></li>
+                </ul>
+            </li>
+
+            <li class="@(ViewBag.SelectedTab == SelectedAdminTab.Dish ? "active" : "")">
+                <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Manage Dish</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/Admin/Dish/ManageDish">Dish</a></li>
+                    <li><a href="/Admin/Dish/AddDish">Add Dish</a></li>
                 </ul>
             </li>
 

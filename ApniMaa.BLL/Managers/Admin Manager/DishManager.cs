@@ -28,17 +28,14 @@ namespace ApniMaa.BLL.Managers
     {
 
         private readonly IEmailProvider emailProvider;
-        public DishManager()
-        {
-
-        }
+      
         public DishManager(IEmailProvider emailProvider)
         {
             this.emailProvider = emailProvider;
             
         }
 
-        ActionOutput IDishManager.AddDish(Dish model)
+        ActionOutput IDishManager.AddDish(AddDishModel model)
         {
             ActionOutput res = new ActionOutput();
             try
@@ -70,16 +67,15 @@ namespace ApniMaa.BLL.Managers
             }
             return res;
         }
-
-        ActionOutput IDishManager.ModifyDish(Dish model)
+        ActionOutput IDishManager.ModifyDish(EditDishModel model)
         {
             ActionOutput res = new ActionOutput();
             try
             {
-                var exists = Context.Dishes.Where(p => p.Id == model.Id).FirstOrDefault();
+                var exists = Context.Dishes.Where(p => p.Id == model.DishId).FirstOrDefault();
                 if(exists!=null)
                 {
-                    var already = Context.Dishes.Where(p => p.Name == model.Name && p.Id != model.Id).Any();
+                    var already = Context.Dishes.Where(p => p.Name == model.Name && p.Id != model.DishId).Any();
                     if(!already)
                     {
                         exists.CategoryId = model.CategoryId;
@@ -108,12 +104,12 @@ namespace ApniMaa.BLL.Managers
             }
             return res;
         }
-        ActionOutput IDishManager.DeleteDish(Dish model)
+        ActionOutput IDishManager.DeleteDish(int id)
         {
             ActionOutput res = new ActionOutput();
             try
             {
-                var exists = Context.Dishes.Where(p => p.Id == model.Id && p.IsDeleted==false).FirstOrDefault();
+                var exists = Context.Dishes.Where(p => p.Id == id && p.IsDeleted == false).FirstOrDefault();
                 if(exists!=null)
                 {
                     exists.IsDeleted = true;
@@ -134,15 +130,15 @@ namespace ApniMaa.BLL.Managers
             }
             return res;
         }
-        ActionOutput<DishModel> IDishManager.GetDishDetails(int Id)
+        ActionOutput<EditDishModel> IDishManager.GetDishDetails(int Id)
         {
-            ActionOutput<DishModel> res = new ActionOutput<DishModel>();
+            ActionOutput<EditDishModel> res = new ActionOutput<EditDishModel>();
             try
             {
                 var exists = Context.Dishes.Where(p => p.Id == Id && p.IsDeleted == false).FirstOrDefault();
                 if (exists != null)
                 {
-                    res.Object = new DishModel(exists);
+                    res.Object = new EditDishModel(exists);
                     res.Status = ActionStatus.Successfull;
                     res.Message = "Dish details fetched successfully.";
                 }
@@ -159,9 +155,9 @@ namespace ApniMaa.BLL.Managers
             }
             return res;
         }
-        PagingResult<DishModel> IDishManager.GetDishPagedList(PagingModel model)
+        PagingResult<DishListingModel> IDishManager.GetDishPagedList(PagingModel model)
         {
-            var result = new PagingResult<DishModel>();
+            var result = new PagingResult<DishListingModel>();
             model.SortBy = model.SortBy == null ? "CreatedDate" : model.SortBy;
             model.SortOrder = model.SortOrder == null ? "Desc" : model.SortOrder;
             var query = Context.Dishes.AsEnumerable().OrderBy(model.SortBy + " " + model.SortOrder);
@@ -172,14 +168,12 @@ namespace ApniMaa.BLL.Managers
             }
             var list = query
                .Skip((model.PageNo - 1) * model.RecordsPerPage).Take(model.RecordsPerPage)
-               .ToList().Select(x => new DishModel(x)).ToList();
+               .ToList().Select(x => new DishListingModel(x)).ToList();
             result.List = list;
             result.Status = ActionStatus.Successfull;
             result.Message = "Dish List";
             result.TotalCount = query.Count();
             return result;
         }
-
-
     }
 }

@@ -13,6 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -190,6 +191,7 @@
     <Compile Include="Models\Admin Models\AuditModel.cs" />
     <Compile Include="Models\Admin Models\BulkImportModel.cs" />
     <Compile Include="Models\Admin Models\CaseDetailsModel.cs" />
+    <Compile Include="Models\Admin Models\CategoryModels.cs" />
     <Compile Include="Models\Admin Models\ComissionModel.cs" />
     <Compile Include="Models\Admin Models\ContactModel.cs" />
     <Compile Include="Models\Admin Models\ContactTypeList.cs" />
@@ -230,7 +232,6 @@
     <Compile Include="Models\Frontend Models\UserModel.cs" />
     <Compile Include="Models\ImageViewModel.cs" />
     <Compile Include="Models\Modules.cs" />
-    <Compile Include="Models\PagingCustomModel.cs" />
     <Compile Include="Models\ProspectModels.cs" />
     <Compile Include="Models\RatingMatrixModel.cs" />
     <Compile Include="Models\WebApi\ApiUserModels.cs" />

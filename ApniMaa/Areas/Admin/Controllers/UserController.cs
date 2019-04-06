@@ -29,8 +29,8 @@ namespace ApniMaa.Areas.Admin.Controllers
 
         public ActionResult ManageUsers()
         {
-            
-            var data = _userManager.GetUserPagedList(new PagingModel { PageNo = 1, RecordsPerPage = AppDefaults.PageSize, SortBy = "CreatedOn", SortOrder = "Desc" });
+            ViewBag.SelectedTab = SelectedAdminTab.Users;
+            var data = _userManager.GetUserPagedList(PagingModel.DefaultModel("CreatedOn"));
             return View(data);
         }
 
@@ -39,7 +39,7 @@ namespace ApniMaa.Areas.Admin.Controllers
         {
             var modal = _userManager.GetUserPagedList(model);
             List<string> resultString = new List<string>();
-            resultString.Add(RenderRazorViewToString("_partials/_ProspectListing", modal));
+            resultString.Add(RenderRazorViewToString("partials/_userListing", modal));
             resultString.Add(modal.TotalCount.ToString());
             return JsonResult(resultString);
         }
@@ -53,6 +53,7 @@ namespace ApniMaa.Areas.Admin.Controllers
         }
         public JsonResult UpdateUserProfile(UserModel model)
         {
+            ViewBag.SelectedTab = SelectedAdminTab.Users;
             return Json(_userManager.UpdateUserProfile(model));
         }
         //[HttpPost, AjaxOnly, Public]

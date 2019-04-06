@@ -21,24 +21,46 @@ using System.Web;
 using ApniMaa.Services;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
+using ApniMaa.BLL.Models.Admin_Models;
 
 namespace ApniMaa.BLL.Managers
 {
     public class CategoryManager : BaseManager, ICategoryManager
     {
 
-        private readonly IEmailProvider emailProvider;
-        public CategoryManager()
-        {
-
-        }
+        private readonly IEmailProvider _emailProvider;
         public CategoryManager(IEmailProvider emailProvider)
         {
-            this.emailProvider = emailProvider;
-            
+            _emailProvider = emailProvider;
         }
 
-        ActionOutput ICategoryManager.AddCategory(Category model)
+        PagingResult<CategoryListingModel> ICategoryManager.GetCategoriesPagedList(PagingModel model)
+        {
+            var result = new PagingResult<CategoryListingModel>();
+
+            model.SortBy = model.SortBy == null ? "CreatedOn" : model.SortBy;
+            model.SortOrder = model.SortOrder == null ? "Desc" : model.SortOrder;
+
+            var query = Context.Categories.Where(a=>a.IsDeleted == false).AsEnumerable().OrderBy(model.SortBy + " " + model.SortOrder);
+
+            if (!string.IsNullOrEmpty(model.Search))
+            {
+                query = query.Where(z => 
+                    ((z.Description != null && z.Description.ToLower().Contains(model.Search.ToLower())) || 
+                    (z.Name != null && (z.Name.ToLower()).Contains(model.Search.ToLower()))));
+            }
+            var list = query
+               .Skip((model.PageNo - 1) * model.RecordsPerPage).Take(model.RecordsPerPage)
+               .ToList().Select(x => new CategoryListingModel(x)).ToList();
+
+            result.List = list;
+            result.Status = ActionStatus.Successfull;
+            result.Message = "Category List";
+            result.TotalCount = query.Count();
+            return result;
+        }
+
+        ActionOutput ICategoryManager.AddCategory(AddCategoryModel model)
         {
             ActionOutput res = new ActionOutput();
             try
@@ -53,129 +75,93 @@ namespace ApniMaa.BLL.Managers
                     _category.CreatedOn = DateTime.Now;
                     Context.Categories.Add(_category);
                     Context.SaveChanges();
-                    res.Status = ActionStatus.Successfull;
-                    res.Message = "Category Added Successfully";
+
+                    return SuccessResponse("Category Added Successfully");
                 }
                 else
                 {
-                    res.Status = ActionStatus.Error;
-                    res.Message = "Category with the same name already exists.";
+                    return ErrorResponse("Category with the same name already exists.");
                 }
             }
             catch(Exception ex)
             {
-                res.Status = ActionStatus.Error;
-                res.Message = "Some Error Occurred";
+                return ErrorResponse("Some Error Occurred");
             }
-            return res;
         }
 
-        ActionOutput ICategoryManager.ModifyCategory(Category model)
+        ActionOutput ICategoryManager.ModifyCategory(EditCategoryModel model)
         {
             ActionOutput res = new ActionOutput();
             try
             {
-                var exists = Context.Categories.Where(p => p.Id == model.Id).FirstOrDefault();
+                var exists = Context.Categories.Where(p => p.Id == model.id).FirstOrDefault();
                 if(exists!=null)
                 {
-                    var already = Context.Categories.Where(p => p.Name == model.Name && p.Id != model.Id).Any();
+                    var already = Context.Categories.Where(p => p.Name == model.Name && p.Id != model.id).Any();
                     if(!already)
                     {
                         exists.Description = model.Description;
                         exists.Name = model.Name;
                         Context.SaveChanges();
-                        res.Status = ActionStatus.Successfull;
-                        res.Message = "Category updated Successfully";
+
+                        return SuccessResponse("Category updated Successfully");
                     }
                     else
                     {
-                        res.Status = ActionStatus.Error;
-                        res.Message = "Category already exists with Same Name";
+                        return ErrorResponse("Category already exists with Same Name");
                     }
                 }
                 else
                 {
-                    res.Status = ActionStatus.Error;
-                    res.Message = "Category doesn't exists";
+                    return ErrorResponse("Category doesn't exists");
                 }
             }
             catch (Exception ex)
             {
-                res.Status = ActionStatus.Error;
-                res.Message = "Some Error Occurred";
+                return ErrorResponse("Category doesn't exists");
             }
-            return res;
         }
-        ActionOutput ICategoryManager.DeleteCategory(Category model)
+        ActionOutput ICategoryManager.DeleteCategory(int Id)
         {
             ActionOutput res = new ActionOutput();
             try
             {
-                var exists = Context.Categories.Where(p => p.Id == model.Id && p.IsDeleted==false).FirstOrDefault();
+                var exists = Context.Categories.Where(p => p.Id == Id && p.IsDeleted==false).FirstOrDefault();
                 if(exists!=null)
                 {
                     exists.IsDeleted = true;
                     Context.SaveChanges();
-                    res.Status = ActionStatus.Successfull;
-                    res.Message = "Category Deleted Successfully";
+                    return SuccessResponse("Category Deleted Successfully");
                 }
                 else
                 {
-                    res.Status = ActionStatus.Error;
-                    res.Message = "Category doesn't exists";
+                    return ErrorResponse("Category doesn't exists");
                 }
             }
             catch (Exception ex)
             {
-                res.Status = ActionStatus.Error;
-                res.Message = "Some Error Occurred";
+                return ErrorResponse("Category doesn't exists");
             }
-            return res;
         }
-        ActionOutput<Category> ICategoryManager.GetCategoryDetails(int Id)
+        ActionOutput<EditCategoryModel> ICategoryManager.GetCategoryDetails(int Id)
         {
-            ActionOutput<Category> res = new ActionOutput<Category>();
+            ActionOutput<EditCategoryModel> res = new ActionOutput<EditCategoryModel>();
             try
             {
                 var exists = Context.Categories.Where(p => p.Id == Id && p.IsDeleted == false).FirstOrDefault();
                 if (exists != null)
                 {
-                    res.Object =exists;
-                    res.Status = ActionStatus.Successfull;
-                    res.Message = "Category details fetched successfully.";
+                    return SuccessResponse<EditCategoryModel>("Category details fetched successfully.", new EditCategoryModel(exists));
                 }
                 else
                 {
-                    res.Status = ActionStatus.Error;
-                    res.Message = "Category doesn't exists";
+                    return ErrorResponse<EditCategoryModel>("Category doesn't exists");
                 }
             }
             catch (Exception ex)
             {
-                res.Status = ActionStatus.Error;
-                res.Message = "Some Error Occurred";
+                return ErrorResponse<EditCategoryModel>("Category doesn't exists");
             }
-            return res;
-        }
-        PagingResult<Category> ICategoryManager.GetCategoriesPagedList(PagingModel model)
-        {
-            var result = new PagingResult<Category>();
-            model.SortBy = model.SortBy == null ? "CreatedDate" : model.SortBy;
-            model.SortOrder = model.SortOrder == null ? "Desc" : model.SortOrder;
-            var query = Context.Categories.AsEnumerable().OrderBy(model.SortBy + " " + model.SortOrder);
-            if (!string.IsNullOrEmpty(model.Search))
-            {
-                query = query.Where(z => ((z.Description != null && z.Description.ToLower().Contains(model.Search.ToLower())) || (z.Name != null && (z.Name.ToLower()).Contains(model.Search.ToLower()))
-                   ));
-            }
-            var list = query
-               .Skip((model.PageNo - 1) * model.RecordsPerPage).Take(model.RecordsPerPage)
-               .ToList().Select(x => x).ToList();
-            result.List = list;
-            result.Status = ActionStatus.Successfull;
-            result.Message = "Category List";
-            result.TotalCount = query.Count();
-            return result;
         }
         List<SelectListItem> ICategoryManager.GetCategoriesList()
         {

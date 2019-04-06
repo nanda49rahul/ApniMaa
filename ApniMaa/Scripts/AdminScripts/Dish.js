@@ -1,21 +1,29 @@
 ﻿$(document).ready(function () {
-    $("#addDish").live("click", function () {
+
+    $("#AddDishBtn").on("click", function () {
         return Dish.AddDish($(this));
     });
-    $("#modifydsish").live("click", function () {
+    $("#updateDish").on("click", function () {
         return Dish.UpdateDish($(this));
     });
-    $("#deleteDish").live("click", function () {
+
+    $(document).on("click",".deleteDish", function (e) {
         return Dish.DeleteDish($(this));
     });
 
-    $("input[type=button]#btnFilterVersion").live("click", function () {
-        return Dish.ManageDishes($(this));
+    $("input[type=button]#btnFilterPeople").on("click", function () {
+        return Dish.SearchDishes($(this));
     });
+
+    $("input[type=button]#btnResetSearch").on("click", function () {
+        $('#Search').val('');
+        return Dish.SearchDishes($(this));
+    });
+
     $("select#showRecords").on("change", function () {
         return Dish.ShowRecords($(this));
     });
-    $('.sorting').live("click", function () {
+    $('.sorting').on("click", function () {
         return Dish.SortDishes($(this));
     });
 });
@@ -49,8 +57,8 @@ var Dish = {
             validate: true,
             showErrorMessage: true,
             messageControl: $('div.messageAlert'),
-            formToValidate: $("#DishForm"),
-            formToPost: $("#DishForm"),
+            formToValidate: $("#AddDishForm"),
+            formToPost: $("#AddDishForm"),
             isAjaxForm: true,
             showThrobber: true,
             button: $(sender),
@@ -58,22 +66,22 @@ var Dish = {
             success: function (results, message) {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
-                    window.location.href = baseUrl + '/Dish/ManageDishes';
+                    window.location.href = '/Admin/Dish/ManageDish';
                 }, 1500);
 
             }
         });
 
     },
-    UpdateUser: function (sender) {
+    UpdateDish: function (sender) {
         $.ajaxExt({
-            url: baseUrl + '/Dish/ModifyDish',
+            url: baseUrl + '/Dish/UpdateDish',
             type: 'POST',
             validate: true,
             showErrorMessage: true,
             messageControl: $('div.messageAlert'),
-            formToValidate: $("#DishForm"),
-            formToPost: $("#DishForm"),
+            formToValidate: $("#UpdateDishForm"),
+            formToPost: $("#UpdateDishForm"),
             isAjaxForm: true,
             showThrobber: true,
             button: $(sender),
@@ -81,14 +89,13 @@ var Dish = {
             success: function (results, message) {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
-                    window.location.href = baseUrl + '/Dish/ManageDishes';
+                    window.location.href = '/Admin/Dish/ManageDish';
                 }, 1500);
             }
         });
 
     },
-
-    DeleteUser: function (sender) {
+    DeleteDish: function (sender) {
         $.ConfirmBox("", "Are you sure to delete this record?", null, true, "Yes", true, null, function () {
             $.ajaxExt({
                 url: baseUrl + '/Dish/DeleteDish',
@@ -107,20 +114,17 @@ var Dish = {
             });
         });
     },
-
     ManageDishes: function (totalCount) {
         var totalRecords = 0;
         totalRecords = parseInt(totalCount);
         //alert(totalRecords);
         PageNumbering(totalRecords);
     },
-
     SearchDishes: function (sender) {
         paging.startIndex = 1;
         Paging(sender);
 
     },
-
     ShowRecords: function (sender) {
 
         paging.startIndex = 1;
@@ -145,7 +149,7 @@ function Paging(sender) {
         messageControl: null,
         showThrobber: false,
         throbberPosition: { my: "left center", at: "right center", of: sender, offset: "5 0" },
-        url: baseUrl + '/Dish/GetDishesPagedList',
+        url: '/admin/Dish/GetDishPagedList',
         success: function (results, message) {
             $('#divResult table:first tbody').html(results[0]);
             PageNumbering(results[1]);

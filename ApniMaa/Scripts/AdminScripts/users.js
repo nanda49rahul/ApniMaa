@@ -1,21 +1,30 @@
 ﻿$(document).ready(function () {
-    $("input[type=button]#addUserBtn").live("click", function () {
+    $("input[type=button]#addUserBtn").on("click", function () {
         return Users.AddUser($(this));
     });
-    $("input[type=button]#editUserBtn").live("click", function () {
+    $("input[type=button]#editUserBtn").on("click", function () {
         return Users.UpdateUser($(this));
     });
-    $("a.deleteUser").live("click", function () {
+    $(document).on("click", ".deleteUser", function () {
         return Users.DeleteUser($(this));
     });
 
-    $("input[type=button]#btnFilterVersion").live("click", function () {
-        return Users.ManageUsers($(this));
+    $("input[type=button]#btnFilterPeople").on("click", function () {
+        debugger;
+        return Users.SearchUsers($(this));
     });
+
+    $("input[type=button]#btnResetSearch").on("click", function () {
+        $('#Search').val('');
+        $('#DDLUserType').val('');
+        return Users.SearchUsers($(this));
+    });
+
     $("select#showRecords").on("change", function () {
         return Users.ShowRecords($(this));
     });
-    $('.sorting').live("click", function () {
+
+    $('.sorting').on("click", function () {
         return Users.SortUsers($(this));
     });
 });
@@ -131,12 +140,16 @@ var Users = {
 };
 
 function Paging(sender) {
+    debugger;
     var obj = new Object();
     obj.Search = $('#Search').val();
     obj.PageNo = paging.startIndex;
     obj.RecordsPerPage = paging.pageSize;
     obj.SortBy = $('#SortBy').val();
     obj.SortOrder = $('#SortOrder').val();
+    obj.UserRole = $('#DDLUserType').val();
+    
+
     $.ajaxExt({
         type: "POST",
         validate: false,

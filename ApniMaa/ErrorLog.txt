@@ -845,3 +845,402 @@ http://jsonformat.com/
 
 
 
+The model item passed into the dictionary is of type 'ApniMaa.BLL.Models.PagingResult`1[ApniMaa.BLL.Models.Admin_Models.CategoryListingModel]', but this dictionary requires a model item of type 'ApniMaa.BLL.Models.PagingResult`1[ApniMaa.BLL.Models.UserModel]'.
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Category\Partials\_CategoryListing.cshtml(14): error CS0828: Cannot assign method group to anonymous type property
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Category\Partials\_CategoryListing.cshtml(14): error CS0828: Cannot assign method group to anonymous type property
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Category\Partials\_CategoryListing.cshtml(14): error CS0828: Cannot assign method group to anonymous type property
+http://jsonformat.com/
+
+
+
+The view 'AddCategories' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/Category/AddCategories.aspx
+~/Areas/Admin/Views/Category/AddCategories.ascx
+~/Areas/Admin/Views/Shared/AddCategories.aspx
+~/Areas/Admin/Views/Shared/AddCategories.ascx
+~/Views/Category/AddCategories.aspx
+~/Views/Category/AddCategories.ascx
+~/Views/Shared/AddCategories.aspx
+~/Views/Shared/AddCategories.ascx
+~/Areas/Admin/Views/Category/AddCategories.cshtml
+~/Areas/Admin/Views/Category/AddCategories.vbhtml
+~/Areas/Admin/Views/Shared/AddCategories.cshtml
+~/Areas/Admin/Views/Shared/AddCategories.vbhtml
+~/Views/Category/AddCategories.cshtml
+~/Views/Category/AddCategories.vbhtml
+~/Views/Shared/AddCategories.cshtml
+~/Views/Shared/AddCategories.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'AddCategories' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/Category/AddCategories.aspx
+~/Areas/Admin/Views/Category/AddCategories.ascx
+~/Areas/Admin/Views/Shared/AddCategories.aspx
+~/Areas/Admin/Views/Shared/AddCategories.ascx
+~/Views/Category/AddCategories.aspx
+~/Views/Category/AddCategories.ascx
+~/Views/Shared/AddCategories.aspx
+~/Views/Shared/AddCategories.ascx
+~/Areas/Admin/Views/Category/AddCategories.cshtml
+~/Areas/Admin/Views/Category/AddCategories.vbhtml
+~/Areas/Admin/Views/Shared/AddCategories.cshtml
+~/Areas/Admin/Views/Shared/AddCategories.vbhtml
+~/Views/Category/AddCategories.cshtml
+~/Views/Category/AddCategories.vbhtml
+~/Views/Shared/AddCategories.cshtml
+~/Views/Shared/AddCategories.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'ApniMaa.BLL.Models.ActionOutput`1[ApniMaa.BLL.Models.Admin_Models.EditCategoryModel]', but this dictionary requires a model item of type 'ApniMaa.BLL.Models.Admin_Models.EditCategoryModel'.
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'ApniMaa.BLL.Models.ActionOutput`1[ApniMaa.BLL.Models.Admin_Models.EditCategoryModel]', but this dictionary requires a model item of type 'ApniMaa.BLL.Models.Admin_Models.EditCategoryModel'.
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'Id' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult EditCategory(Int32)' in 'ApniMaa.Areas.Admin.Controllers.CategoryController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+The view 'ManageCategory' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Category/ManageCategory.aspx
+~/Views/Category/ManageCategory.ascx
+~/Views/Shared/ManageCategory.aspx
+~/Views/Shared/ManageCategory.ascx
+~/Views/Category/ManageCategory.cshtml
+~/Views/Category/ManageCategory.vbhtml
+~/Views/Shared/ManageCategory.cshtml
+~/Views/Shared/ManageCategory.vbhtml
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'Category'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Shared\_SideBaar.cshtml(56): error CS0117: 'ApniMaa.BLL.Models.SelectedAdminTab' does not contain a definition for 'Dish'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedOn' exists in type 'Dish'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedOn' exists in type 'Dish'
+http://jsonformat.com/
+
+
+
+The ViewData item that has the key 'CategoryId' is of type 'System.Int32' but must be of type 'IEnumerable<SelectListItem>'.
+http://jsonformat.com/
+
+
+
+The ViewData item that has the key 'CategoryId' is of type 'System.Int32' but must be of type 'IEnumerable<SelectListItem>'.
+http://jsonformat.com/
+
+
+
+The view 'ManageDish' or its master was not found or no view engine supports the searched locations. The following locations were searched:
+~/Views/Dish/ManageDish.aspx
+~/Views/Dish/ManageDish.ascx
+~/Views/Shared/ManageDish.aspx
+~/Views/Shared/ManageDish.ascx
+~/Views/Dish/ManageDish.cshtml
+~/Views/Dish/ManageDish.vbhtml
+~/Views/Shared/ManageDish.cshtml
+~/Views/Shared/ManageDish.vbhtml
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\Dish\EditDish.cshtml(18): error CS1061: 'ApniMaa.BLL.Models.EditDishModel' does not contain a definition for 'id' and no extension method 'id' accepting a first argument of type 'ApniMaa.BLL.Models.EditDishModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'ApniMaa.BLL.Models.DishListingModel', but this dictionary requires a model item of type 'ApniMaa.BLL.Models.EditDishModel'.
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'ApniMaa.BLL.Models.DishListingModel', but this dictionary requires a model item of type 'ApniMaa.BLL.Models.EditDishModel'.
+http://jsonformat.com/
+
+
+
+The model item passed into the dictionary is of type 'ApniMaa.BLL.Models.DishListingModel', but this dictionary requires a model item of type 'ApniMaa.BLL.Models.EditDishModel'.
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedDate' exists in type 'UserTbl'
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: view
+http://jsonformat.com/
+
+
+

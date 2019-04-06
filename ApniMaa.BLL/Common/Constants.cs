@@ -18,6 +18,8 @@ namespace ApniMaa.BLL.Models
     public static class SelectedAdminTab
     {
         public const string Users = "Users";
+        public const string Category = "Category";
+        public const string Dish = "Dish";
         public const string CMSManager = "CMSManager";
         public const string Templates = "Templates";
       
@@ -25,6 +27,7 @@ namespace ApniMaa.BLL.Models
     public static class AppDefaults
     {
         public const Int32 PageSize = 10;
+        public const string DateTimeFormat = "MM/dd/yyyy";
     
     }
     public static class ValidateGoogleCaptcha

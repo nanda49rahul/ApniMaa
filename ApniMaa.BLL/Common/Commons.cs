@@ -40,7 +40,7 @@ namespace ApniMaa.BLL.Models
         public String Message { get; set; }
     }
 
-    public class PagingModel
+    public class PagingModel : PagingCustomModel
     {
         public int PageNo { get; set; }
         public int RecordsPerPage { get; set; }
@@ -59,8 +59,19 @@ namespace ApniMaa.BLL.Models
         public string SortBy { get; set; }
         public string SortOrder { get; set; }
         public string Search { get; set; }
+
+        public static PagingModel DefaultModel(string sortBy = "CreatedOn", string sortOder = "Asc")
+        {
+            return new PagingModel { PageNo = 1, RecordsPerPage = AppDefaults.PageSize, SortBy = sortBy, SortOrder = sortOder };
+        }
        
     }
+    public class PagingCustomModel
+    {
+        public int? UserRole { get; set; }
+        
+    }
+
     public class UserDetails
     {
         public Int32 UserID { get; set; }

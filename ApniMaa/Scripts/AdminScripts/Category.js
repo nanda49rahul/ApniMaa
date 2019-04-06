@@ -1,21 +1,28 @@
 ﻿$(document).ready(function () {
-    $("#addCategory").live("click", function () {
+    $("#AddCategoryBtn").on("click", function () {
         return Category.AddCategory($(this));
     });
-    $("#updateCategory").live("click", function () {
+    $("#updateCategory").on("click", function () {
         return Category.UpdateCategory($(this));
     });
-    $("#deleteCategory").live("click", function () {
+    $(document).on("click", ".deleteCategory", function () {
         return Category.DeleteCategory($(this));
     });
 
-    $("input[type=button]#btnFilterVersion").live("click", function () {
-        return Category.ManageCategories($(this));
+    $("input[type=button]#btnFilterPeople").on("click", function () {
+        debugger;
+        return Category.SearchCategories($(this));
     });
+
+    $("input[type=button]#btnResetSearch").on("click", function () {
+        $('#Search').val('');
+        return Category.SearchCategories($(this));
+    });
+
     $("select#showRecords").on("change", function () {
         return Category.ShowRecords($(this));
     });
-    $('.sorting').live("click", function () {
+    $('.sorting').on("click", function () {
         return Category.SortCategories($(this));
     });
 });
@@ -43,14 +50,15 @@ var Category = {
         }
     },
     AddCategory: function (sender) {
+        debugger;
         $.ajaxExt({
             url: baseUrl + '/Category/AddCategory',
             type: 'POST',
             validate: true,
             showErrorMessage: true,
             messageControl: $('div.messageAlert'),
-            formToValidate: $("#categoryForm"),
-            formToPost: $("#categoryForm"),
+            formToValidate: $("#AddCategoryForm"),
+            formToPost: $("#AddCategoryForm"),
             isAjaxForm: true,
             showThrobber: true,
             button: $(sender),
@@ -58,22 +66,22 @@ var Category = {
             success: function (results, message) {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
-                    window.location.href = baseUrl + '/Category/ManageCategories';
+                    window.location.href = '/admin/Category/ManageCategory';
                 }, 1500);
 
             }
         });
 
     },
-    UpdateUser: function (sender) {
+    UpdateCategory: function (sender) {
         $.ajaxExt({
-            url: baseUrl + '/Category/ModifyCategory',
+            url: baseUrl + '/Category/UpdateCategory',
             type: 'POST',
             validate: true,
             showErrorMessage: true,
             messageControl: $('div.messageAlert'),
-            formToValidate: $("#categoryForm"),
-            formToPost: $("#categoryForm"),
+            formToValidate: $("#UpdateCategoryForm"),
+            formToPost: $("#UpdateCategoryForm"),
             isAjaxForm: true,
             showThrobber: true,
             button: $(sender),
@@ -81,14 +89,14 @@ var Category = {
             success: function (results, message) {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
-                    window.location.href = baseUrl + '/Category/ManageCategories';
+                    window.location.href = '/admin/Category/ManageCategory';
                 }, 1500);
             }
         });
 
     },
 
-    DeleteUser: function (sender) {
+    DeleteCategory: function (sender) {
         $.ConfirmBox("", "Are you sure to delete this record?", null, true, "Yes", true, null, function () {
             $.ajaxExt({
                 url: baseUrl + '/Category/DeleteCategory',
@@ -99,7 +107,7 @@ var Category = {
                 showThrobber: true,
                 button: $(sender),
                 throbberPosition: { my: "left center", at: "right center", of: $(sender) },
-                data: { Id: $(sender).attr("data-id") },
+                data: { Id: $(sender).attr("data-categoryid") },
                 success: function (results, message) {
                     $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                     Paging();
@@ -116,27 +124,26 @@ var Category = {
     },
 
     SearchCategories: function (sender) {
+        debugger;
         paging.startIndex = 1;
         Paging(sender);
-
     },
-
     ShowRecords: function (sender) {
-
         paging.startIndex = 1;
         paging.pageSize = parseInt($(sender).find('option:selected').val());
         Paging(sender);
-
     }
 };
 
 function Paging(sender) {
+    debugger;
     var obj = new Object();
     obj.Search = $('#Search').val();
     obj.PageNo = paging.startIndex;
     obj.RecordsPerPage = paging.pageSize;
     obj.SortBy = $('#SortBy').val();
     obj.SortOrder = $('#SortOrder').val();
+
     $.ajaxExt({
         type: "POST",
         validate: false,
@@ -145,7 +152,7 @@ function Paging(sender) {
         messageControl: null,
         showThrobber: false,
         throbberPosition: { my: "left center", at: "right center", of: sender, offset: "5 0" },
-        url: baseUrl + '/Category/GetCategoriesPagedList',
+        url: '/admin/Category/GetCategoriesPagedList',
         success: function (results, message) {
             $('#divResult table:first tbody').html(results[0]);
             PageNumbering(results[1]);

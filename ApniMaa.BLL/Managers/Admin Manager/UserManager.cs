@@ -1407,14 +1407,14 @@ namespace ApniMaa.BLL.Managers
         PagingResult<UserModel> IUserManager.GetUserPagedList(PagingModel model)
         {
             var result = new PagingResult<UserModel>();
-            model.SortBy = model.SortBy == null ? "Id" : model.SortBy;
+            model.SortBy = model.SortBy == null ? "CreatedOn" : model.SortBy;
             model.SortOrder = model.SortOrder == null ? "Desc" : model.SortOrder;
             var query = Context.UserTbls.Where(p => p.RoleId != (int)UserRoleTypes.Admin).AsEnumerable().OrderBy(model.SortBy + " " + model.SortOrder).AsQueryable();
 
-            //if (UserRole != 0)
-            //{
-            //    query = query.Where(p => p.RoleId == UserRole);
-            //}
+            if (model.UserRole != null)
+            {
+                query = query.Where(p => p.RoleId == model.UserRole);
+            }
             //if (UserStatus != 0)
             //{
             //    query = query.Where(p => p.Status == UserStatus);
@@ -1422,7 +1422,9 @@ namespace ApniMaa.BLL.Managers
 
             if (!string.IsNullOrEmpty(model.Search))
             {
-                query = query.Where(z => z.FirstName.ToLower().Contains(model.Search.ToLower()) || z.Email.ToString().Contains(model.Search.ToLower()) || (z.Phone != null && z.Phone.ToString().Contains(model.Search.ToLower())) || (z.LastName != null && z.LastName.ToString().Contains(model.Search.ToLower())));
+                query = query.Where(z => 
+                    (z.FirstName.ToLower() + " " + z.LastName.ToLower()).Contains(model.Search.ToLower()) || 
+                    z.Email.ToString().Contains(model.Search.ToLower()));
             }
             var list = query.Skip(model.PageNo - 1).Take(model.RecordsPerPage)
                .ToList().Select(x => new UserModel(x)).ToList();

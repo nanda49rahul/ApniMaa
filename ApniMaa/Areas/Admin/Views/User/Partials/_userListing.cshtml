@@ -12,7 +12,9 @@
                 </td>
 
                 @*<td class="center">@item.date.ToShortDateString()</td>*@
-                <td class="center"><a class="btn btn-primary btn-xs" href="@Url.Action("EditUser", "user", new { area = "Admin", userId = @item.UserID })" data-original-title="Edit" data-toggle="tooltip"><i class="fa fa-pencil"></i></a> <a data-userid="@item.UserID" class="btn btn-danger btn-xs deleteUser" href="javascript:void(0);" data-original-title="Remove" data-toggle="tooltip"><i class="fa fa-times"></i></a></td>
+                <td class="center">
+                <a class="btn btn-primary btn-xs" href="@Url.Action("EditUser", "user", new { area = "Admin", userId = @item.UserID })" data-original-title="Edit" data-toggle="tooltip"><i class="fa fa-pencil"></i></a> 
+                    <a data-userid="@item.UserID" class="btn btn-danger btn-xs deleteUser" href="javascript:void(0);" data-original-title="Remove" data-toggle="tooltip"><i class="fa fa-times"></i></a></td>
             </tr>
         }
     }

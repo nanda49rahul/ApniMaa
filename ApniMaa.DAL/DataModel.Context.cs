@@ -28,12 +28,10 @@ namespace ApniMaa.DAL
         public virtual DbSet<Achievement> Achievements { get; set; }
         public virtual DbSet<AdminUser> AdminUsers { get; set; }
         public virtual DbSet<Cart> Carts { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<CMSPage> CMSPages { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
         public virtual DbSet<Coupon> Coupons { get; set; }
-        public virtual DbSet<Dish> Dishes { get; set; }
         public virtual DbSet<EmailTemplate> EmailTemplates { get; set; }
         public virtual DbSet<ErrorLog> ErrorLogs { get; set; }
         public virtual DbSet<Favourite> Favourites { get; set; }
@@ -69,5 +67,7 @@ namespace ApniMaa.DAL
         public virtual DbSet<UserLoginSession> UserLoginSessions { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<UserTbl> UserTbls { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Dish> Dishes { get; set; }
     }
 }

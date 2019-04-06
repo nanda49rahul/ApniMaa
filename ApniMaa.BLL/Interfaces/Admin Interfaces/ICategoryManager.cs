@@ -5,17 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
-using ApniMaa.DAL;
+using ApniMaa.BLL.Models.Admin_Models;
 
 namespace ApniMaa.BLL.Interfaces
 {
     public interface ICategoryManager
     {
-        ActionOutput AddCategory(Category model);
-        ActionOutput ModifyCategory(Category model);
-        ActionOutput DeleteCategory(Category model);
-        ActionOutput<Category> GetCategoryDetails(int Id);
-        PagingResult<Category> GetCategoriesPagedList(PagingModel model);
+        PagingResult<CategoryListingModel> GetCategoriesPagedList(PagingModel model);
+        ActionOutput AddCategory(AddCategoryModel model);
+        ActionOutput ModifyCategory(EditCategoryModel model);
+        ActionOutput DeleteCategory(int Id);
+        ActionOutput<EditCategoryModel> GetCategoryDetails(int Id);
         List<SelectListItem> GetCategoriesList();
     }
 }

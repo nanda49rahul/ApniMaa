@@ -53,8 +53,8 @@
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Name" Type="nvarchar" MaxLength="1" Nullable="false" />
-    <Property Name="Description" Type="nvarchar" MaxLength="1" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="70" />
+    <Property Name="Description" Type="nvarchar(max)" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="CreatedOn" Type="datetime" Nullable="false" />
   </EntityType>
@@ -111,7 +111,7 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="CategoryId" Type="int" Nullable="false" />
-    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="70" />
     <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
     <Property Name="IsDeleted" Type="bit" Nullable="false" />
     <Property Name="CreatedDate" Type="datetime" Nullable="false" />

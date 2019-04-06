@@ -11,10 +11,10 @@ namespace ApniMaa.BLL.Interfaces
 {
     public interface IDishManager
     {
-        ActionOutput AddDish(Dish model);
-        ActionOutput ModifyDish(Dish model);
-        ActionOutput DeleteDish(Dish model);
-        ActionOutput<DishModel> GetDishDetails(int Id);
-        PagingResult<DishModel> GetDishPagedList(PagingModel model);
+        ActionOutput AddDish(AddDishModel model);
+        ActionOutput ModifyDish(EditDishModel model);
+        ActionOutput DeleteDish(int id);
+        ActionOutput<EditDishModel> GetDishDetails(int Id);
+        PagingResult<DishListingModel> GetDishPagedList(PagingModel model);
     }
 }

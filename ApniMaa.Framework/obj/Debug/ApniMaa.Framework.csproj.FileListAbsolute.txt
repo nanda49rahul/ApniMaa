@@ -83,7 +83,6 @@ D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\System.Net.Http.Format
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\Common.Logging.Core.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\Common.Logging.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\ApniMaa.BLL.pdb
-D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\Newtonsoft.Json.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\System.Web.Http.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\ApniMaa.DAL.pdb
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\EntityFramework.xml
@@ -93,3 +92,4 @@ D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\System.Net.Http.Format
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.csprojResolveAssemblyReference.cache
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.pdb
+D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\Newtonsoft.Json.xml

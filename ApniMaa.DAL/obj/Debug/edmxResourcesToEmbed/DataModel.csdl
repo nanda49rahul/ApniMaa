@@ -53,17 +53,6 @@
     <NavigationProperty Name="MotherCarts" Relationship="Self.FK_dbo_MotherCart_dbo_Orders_OrderId" FromRole="Cart" ToRole="MotherCart" />
     <NavigationProperty Name="UserTbl" Relationship="ApniMaaDBModel.FK_dbo_Cart_dbo_UserTbl_UserId" FromRole="Cart" ToRole="UserTbl" />
   </EntityType>
-  <EntityType Name="Category">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Description" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Dishes" Relationship="Self.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Category" ToRole="Dishes" />
-  </EntityType>
   <EntityType Name="City">
     <Key>
       <PropertyRef Name="Id" />
@@ -112,19 +101,6 @@
     <Property Name="Enddate" Type="DateTime" Nullable="false" Precision="3" />
     <Property Name="AvailType" Type="Int32" Nullable="false" />
     <NavigationProperty Name="MotherCoupons" Relationship="Self.FK_dbo_MotherCoupons_dbo_Coupons_CouponId" FromRole="Coupons" ToRole="MotherCoupons" />
-  </EntityType>
-  <EntityType Name="Dish">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="CategoryId" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Category" Relationship="Self.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Dishes" ToRole="Category" />
-    <NavigationProperty Name="MotherDishes" Relationship="Self.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="Dishes" ToRole="MotherDish" />
   </EntityType>
   <EntityType Name="EmailTemplate">
     <Key>
@@ -301,12 +277,12 @@
     <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
     <Property Name="IsMainDish" Type="Boolean" Nullable="false" />
     <Property Name="IsSignatureDish" Type="Boolean" Nullable="false" />
-    <NavigationProperty Name="Dish" Relationship="Self.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="MotherDish" ToRole="Dishes" />
     <NavigationProperty Name="MotherCartDetails" Relationship="Self.FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId" FromRole="MotherDish" ToRole="MotherCartDetails" />
     <NavigationProperty Name="MotherDishDailySchedules" Relationship="Self.FK_dbo_MotherDish_dbo__MotherDishId" FromRole="MotherDish" ToRole="MotherDishDailySchedule" />
     <NavigationProperty Name="MotherTbl" Relationship="Self.FK_dbo_MotherDishes_dbo_MotherTbl_MotherId" FromRole="MotherDish" ToRole="MotherTbl" />
     <NavigationProperty Name="MotherDishReviews" Relationship="Self.FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId" FromRole="MotherDish" ToRole="MotherDishReviews" />
     <NavigationProperty Name="MotherOrderDetails" Relationship="Self.FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId" FromRole="MotherDish" ToRole="MotherOrderDetails" />
+    <NavigationProperty Name="Dish" Relationship="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="MotherDish" ToRole="Dish" />
   </EntityType>
   <EntityType Name="MotherDishDailySchedule">
     <Key>
@@ -645,20 +621,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_dbo_Dishes_dbo_Category_CategoryId">
-    <End Role="Category" Type="Self.Category" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Dishes" Type="Self.Dish" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Category">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Dishes">
-        <PropertyRef Name="CategoryId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="FK_dbo_City_dbo_Province_ProvinceId">
     <End Role="Province" Type="Self.Province" Multiplicity="1">
       <OnDelete Action="Cascade" />
@@ -684,20 +646,6 @@
       </Principal>
       <Dependent Role="MotherCoupons">
         <PropertyRef Name="CouponId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
-    <End Role="Dishes" Type="Self.Dish" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="MotherDish" Type="Self.MotherDish" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Dishes">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="MotherDish">
-        <PropertyRef Name="DishId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -987,12 +935,10 @@
     <EntitySet Name="Achievements" EntityType="Self.Achievement" />
     <EntitySet Name="AdminUsers" EntityType="Self.AdminUser" />
     <EntitySet Name="Carts" EntityType="Self.Cart" />
-    <EntitySet Name="Categories" EntityType="Self.Category" />
     <EntitySet Name="Cities" EntityType="Self.City" />
     <EntitySet Name="CMSPages" EntityType="Self.CMSPage" />
     <EntitySet Name="Countries" EntityType="Self.Country" />
     <EntitySet Name="Coupons" EntityType="Self.Coupon" />
-    <EntitySet Name="Dishes" EntityType="Self.Dish" />
     <EntitySet Name="EmailTemplates" EntityType="Self.EmailTemplate" />
     <EntitySet Name="ErrorLogs" EntityType="Self.ErrorLog" />
     <EntitySet Name="Favourites" EntityType="Self.Favourite" />
@@ -1043,10 +989,6 @@
       <End Role="Cart" EntitySet="Carts" />
       <End Role="MotherCart" EntitySet="MotherCarts" />
     </AssociationSet>
-    <AssociationSet Name="FK_dbo_Dishes_dbo_Category_CategoryId" Association="Self.FK_dbo_Dishes_dbo_Category_CategoryId">
-      <End Role="Category" EntitySet="Categories" />
-      <End Role="Dishes" EntitySet="Dishes" />
-    </AssociationSet>
     <AssociationSet Name="FK_dbo_City_dbo_Province_ProvinceId" Association="Self.FK_dbo_City_dbo_Province_ProvinceId">
       <End Role="Province" EntitySet="Provinces" />
       <End Role="City" EntitySet="Cities" />
@@ -1054,10 +996,6 @@
     <AssociationSet Name="FK_dbo_MotherCoupons_dbo_Coupons_CouponId" Association="Self.FK_dbo_MotherCoupons_dbo_Coupons_CouponId">
       <End Role="Coupons" EntitySet="Coupons" />
       <End Role="MotherCoupons" EntitySet="MotherCoupons" />
-    </AssociationSet>
-    <AssociationSet Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId" Association="Self.FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
-      <End Role="Dishes" EntitySet="Dishes" />
-      <End Role="MotherDish" EntitySet="MotherDishes" />
     </AssociationSet>
     <AssociationSet Name="FK_dbo_Orders_dbo_Guests_GuestId" Association="Self.FK_dbo_Orders_dbo_Guests_GuestId">
       <End Role="Guest" EntitySet="Guests" />
@@ -1183,6 +1121,16 @@
     <AssociationSet Name="FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId" Association="ApniMaaDBModel.FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId">
       <End Role="UserTbl" EntitySet="UserTbls" />
       <End Role="UserLoginSession" EntitySet="UserLoginSessions" />
+    </AssociationSet>
+    <EntitySet Name="Categories" EntityType="ApniMaaDBModel.Category" />
+    <EntitySet Name="Dishes" EntityType="ApniMaaDBModel.Dish" />
+    <AssociationSet Name="FK_dbo_Dishes_dbo_Category_CategoryId" Association="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Dish" EntitySet="Dishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId" Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
+      <End Role="Dish" EntitySet="Dishes" />
+      <End Role="MotherDish" EntitySet="MotherDishes" />
     </AssociationSet>
   </EntityContainer>
   <EntityType Name="UserTbl">
@@ -1350,6 +1298,58 @@
       </Principal>
       <Dependent Role="UserLoginSession">
         <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Dishes" Relationship="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Category" ToRole="Dish" />
+  </EntityType>
+  <EntityType Name="Dish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Category" Relationship="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Dish" ToRole="Category" />
+    <NavigationProperty Name="MotherDishes" Relationship="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="Dish" ToRole="MotherDish" />
+  </EntityType>
+  <Association Name="FK_dbo_Dishes_dbo_Category_CategoryId">
+    <End Type="ApniMaaDBModel.Category" Role="Category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaDBModel.Dish" Role="Dish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dish">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
+    <End Type="ApniMaaDBModel.Dish" Role="Dish" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaDBModel.MotherDish" Role="MotherDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDish">
+        <PropertyRef Name="DishId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

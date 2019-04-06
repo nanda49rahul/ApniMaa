@@ -33,11 +33,11 @@ namespace ApniMaa.DAL
         public bool IsMainDish { get; set; }
         public bool IsSignatureDish { get; set; }
     
-        public virtual Dish Dish { get; set; }
         public virtual ICollection<MotherCartDetail> MotherCartDetails { get; set; }
         public virtual ICollection<MotherDishDailySchedule> MotherDishDailySchedules { get; set; }
         public virtual MotherTbl MotherTbl { get; set; }
         public virtual ICollection<MotherDishReview> MotherDishReviews { get; set; }
         public virtual ICollection<MotherOrderDetail> MotherOrderDetails { get; set; }
+        public virtual Dish Dish { get; set; }
     }
 }
