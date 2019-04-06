@@ -27,11 +27,17 @@
 
     @RenderBody()
 
-    <script type="text/javascript" src="~/content/js/jquery.min.js"></script>
+    @*<script type="text/javascript" src="~/content/js/jquery.min.js"></script>
     <script type="text/javascript" src="~/content/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="~/content/js/script.js"></script>
+    <script type="text/javascript" src="~/content/js/script.js"></script>*@
 
     @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
+    <script src="~/Scripts/jquery-migrate-1.2.1.js"></script>
+
+    @*<script src="~/Content/CustomAdmin/js/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>*@
+
     @Scripts.Render("~/bundles/bootstrap")
     @Scripts.Render("~/bundles/extendedjs")
     @Scripts.Render("~/bundles/themeSpecific")

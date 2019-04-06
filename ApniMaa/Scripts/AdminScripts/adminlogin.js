@@ -1,21 +1,20 @@
 ﻿$(document).ready(function () {
-    $("#LoginBtn").click(function () {
+    $("#signInBtn").on("click", function () {
         return Login.Login($(this));
     });
-    
 });
 
 var Login = {
     
     Login: function (sender) {
         $.ajaxExt({
-            url: '/User/Login',
+            url: '/Admin/Home/Login',
             type: 'POST',
             validate: true,
             showErrorMessage: true,
             messageControl: $('div.messageAlert'),
-            formToValidate: $("#LoginForm"),
-            formToPost: $("#LoginForm"),
+            formToValidate: $("#loginForm"),
+            formToPost: $("#loginForm"),
             isAjaxForm: true,
             showThrobber: true,
             button: $(sender),
@@ -23,9 +22,8 @@ var Login = {
             success: function (results, message) {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
-                    window.location.href = baseUrl + '/Home/Dashboard';
+                    window.location.href = '/Admin/Home/Dashboard';
                 }, 1500);
-
             }
         });
 
