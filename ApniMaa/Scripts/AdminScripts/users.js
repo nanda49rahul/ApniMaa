@@ -1,12 +1,19 @@
 ﻿$(document).ready(function () {
-    $("input[type=button]#addUserBtn").on("click", function () {
-        return Users.AddUser($(this));
+
+    $("#BtnAddUserDish").on("click", function () {
+        return Users.AddDishForMother($(this));
     });
-    $("input[type=button]#editUserBtn").on("click", function () {
+
+    $("#UpdateUserBtn").on("click", function () {
         return Users.UpdateUser($(this));
     });
+
     $(document).on("click", ".deleteUser", function () {
         return Users.DeleteUser($(this));
+    });
+
+    $(document).on("click", ".DeleteDish", function () {
+        return Users.DeleteDish($(this));
     });
 
     $("input[type=button]#btnFilterPeople").on("click", function () {
@@ -75,14 +82,15 @@ var Users = {
      
     },
     UpdateUser: function (sender) {
+       
         $.ajaxExt({
             url: baseUrl + '/Admin/User/UpdateUserDetails',
             type: 'POST',
             validate: true,
             showErrorMessage: true,
             messageControl: $('div.messageAlert'),
-            formToValidate: $(sender).parents("form:first"),
-            formToPost: $(sender).parents("form:first"),
+            formToValidate: $("#UpdateDishForm"),
+            formToPost: $("#UpdateDishForm"),
             isAjaxForm: true,
             showThrobber: true,
             button: $(sender),
@@ -90,11 +98,37 @@ var Users = {
             success: function (results, message) {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
-                    window.location.href = baseUrl + '/Admin/User/ManageUsers';
+                    window.location.href = '/Admin/User/ManageUsers';
                 }, 1500);
             }
         });
     
+    },
+
+    AddDishForMother: function (sender) {
+        //$.ShowMessage($('div.messageAlert'), 'abc', MessageType.Success);
+
+        //return false;
+        $('#AddDishForMotherForm #MotherID').val($('#UpdateDishForm #UserID').val());
+        $.ajaxExt({
+            url: baseUrl + '/Admin/User/AddDishForMother',
+            type: 'POST',
+            validate: true,
+            showErrorMessage: true,
+            messageControl: $('div.messageAlert'),
+            formToValidate: $('#AddDishForMotherForm'),
+            formToPost: $('#AddDishForMotherForm'),
+            isAjaxForm: true,
+            showThrobber: true,
+            button: $(sender),
+            throbberPosition: { my: "left center", at: "right center", of: $(sender) },
+            success: function (results, message) {
+                $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
+                GetDishAddedByAdmin($('#AddDishForMotherForm #MotherID').val());
+                $('#DishId').val('');
+                $('#DishImage').val('');
+            }
+        });
     },
 
     DeleteUser: function (sender) {
@@ -112,6 +146,26 @@ var Users = {
                 success: function (results, message) {
                     $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                     Paging();
+                }
+            });
+        });
+    },
+
+    DeleteDish: function (sender) {
+        $.ConfirmBox("", "Are you sure to delete this record?", null, true, "Yes", true, null, function () {
+            $.ajaxExt({
+                url: baseUrl + '/Admin/User/DeleteDish',
+                type: 'POST',
+                validate: false,
+                showErrorMessage: true,
+                messageControl: $('div.messageAlert'),
+                showThrobber: true,
+                button: $(sender),
+                throbberPosition: { my: "left center", at: "right center", of: $(sender) },
+                data: { dishid: $(sender).attr("data-dishid") },
+                success: function (results, message) {
+                    $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
+                    GetDishAddedByAdmin($('#UpdateDishForm #UserID').val());
                 }
             });
         });
@@ -163,6 +217,24 @@ function Paging(sender) {
             $('#divResult table:first tbody').html(results[0]);
             PageNumbering(results[1]);
           
+        }
+    });
+}
+
+
+function GetDishAddedByAdmin(id) {
+    $('#MotherDishListing tbody').html('<td colspan="2"><center><img src="/Content/images/loader.GIF" style="margin-top:50px;" /></center><td>');
+    $.ajaxExt({
+        type: "POST",
+        validate: false,
+        messageControl: null,
+        showThrobber: false,
+        url: baseUrl + '/Admin/User/GetMotherDishList',
+        data: { MotherId: id },
+        success: function (results, message) {
+            debugger;
+            $('#MotherDishListing tbody').html(results[0]);
+
         }
     });
 }

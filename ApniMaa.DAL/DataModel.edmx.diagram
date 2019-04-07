@@ -73,7 +73,7 @@
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_PaymentDetails_dbo_Orders_OrderId" ManuallyRouted="false" />
         <AssociationConnector Association="ApniMaaDBModel.FK_QueuedPushNotifications_ID" ManuallyRouted="false" />
         <AssociationConnector Association="ApniMaaDBModel.FK_UserLoginSessions_UserId_UserLoginSessions_UserId" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.UserTbl" Width="1.5" PointX="0.75" PointY="40.125" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserTbl" Width="2.125" PointX="0.75" PointY="40.125" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Cart_dbo_UserTbl_UserId" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Favourites_dbo__UserId" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishReviews_dbo_UserTbl_UserId" />

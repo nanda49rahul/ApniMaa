@@ -17,12 +17,13 @@ namespace ApniMaa.Areas.Admin.Controllers
         #region Private Data
 
 
-        IUserManager _userManager;
-       
-        public UserController(IErrorLogManager errorLogManager, IUserManager userManager)
+        private readonly IUserManager _userManager;
+        private readonly ISelectListManager _SelectListManager;
+        public UserController(IErrorLogManager errorLogManager, IUserManager userManager, ISelectListManager SelectListManager)
             : base(errorLogManager)
         {
             _userManager = userManager;
+            _SelectListManager = SelectListManager;
         }
 
         #endregion
@@ -51,85 +52,77 @@ namespace ApniMaa.Areas.Admin.Controllers
 
             return Json(result, JsonRequestBehavior.AllowGet);
         }
-        public JsonResult UpdateUserProfile(UserModel model)
+
+        //public JsonResult UpdateUserProfile(UserModel model)
+        //{
+        //    ViewBag.SelectedTab = SelectedAdminTab.Users;
+        //    return Json(_userManager.UpdateUserProfile(model));
+        //}
+
+        public ActionResult _AddDishPartial()
+        {
+            AddDishForMotherModel AddDishModel = new AddDishForMotherModel();
+            AddDishModel.DishList = _SelectListManager.GetDishList();
+            return PartialView("Partials/_AddDishPartial", AddDishModel);
+        }
+        public ActionResult UpdateUserDetails(int UserId)
+        {
+            var result = _userManager.GetUserDetails(UserId);
+            //result.Object.DishList = _SelectListManager.GetDishList();
+            return View(result.Object);
+        }
+
+        [HttpPost, AjaxOnly, Public]
+        public JsonResult UpdateUserDetails(UserDetailModel model)
+        {
+            var result = _userManager.UpdateUserDetails(model);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+        [AjaxOnly, HttpPost]
+        public JsonResult AddDishForMother(AddDishForMotherModel model)
         {
             ViewBag.SelectedTab = SelectedAdminTab.Users;
-            return Json(_userManager.UpdateUserProfile(model));
+            return JsonResult(_userManager.AddDishForMother(model));
+
         }
-        //[HttpPost, AjaxOnly, Public]
-        //public JsonResult GetUserProfile(long UserId)
-        //{
-        //    string path = Server.MapPath("~/Content/Upload/");
-        //    var model = _userManager.GetProfileInfo(UserId, path);
-        //    ViewBag.CountryList = UserManager.GetCountryList();
 
-        //    if (model.CountryId == null)
-        //    {
-        //        List<SelectListItem> StateList = new List<SelectListItem>();
-        //        SelectListItem item = new SelectListItem();
-        //        item.Selected = true;
-        //        item.Text = "Select State";
-        //        item.Value = "";
-        //        StateList.Add(item);
-        //        ViewBag.StateList = StateList;
-        //    }
-        //    else
-        //    {
-        //        ViewBag.StateList = UserManager.GetStateList(model.CountryId.Value);
-        //    }
-
-
-        //    if (model.StateId == null)
-        //    {
-        //        List<SelectListItem> CityList = new List<SelectListItem>();
-        //        SelectListItem item1 = new SelectListItem();
-        //        item1.Selected = true;
-        //        item1.Text = "Select City";
-        //        item1.Value = "";
-        //        CityList.Add(item1);
-        //        ViewBag.CityList = CityList;
-        //    }
-        //    else
-        //    {
-        //        ViewBag.CityList = UserManager.GetCityList(model.StateId.Value);
-        //    }
-
-
-
-        //    ViewBag.CategoryList = UserManager.GetCategoryList();
-
-        //    if (model.Categories == null)
-        //    {
-        //        ViewBag.SubCategoryList = new List<SelectListItem>();
-        //    }
-        //    else
-        //    {
-        //        ViewBag.SubCategoryList = UserManager.GetSubCategoryList(model.Categories);
-        //    }
-        //    List<string> resultString = new List<string>();
-        //    resultString.Add(RenderRazorViewToString("/Views/Shared/_Myprofile.cshtml", model));
-        //    //resultString.Add(modal.TotalCount.ToString());
-        //    return Json(new ActionOutput { Status = ActionStatus.Successfull, Message = "", Results = resultString }, JsonRequestBehavior.AllowGet);
-
-        //    //return Json("", result);
-        //    //return Json(result, JsonRequestBehavior.AllowGet);
-        //}
-        [AjaxOnly, HttpPost, Public]
-        public JsonResult Login(LoginModal model)
+        [AjaxOnly, HttpPost]
+        public JsonResult GetMotherDishList(int MotherId)
         {
-            //to do: Implement user login
-            var data = _userManager.AdminLogin(model);
-            
-            //if (data.Status == ActionStatus.Successfull)
-            //{
-            //    //var user_data = data.Object;
-            //    //CreateCustomAuthorisationCookie(model.UserName, false, new JavaScriptSerializer().Serialize(user_data));
-            //    var PermissonAndDetailModel = new PermissonAndDetailModel();
-            //    PermissonAndDetailModel.UserDetails = data.Object;
-            //    PermissonAndDetailModel.ModulesModelList = _userManager.GetAllModulesAtAuthentication(data.Object.UserID);
-            //    CreateCustomAuthorisationCookie(model.UserName, true, new JavaScriptSerializer().Serialize(PermissonAndDetailModel));
-            //}
-            return Json(data, JsonRequestBehavior.AllowGet);
+            ViewBag.SelectedTab = SelectedAdminTab.Users;
+            var modal = _userManager.GetMotherDishList(MotherId);
+            List<string> resultString = new List<string>();
+            resultString.Add(RenderRazorViewToString("Partials/_MotherDishListing", modal));
+            return JsonResult(resultString);
         }
+
+        [HttpPost, AjaxOnly, Public]
+        public JsonResult DeleteDish(int dishid)
+        {
+            var result = _userManager.DeleteDish(dishid);
+            return Json(result, JsonRequestBehavior.AllowGet);
+        }
+
+
+
+        //Not in use
+        //[AjaxOnly, HttpPost, Public]
+        //public JsonResult Login(LoginModal model)
+        //{
+        //    //to do: Implement user login
+        //    var data = _userManager.AdminLogin(model);
+            
+        //    //if (data.Status == ActionStatus.Successfull)
+        //    //{
+        //    //    //var user_data = data.Object;
+        //    //    //CreateCustomAuthorisationCookie(model.UserName, false, new JavaScriptSerializer().Serialize(user_data));
+        //    //    var PermissonAndDetailModel = new PermissonAndDetailModel();
+        //    //    PermissonAndDetailModel.UserDetails = data.Object;
+        //    //    PermissonAndDetailModel.ModulesModelList = _userManager.GetAllModulesAtAuthentication(data.Object.UserID);
+        //    //    CreateCustomAuthorisationCookie(model.UserName, true, new JavaScriptSerializer().Serialize(PermissonAndDetailModel));
+        //    //}
+        //    return Json(data, JsonRequestBehavior.AllowGet);
+        //}
     }
 }

@@ -110,7 +110,8 @@ $.showStaticMessage = function (messageSpan, message, messageType) {
         position: 'bottom-left',
         title: '<strong>Success!</strong>',
         text: message,
-        imageIcon: "<img src='/content/images/success_head.png' width='45'/>",
+        //imageIcon: "<img src='/content/images/success_head.png' width='45'/>",
+        imageIcon: "",
         class_name: 'clean',
         time: '20000'
     });
@@ -122,7 +123,8 @@ $.showGritterMessage = function (message, messageType) {
             position: 'bottom-left',
             title: '<strong>Success!</strong>',
             text: message,
-            imageIcon: "<img src='/content/images/success_head.png' width='45'/>",
+            //imageIcon: "<img src='/content/images/success_head.png' width='45'/>",
+            imageIcon: "",
             //imageIcon: '<i class="fa fa-check fa-4x" style="color:#4CAE4C"></i>',
             class_name: 'clean',
             time: ''
@@ -132,7 +134,8 @@ $.showGritterMessage = function (message, messageType) {
             position: 'bottom-left',
             title: '<strong>Error!</strong>',
             text: message,
-            imageIcon: "<img src='/content/images/error_head.png' width='45'/>",
+            //imageIcon: "<img src='/content/images/success_head.png' width='45'/>",
+            imageIcon: "",
             //imageIcon: '<i class="fa fa-times-circle fa-4x" style="color:#B94A48"></i>',
             class_name: 'clean',
             time: ''
@@ -144,7 +147,8 @@ $.showGritterMessage = function (message, messageType) {
             position: 'bottom-left',
             title: '<strong>Warning!</strong>',
             text: message,
-            imageIcon: "<img src='/content/images/alert_head.png' width='45'/>",
+            //imageIcon: "<img src='/content/images/success_head.png' width='45'/>",
+            imageIcon: "",
             //imageIcon: '<i class="fa fa-warning fa-4x" style="color:#C09853"></i>',
             class_name: 'clean',
             time: ''

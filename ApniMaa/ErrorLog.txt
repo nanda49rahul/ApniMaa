@@ -1244,3 +1244,90 @@ http://jsonformat.com/
 
 
 
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult EditUser(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\UpdateUserDetails.cshtml(47): error CS1061: 'ApniMaa.BLL.Models.UserDetailModel' does not contain a definition for 'DishId' and no extension method 'DishId' accepting a first argument of type 'ApniMaa.BLL.Models.UserDetailModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult UpdateUserDetails(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult UpdateUserDetails(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult UpdateUserDetails(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult UpdateUserDetails(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+An error occurred while updating the entries. See the inner exception for details.
+http://jsonformat.com/
+
+
+
+The partial view 'Partial/_MotherDishListing' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.aspx
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.ascx
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.aspx
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.ascx
+~/Views/user/Partial/_MotherDishListing.aspx
+~/Views/user/Partial/_MotherDishListing.ascx
+~/Views/Shared/Partial/_MotherDishListing.aspx
+~/Views/Shared/Partial/_MotherDishListing.ascx
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.cshtml
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.vbhtml
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.cshtml
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.vbhtml
+~/Views/user/Partial/_MotherDishListing.cshtml
+~/Views/user/Partial/_MotherDishListing.vbhtml
+~/Views/Shared/Partial/_MotherDishListing.cshtml
+~/Views/Shared/Partial/_MotherDishListing.vbhtml
+http://jsonformat.com/
+
+
+
+The partial view 'Partial/_MotherDishListing' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.aspx
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.ascx
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.aspx
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.ascx
+~/Views/user/Partial/_MotherDishListing.aspx
+~/Views/user/Partial/_MotherDishListing.ascx
+~/Views/Shared/Partial/_MotherDishListing.aspx
+~/Views/Shared/Partial/_MotherDishListing.ascx
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.cshtml
+~/Areas/Admin/Views/user/Partial/_MotherDishListing.vbhtml
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.cshtml
+~/Areas/Admin/Views/Shared/Partial/_MotherDishListing.vbhtml
+~/Views/user/Partial/_MotherDishListing.cshtml
+~/Views/user/Partial/_MotherDishListing.vbhtml
+~/Views/Shared/Partial/_MotherDishListing.cshtml
+~/Views/Shared/Partial/_MotherDishListing.vbhtml
+http://jsonformat.com/
+
+
+

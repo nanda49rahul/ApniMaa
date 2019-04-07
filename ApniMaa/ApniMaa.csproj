@@ -3772,6 +3772,9 @@
     <Content Include="Areas\Admin\Views\Dish\Partials\_DishListing.cshtml" />
     <Content Include="Areas\Admin\Views\Dish\Partials\_SearchFilter.cshtml" />
     <Content Include="Areas\Admin\Views\User\Partials\_SearchFilter.cshtml" />
+    <Content Include="Areas\Admin\Views\User\UpdateUserDetails.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Partials\_MotherDishListing.cshtml" />
     <None Include="Areas\Admin\Views\web.config====" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayOut.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_beforeLoginAdminLayout.cshtml" />
@@ -4146,7 +4149,6 @@
     <Content Include="Areas\Admin\Views\CMS\CMSManager.cshtml" />
     <Content Include="Areas\Admin\Views\CMS\EditPageContent.cshtml" />
     <Content Include="Areas\Admin\Views\User\AddUser.cshtml" />
-    <Content Include="Areas\Admin\Views\User\EditUser.cshtml" />
     <Content Include="Areas\Admin\Views\CMS\Partials\_pageListing.cshtml" />
     <Content Include="Areas\Admin\Views\EmailTemplate\Partials\_templateListing.cshtml" />
     <Content Include="Areas\Admin\Views\User\Partials\_userListing.cshtml" />

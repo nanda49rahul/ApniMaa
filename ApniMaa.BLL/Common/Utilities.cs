@@ -50,12 +50,12 @@ namespace ApniMaa.BLL.Common
             return path;
         }
 
-        public static string GetFilePath(string folderName, string fileName, int id)
+        public static string GetFilePath(string folderName, string fileName)
         {
             if (string.IsNullOrEmpty(fileName))
                 return null;
 
-            var path = ("/Documents/" + folderName + "/" + id + "/" + fileName);
+            var path = ("/ApplicationImages/" + folderName + "/" + fileName);
             return path;
         }
 
@@ -78,10 +78,10 @@ namespace ApniMaa.BLL.Common
             return path;
         }
 
-        public static string SavePostedFile(string FolderName, HttpPostedFileBase fileData, int FirmID)
+        public static string SavePostedFile(string FolderName, HttpPostedFileBase fileData)
         {
             var FileDataContent = fileData;
-            var UploadPath = HostingEnvironment.MapPath("~/Documents/" + FolderName + "/" + FirmID + "/");
+            var UploadPath = HostingEnvironment.MapPath("~/ApplicationImages/" + FolderName + "/");
             bool exists = System.IO.Directory.Exists(UploadPath);
             if (!exists)
             {

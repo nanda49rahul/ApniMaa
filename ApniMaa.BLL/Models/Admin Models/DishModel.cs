@@ -44,6 +44,7 @@ namespace ApniMaa.BLL.Models
         [Required(ErrorMessage = "Description is required field")]
         public string Description { get; set; }
         public AddDishModel() {
+
             using (ApniMaaDBEntities Context = new ApniMaaDBEntities())
             {
                 this.CategoryList = Context.Categories.Where(d => d.IsDeleted == false).ToList()

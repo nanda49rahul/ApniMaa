@@ -167,6 +167,7 @@
     <Compile Include="Interfaces\Admin Interfaces\IMotherManager.cs" />
     <Compile Include="Interfaces\Admin Interfaces\IUserManager.cs" />
     <Compile Include="Interfaces\Common Interfaces\IEmailProvider.cs" />
+    <Compile Include="Interfaces\Common Interfaces\ISelectListManager.cs" />
     <Compile Include="Interfaces\ICMSManager.cs" />
     <Compile Include="Interfaces\IEmailTemplateManager.cs" />
     <Compile Include="Interfaces\IErrorLogManager.cs" />
@@ -180,6 +181,7 @@
     <Compile Include="Managers\BaseManager.cs" />
     <Compile Include="Managers\CMSManager.cs" />
     <Compile Include="Managers\Common Manager\EmailProvider.cs" />
+    <Compile Include="Managers\Common Manager\SelectListManager.cs" />
     <Compile Include="Managers\EmailTemplateManager.cs" />
     <Compile Include="Managers\ErrorLogManager.cs" />
     <Compile Include="Managers\DashboardManager.cs" />

@@ -88,6 +88,7 @@ namespace ApniMaa.Areas.Admin.Controllers
         [HttpGet]
         public ActionResult Dashboard()
         {
+            ViewBag.SelectedTab = SelectedAdminTab.Dashboard;
             return View();
         }
 

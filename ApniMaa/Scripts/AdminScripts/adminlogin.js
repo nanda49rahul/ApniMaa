@@ -7,6 +7,8 @@
 var Login = {
     
     Login: function (sender) {
+        //$.ShowMessage($('div.messageAlert'), 'saass', MessageType.Success);
+        //return false;
         $.ajaxExt({
             url: '/Admin/Home/Login',
             type: 'POST',
@@ -23,7 +25,7 @@ var Login = {
                 $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
                 setTimeout(function () {
                     window.location.href = '/Admin/Home/Dashboard';
-                }, 1500);
+                }, 1000);
             }
         });
 

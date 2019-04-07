@@ -19,6 +19,7 @@ namespace ApniMaa.BLL.Models
     {
         public const string Users = "Users";
         public const string Category = "Category";
+        public const string Dashboard = "Dashboard";
         public const string Dish = "Dish";
         public const string CMSManager = "CMSManager";
         public const string Templates = "Templates";
@@ -53,6 +54,7 @@ namespace ApniMaa.BLL.Models
         public const string BrokerCertificate = "BrokerCertificate";
         public const string CancellationCertificate = "CancellationCertificate";
         public const string Template = "Template";
+        public const string DishImage = "DishImage";
     }
     public static class Messages
     {

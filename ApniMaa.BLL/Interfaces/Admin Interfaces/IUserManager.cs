@@ -28,34 +28,10 @@ namespace ApniMaa.BLL.Interfaces
         ActionOutput<UserModel> OTPLogin(LoginModel model);
         ActionOutput<Guest> GenrateGuestId();
         ActionOutput<UserModel> AdminLogin(LoginModal model);
-
-        //ActionOutput AddUserDetails(UserModel model);
-
-        //PagingResult<UserModel> GetUserPagedList(PagingModel model);
-
-        //UserModel GetUserByUserId(int userId);
-
-        //ActionOutput UpdateUserDetails(UserModel model);
-
-        //ActionOutput DeleteUser(int userId);
-
-        //ActionOutput<UserInfo> LoginUser(LoginModal userDetails);
-
-        //ActionOutput ValidateUserByEmail(string email, string token);
-
-        //ActionOutput ChangePassword(GenerateNewPasswordModel model);
-
-        //UserModel GetUserDetails(UserInfo user,int LoginType);
-
-        //ActionOutput UpdateUserProfile(UserModel model);
-
-        //ActionOutput UpdateUserPassword(string Old, string New, string Confirm, UserInfo user,int loginType);
-        //ActionOutput UpdateFirmPassword(string Old, string New, string Confirm, UserInfo user, int loginType);
-
-        //List<SelectListItem> GetSelectListUsers(int? UserId=0);
-
-        //ActionOutput BulkUpload(BulkImportModel model);
-
-        //ActionOutput BulkUploadCases(BulkImportModel model);
+        ActionOutput<UserDetailModel> GetUserDetails(int Id);
+        ActionOutput UpdateUserDetails(UserDetailModel model);
+        ActionOutput AddDishForMother(AddDishForMotherModel Details);
+        List<MotherDishModel> GetMotherDishList(int MotherId);
+        ActionOutput DeleteDish(int dishid);
     }
 }
