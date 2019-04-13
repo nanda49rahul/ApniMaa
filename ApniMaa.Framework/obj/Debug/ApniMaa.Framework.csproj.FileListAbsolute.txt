@@ -61,6 +61,7 @@ F:\Freelance\apnimaa\ApniMaa.Framework\bin\Debug\System.Net.Http.Formatting.xml
 F:\Freelance\apnimaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.csprojResolveAssemblyReference.cache
 F:\Freelance\apnimaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.dll
 F:\Freelance\apnimaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.pdb
+D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.csprojResolveAssemblyReference.cache
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\ApniMaa.Framework.dll.config
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\ApniMaa.Framework.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\ApniMaa.Framework.pdb
@@ -89,7 +90,6 @@ D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\EntityFramework.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\ApniMaa.Globalization.pdb
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\Twilio.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\System.Net.Http.Formatting.xml
-D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.csprojResolveAssemblyReference.cache
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\obj\Debug\ApniMaa.Framework.pdb
 D:\Freelance_Projects\ApniMaa\ApniMaa.Framework\bin\Debug\Newtonsoft.Json.xml

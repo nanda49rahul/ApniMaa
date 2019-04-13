@@ -529,16 +529,16 @@
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="FirstName" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="LastName" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Email" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="LastName" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar(max)" />
     <Property Name="Phone" Type="nvarchar(max)" Nullable="false" />
     <Property Name="OTP" Type="nvarchar(max)" Nullable="false" />
     <Property Name="Password" Type="nvarchar" MaxLength="150" Nullable="false" />
-    <Property Name="City" Type="int" Nullable="false" />
-    <Property Name="Province" Type="int" Nullable="false" />
-    <Property Name="Address" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Longitute" Type="nvarchar(max)" Nullable="false" />
-    <Property Name="Latitute" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="City" Type="int" />
+    <Property Name="Province" Type="int" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Longitute" Type="nvarchar(max)" />
+    <Property Name="Latitute" Type="nvarchar(max)" />
     <Property Name="RoleId" Type="int" />
     <Property Name="Status" Type="int" Nullable="false" />
     <Property Name="CreatedOn" Type="datetime" Nullable="false" />

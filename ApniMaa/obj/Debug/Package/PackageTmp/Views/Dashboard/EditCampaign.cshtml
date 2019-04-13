@@ -1,0 +1,571 @@
+﻿
+@{
+    ViewBag.Title = "EditCampaign";
+    Layout = "~/Views/Shared/_LayoutAfterLogin.cshtml";
+}
+
+<div class="main-section campagin-detail-page ">
+    <div class="wrapper">
+        <div class="campagin-tab">
+
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="schedule-tab" data-toggle="tab" href="#schedule" role="tab" aria-controls="schedule" aria-selected="true">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="cutoff-tab" data-toggle="tab" href="#cutoff" role="tab" aria-controls="cutoff" aria-selected="false">Cutoff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="notification-tab" data-toggle="tab" href="#notification" role="tab" aria-controls="notification" aria-selected="false">Notification</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="copy-tab" data-toggle="tab" href="#copy" role="tab" aria-controls="copy" aria-selected="false">Copy</a>
+                </li>
+                <button class="btn btn-theme  btn-small"> + Day </button>
+                <button title="Create a test Prospect" class="btn btn-default btn-small"><i class="fa fa-user-plus" aria-hidden="true"></i></button>
+
+            </ul>
+
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="schedule" role="tabpanel" aria-labelledby="schedule-tab">
+                    <h1 class="heading">Healthcare Professional Chitvan  </h1>
+
+                    <div class="camp-full">
+                        <div class="name-campaign">
+                            <h2 class="heading">
+                                Name
+                            </h2>
+                            <div class="lower-area">
+                                <div class="form-group ">
+                                    <input type="text" value="Healthcare Professionals" class="form-control">
+                                </div>
+                                <h1 class="heading">Fast Response - Prospects  </h1>
+                                <p>Followup sequence starts when prospect enters the system and automatically stops when prospect responds.</p>
+
+                            </div>
+                        </div>
+
+
+                        <div class="deatil-campaign">
+                            <h2 class="heading">
+                                Followups
+                                <span class="float-right">
+                                    <a class="btn btn-primary btn-theme" href="edit_campaign.html">Edit</a>
+                                </span>
+                            </h2>
+                            <h6>Times shown are in Eastern Time. </h6>
+
+                            <div class="notifications">
+
+                                <div class="block-noti">
+                                    <span class="cal-icon"><i aria-hidden="true" class="fa fa-calendar-o"></i></span>
+                                    <h1 class="heading">Day 1 </h1>
+
+                                    <ul>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  immediately  <span class="action"><i aria-hidden="true" class="fa fa-phone"></i> Voice Mail</span></li>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  +10 minutes   <span class="action"><i aria-hidden="true" class="fa fa-mobile"></i> SMS</span></li>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  +1 hours 1 minutes    <span class="action"><i aria-hidden="true" class="fa fa-envelope"></i> Email</span></li>
+                                    </ul>
+
+                                </div>
+                                <div class="block-noti">
+                                    <span class="cal-icon"><i aria-hidden="true" class="fa fa-calendar-o"></i></span>
+                                    <h1 class="heading">Day 2 </h1>
+
+                                    <ul>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  immediately  <span class="action"><i aria-hidden="true" class="fa fa-phone"></i> Voice Mail</span></li>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  +10 minutes   <span class="action"><i aria-hidden="true" class="fa fa-mobile"></i> SMS</span></li>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  +1 hours 1 minutes    <span class="action"><i aria-hidden="true" class="fa fa-envelope"></i> Email</span></li>
+                                    </ul>
+
+                                </div>
+                                <div class="block-noti">
+                                    <span class="cal-icon"><i aria-hidden="true" class="fa fa-calendar-o"></i></span>
+                                    <h1 class="heading">Day 4 </h1>
+
+                                    <ul>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  immediately  <span class="action"><i aria-hidden="true" class="fa fa-phone"></i> Voice Mail</span></li>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  +10 minutes   <span class="action"><i aria-hidden="true" class="fa fa-mobile"></i> SMS</span></li>
+                                        <li><i aria-hidden="true" class="fa fa-clock-o"></i>  +1 hours 1 minutes    <span class="action"><i aria-hidden="true" class="fa fa-envelope"></i> Email</span></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="cutoff" role="tabpanel" aria-labelledby="cutoff-tab">
+                    <form>
+                        <div class="form-group ">
+                            <label>Enter City for Timezone</label>
+                            <input type="text" class="form-control" placeholder="e.g Austin ,TX">
+                        </div>
+                        <div class="form-group timezone">
+                            <h2>Timezone: Australia/Brisbane</h2>
+
+                            <div class="form-group">
+                                <label>Cutoff Time AM (times shown in your time zone)</label>
+                                <select class="form-control">
+
+                                    <option>8:00</option>
+                                    <option>9:00</option>
+                                    <option>10:00</option>
+                                    <option>11:00</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Cutoff Time PM (times shown in your time zone)</label>
+                                <select class="form-control">
+
+                                    <option>17:00</option>
+                                    <option>18:00</option>
+                                    <option>19:00</option>
+                                    <option>20:00</option>
+                                </select>
+                            </div>
+
+
+                        </div>
+
+                        <div class="radio-box">
+                            <label>Do you want to send on weekends?</label>
+                            <div class="form-group cutom-check">
+                                <input type="radio" name="send" class="form-control">	<label class="custom-span">Yes</label>
+                            </div>
+                            <div class="form-group cutom-check">
+                                <input type="radio" name="send" class="form-control">	<label class="custom-span">No</label>
+                            </div>
+
+
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-theme" value="Submit">
+                        </div>
+
+                    </form>
+
+
+                </div>
+                <div class="tab-pane fade" id="notification" role="tabpanel" aria-labelledby="notification-tab">
+
+                    <form>
+
+                        <div class="radio-box form-group">
+                            <label>Send text responses from this campaign to cell phone?</label>
+                            <div class="form-group cutom-check">
+                                <input type="radio" name="responses" class="form-control">	<label class="custom-span">Yes</label>
+                            </div>
+                            <div class="form-group cutom-check">
+                                <input type="radio" name="responses" class="form-control">	<label class="custom-span">No</label>
+                            </div>
+
+                            <input type="text" class="form-control" placeholder="Insert Phone Number">
+                        </div>
+
+                        <div class="form-group ">
+                            <label>Send lead notifications to email</label>
+                            <input type="email" class="form-control" value="abc@gmail.com">
+                        </div>
+
+                        <div class="form-group ">
+                            <label>Advanced: Send data to a Zapier Webhook</label>
+                            <input type="text" class="form-control" placeholder="Paste webhook">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="tab-pane fade" id="copy" role="tabpanel" aria-labelledby="copy-tab">
+                    <form>
+
+                        <div class="copy-div">
+                            <div class="cop-left">
+                                <h4>Team members</h4>
+                                <img src="~/content/images/pics.png"> Healthcare Professional Chitvan
+
+                            </div>
+
+                            <div class="cop-left">
+                                <h4>Copy to these people:</h4>
+                                Please select at least one team member from the list to the left.
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                            </div>
+
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+	</div>
+
+<div aria-labelledby="edit-voicemail" role="dialog" tabindex="-1" id="edit-voicemail" class="modal fade modal-custom" style="display: none;" aria-hidden="true">
+    <div role="document" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="text-tab" data-toggle="tab" href="#text" role="tab" aria-controls="text" aria-selected="true">Voicemail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="timing-tab" data-toggle="tab" href="#timing" role="tab" aria-controls="timing" aria-selected="false">Timing</a>
+                    </li>
+
+                    <button class="btn btn-danger ">Delete</button>
+                </ul>
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="text" role="tabpanel" aria-labelledby="text-tab">
+
+                        <div class="voice-section">
+                            <div class="col-left">
+                                <div aria-orientation="vertical" role="tablist" id="v-pills-tab" class="nav flex-column nav-pills">
+                                    <a aria-selected="true" aria-controls="v-pills-home" role="tab" href="#v-pills-home" data-toggle="pill" id="v-pills-home-tab" class="nav-link active"><i class="fa fa-microphone" aria-hidden="true"></i> Record</a>
+                                    <a aria-selected="false" aria-controls="v-pills-profile" role="tab" href="#v-pills-profile" data-toggle="pill" id="v-pills-profile-tab" class="nav-link"><i class="fa fa-file-o" aria-hidden="true"></i> Existing</a>
+                                    <a aria-selected="false" aria-controls="v-pills-messages" role="tab" href="#v-pills-messages" data-toggle="pill" id="v-pills-messages-tab" class="nav-link"><i class="fa fa-upload" aria-hidden="true"></i> Upload</a>
+                                    <a aria-selected="false" aria-controls="v-pills-settings" role="tab" href="#v-pills-settings" data-toggle="pill" id="v-pills-settings-tab" class="nav-link"><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</a>
+                                </div>
+                            </div>
+
+                            <div class="col-right">
+                                <div id="v-pills-tabContent" class="tab-content">
+                                    <div aria-labelledby="v-pills-home-tab" role="tabpanel" id="v-pills-home" class="tab-pane fade show active">
+                                        <div class="inn-tab">
+                                            <p>Recording functionality is under repair.</p>
+                                            <p>Please record your voicemails using a separate utility such as <a href="https://online-voice-recorder.com/" target="_blank">Online Voice Recorder</a>, then upload the file (.mp3 or .wav format).</p>
+
+                                            <p>Apologies for the inconvenience.</p>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div aria-labelledby="v-pills-profile-tab" role="tabpanel" id="v-pills-profile" class="tab-pane fade">
+                                        <div class="inn-tab">
+
+                                            <form>
+                                                <div class="form-group">
+                                                    <label>Choose an option</label>
+                                                    <select class="form-control">
+                                                        <option>option1</option>
+                                                        <option>option2</option>
+                                                        <option>option3</option>
+                                                        <option>option4</option>
+                                                    </select>
+                                                </div>
+
+                                                <input type="submit" class="btn btn-primary btn-theme" value="Save">
+
+
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div aria-labelledby="v-pills-messages-tab" role="tabpanel" id="v-pills-messages" class="tab-pane fade">
+
+                                        <div class="inn-tab">
+                                            <form>
+                                                <div class="form-group ">
+                                                    <label>Name Your Voicemail</label>
+                                                    <input type="text" value="Write here..." class="form-control">
+                                                </div>
+
+                                                <div class="form-group ">
+                                                    <label>Click to upload a file</label>
+                                                    <span class="custom-file btn btn-secondry">
+                                                        <input type="file" onchange="readURL(this);">Upload file
+                                                    </span>
+                                                    <p><small>Upload a 30-60 second .mp3 or .wav file</small></p>
+                                                    <p><small>No spaces in the file name</small></p>
+                                                </div>
+
+                                                <input type="submit" class="btn btn-primary btn-theme" value="Upload">
+                                            </form>
+                                        </div>
+
+
+                                    </div>
+                                    <div aria-labelledby="v-pills-settings-tab" role="tabpanel" id="v-pills-settings" class="tab-pane fade">
+
+                                        <div class="inn-tab">
+
+                                            <form>
+                                                <div class="form-group">
+                                                    <label>Choose an file</label>
+                                                    <select class="form-control">
+                                                        <option>file1</option>
+                                                        <option>file2</option>
+                                                    </select>
+                                                </div>
+
+                                                <input type="submit" class="btn btn-primary btn-theme" value="Delete">
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="tab-pane fade" id="timing" role="tabpanel" aria-labelledby="timing-tab">
+                        <form>
+                            <div class="merge-full">
+                                <h2>Enter the time for SMS to send</h2>
+
+                                <p>SMS will be sent at:</p>
+                                <h4>9:00 AM</h4>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="edit-email" role="dialog" tabindex="-1" id="edit-email" class="modal fade modal-custom" style="display: none;" aria-hidden="true">
+    <div role="document" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="text-tab" data-toggle="tab" href="#text" role="tab" aria-controls="text" aria-selected="true">Email</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="timing-tab" data-toggle="tab" href="#timing" role="tab" aria-controls="timing" aria-selected="false">Timing</a>
+                    </li>
+
+                    <button class="btn btn-danger ">Delete</button>
+                </ul>
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="text" role="tabpanel" aria-labelledby="text-tab">
+                        <form>
+                            <div class="left-merege">
+                                <h4>Merge Tags</h4>
+                                <p>Copy and Paste into email subject or body</p>
+
+                                <h4>Prospect Info</h4>
+                                <p>{{firstName}}</p>
+
+                                <h4>User Info</h4>
+                                <p>{{MyName}}</p>
+                                <p>{{MyFirstName}}</p>
+                                <p>{{MyCampaignPhone}}</p>
+                                <p>{{MyFooter}}</p>
+
+                            </div>
+
+                            <div class="right-merge">
+                                <div class="form-group ">
+                                    <input type="text" class="form-control" placeholder="Hey">
+                                </div>
+                                <div class="form-group ">
+                                    <textarea class="form-control" placeholder="Hi again, {{firstName}}."></textarea>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="timing" role="tabpanel" aria-labelledby="timing-tab">
+                        <form>
+                            <div class="merge-full">
+                                <h2>Enter the time for SMS to send</h2>
+
+                                <p>SMS will be sent at:</p>
+                                <h4>9:00 AM</h4>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div aria-labelledby="edit-sms" role="dialog" tabindex="-1" id="edit-sms" class="modal fade modal-custom" style="display: none;" aria-hidden="true">
+    <div role="document" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+
+                    <li class="nav-item">
+                        <a class="nav-link active" id="test1-tab" data-toggle="tab" href="#text1" role="tab" aria-controls="home" aria-selected="true">Text</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="timing1-tab" data-toggle="tab" href="#timing-tab1" role="tab" aria-controls="profile" aria-selected="false">Timing</a>
+                    </li>
+
+
+
+                    <button class="btn btn-danger ">Delete</button>
+                </ul>
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="text1" role="tabpanel" aria-labelledby="test1-tab">
+                        <form>
+                            <div class="left-merege">
+                                <h4>Merge Tags</h4>
+                                <p>Copy and Paste into text body</p>
+
+                                <h4>Prospect Info</h4>
+                                <p>{{firstName}}</p>
+
+                                <h4>User Info</h4>
+                                <p>{{MyName}}</p>
+                                <p>{{MyFirstName}}</p>
+                                <p>{{MyCampaignPhone}}</p>
+
+                            </div>
+
+                            <div class="right-merge">
+                                <div class="form-group ">
+
+                                    <textarea class="form-control" placeholder="Hi again, {{firstName}}."></textarea>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="tab-pane fade" id="timing-tab1" role="tabpanel" aria-labelledby="timing1-tab">
+                        <form>
+                            <div class="merge-full">
+                                <h2>Enter the time for SMS to send</h2>
+
+                                <p>SMS will be sent at:</p>
+                                <h4>9:00 AM</h4>
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-primary btn-theme" value="Save">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div aria-labelledby="exampleModalLabel" role="dialog" tabindex="-1" id="prospectmodal" class="modal fade" style="display: none;" aria-hidden="true">
+    <div role="document" class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="exampleModalLabel" class="modal-title">Add Prospect</h5>
+                <button aria-label="Close" data-dismiss="modal" class="close" type="button">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group ">
+                        <label>Name</label>
+                        <input type="text" class="form-control" placeholder="Enter Name here">
+                    </div>
+                    <div class="form-group ">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="Enter Email here">
+                    </div>
+                    <div class="form-group ">
+                        <label>Phone Number</label>
+                        <input type="text" class="form-control" placeholder="Enter Phone Number here">
+                    </div>
+                    <div class="form-group">
+                        <label>Campaign</label>
+                        <select class="form-control">
+
+                            <option>Healthcare Professionals</option>
+                            <option>Healthcare Professionals</option>
+                            <option>Healthcare Professionals</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-primary btn-theme" value="Submit">
+                    </div>
+
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(".btn-camp .btn.btn-primary.btn-theme").click(function () {
+            $(this).siblings(".add-option").addClass("intro");
+        });
+        $(".cross-option").click(function () {
+            $(this).parent(".add-option").removeClass("intro");
+        });
+    });
+</script>
+

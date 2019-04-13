@@ -22,8 +22,8 @@ namespace ApniMaa.BLL.Models
         public string Phone { get; set; }
         public string OTP { get; set; }
         public string Password { get; set; }
-        public int City { get; set; }
-        public int Province { get; set; }
+        public int? City { get; set; }
+        public int? Province { get; set; }
         public string Address { get; set; }
         public string Longitute { get; set; }
         public string Latitute { get; set; }
@@ -80,8 +80,8 @@ namespace ApniMaa.BLL.Models
         public string Phone { get; set; }
         public string OTP { get; set; }
         public string Password { get; set; }
-        public int City { get; set; }
-        public int Province { get; set; }
+        public int? City { get; set; }
+        public int? Province { get; set; }
         public string Address { get; set; }
         public string Longitute { get; set; }
         public string Latitute { get; set; }

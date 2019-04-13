@@ -223,6 +223,7 @@ namespace ApniMaa.BLL.Managers
                     _user.Province = model.Province;
                     _user.OTP = UtilitiesHelp.GenerateOTP();
                     _user.Status = (int)UserStatuss.Registered;
+                    _user.CreatedOn = DateTime.Now;
                     Context.UserTbls.Add(_user);
                     Context.SaveChanges();
 

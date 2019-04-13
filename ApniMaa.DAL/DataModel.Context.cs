@@ -66,8 +66,8 @@ namespace ApniMaa.DAL
         public virtual DbSet<UserEnquiry> UserEnquiries { get; set; }
         public virtual DbSet<UserLoginSession> UserLoginSessions { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<UserTbl> UserTbls { get; set; }
         public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<Dish> Dishes { get; set; }
+        public virtual DbSet<UserTbl> UserTbls { get; set; }
     }
 }

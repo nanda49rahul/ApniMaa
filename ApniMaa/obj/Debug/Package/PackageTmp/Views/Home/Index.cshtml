@@ -1,0 +1,55 @@
+﻿@model LoginModal
+@{
+    ViewBag.Title = "Follow Up";
+}
+
+<div id="wrapper" class="wcmp-wrapper">
+    <div class="login_form">
+        <div class="form_row">
+            <form id="loginForm">
+                @Html.Partial("_FunctionCallMessage")
+                <h2>
+                    Login Now
+                    <i class="fas fa-level-down-alt"></i>
+                </h2>
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i>Username</label>
+                    @*<input class="form-control" name="username" placeholder="Username" type="text">*@
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "Enter email here*" })
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-unlock-alt"></i>Password</label>
+                    @*<input class="form-control" name="password" placeholder="Password" type="text">*@
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Enter password here*" })
+                    @Html.ValidationMessageFor(m => m.Password)
+                </div>
+
+                <div class="form-group checkbox">
+                    <label><input class="checkbox" type="checkbox"><span>Stay Signed In</span></label>
+                    <a href="#">Forgot Password?</a>
+
+                </div>
+
+                <div class="form-group btn_sign">
+                    @*<a href="welcome.html" class="btn_submit">Sign In</a>*@
+                    <button class="btn btn-primary" id="signInBtn" data-dismiss="modal" type="button">SIGN IN</button>
+                    <p class="hint-text"><a href="#">Forgot password...?</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section scripts{
+    <script src="~/Scripts/AdminScripts/login.js"></script>
+    <script type="text/javascript">
+        var siteUrls = {
+            loginUrl: "@Url.Action("Login", "Home", new { area = "Admin" })",
+            forgotPasswordUrl: "@Url.Action("ForgotPassword", "Home")",
+            dashboard: "@Url.Action("Dashboard", "Home", new { area = "Admin" })"
+        };
+    </script>
+}

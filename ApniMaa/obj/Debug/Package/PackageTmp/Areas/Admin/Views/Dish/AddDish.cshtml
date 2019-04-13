@@ -1,0 +1,78 @@
+﻿@model AddDishModel
+@{
+    ViewBag.Title = "Add Dish";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayOut.cshtml";
+}
+
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>Add Dish</h2>
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <form class="m-t" id="AddDishForm">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox ">
+                            <div class="ibox-content">
+                                <div class="filter col-md-12">
+                                    <label class="control-label">Category</label>
+                                    <div class="input-group">
+                                        @Html.DropDownListFor(x => x.CategoryId,Model.CategoryList,"--Select--", new { @class = "form-control filter-textbox input-sm" })
+                                    </div>
+                                    <div class="input-group validationError">
+                                        @Html.ValidationMessageFor(x => x.CategoryId)
+                                    </div>
+                                </div>
+
+                                <div class="filter col-md-12">
+                                    <label class="control-label">Name</label>
+                                    <div class="input-group">
+                                        @Html.TextBoxFor(x => x.Name, new { @class = "form-control filter-textbox input-sm" })
+                                    </div>
+                                    <div class="input-group validationError">
+                                        @Html.ValidationMessageFor(x => x.Name)
+                                    </div>
+                                </div>
+
+                                <div class="filter col-md-12">
+                                    <label class="control-label">Description</label>
+                                    <div class="input-group">
+                                        @Html.TextAreaFor(x => x.Description, new { @class = "form-control filter-textbox input-sm" })
+                                    </div>
+                                    <div class="input-group validationError">
+                                        @Html.ValidationMessageFor(x => x.Description)
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <br />
+                                    <div class=" col-md-6">
+                                        <div class="col-sm-offset-4 col-sm-8">
+                                            <input type="button" class="btn btn-primary" id="AddDishBtn" value="Submit" />
+                                            <a href="@Url.Action("ManageCategory", "Category", new { area = "Admin" })" class="btn btn-default">Cancel</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script src="~/Scripts/AdminScripts/Dish.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            App.init();
+        });
+    </script>
+}

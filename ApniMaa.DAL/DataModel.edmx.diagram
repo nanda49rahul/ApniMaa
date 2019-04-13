@@ -73,7 +73,11 @@
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_PaymentDetails_dbo_Orders_OrderId" ManuallyRouted="false" />
         <AssociationConnector Association="ApniMaaDBModel.FK_QueuedPushNotifications_ID" ManuallyRouted="false" />
         <AssociationConnector Association="ApniMaaDBModel.FK_UserLoginSessions_UserId_UserLoginSessions_UserId" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.UserTbl" Width="2.125" PointX="0.75" PointY="40.125" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Category" Width="1.5" PointX="10.375" PointY="1.125" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.Dish" Width="1.5" PointX="12.625" PointY="1" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" />
+        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserTbl" Width="1.5" PointX="0.75" PointY="40.125" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Cart_dbo_UserTbl_UserId" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Favourites_dbo__UserId" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishReviews_dbo_UserTbl_UserId" />
@@ -84,11 +88,7 @@
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserAddress_dbo_User_UserId" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserEnquiry_dbo_UserTbl_UserId" />
         <AssociationConnector Association="ApniMaaDBModel.FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.Category" Width="1.5" PointX="10.375" PointY="1.125" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.Dish" Width="1.5" PointX="12.625" PointY="1" />
-        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" />
-        <AssociationConnector Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" />
-      </Diagram>
+        </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
 </edmx:Edmx>

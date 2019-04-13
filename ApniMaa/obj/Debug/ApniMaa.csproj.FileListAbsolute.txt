@@ -154,6 +154,7 @@ F:\Freelance\apnimaa\ApniMaa\bin\ApniMaa.Globalization.pdb
 F:\Freelance\apnimaa\ApniMaa\obj\Debug\ApniMaa.csprojResolveAssemblyReference.cache
 F:\Freelance\apnimaa\ApniMaa\obj\Debug\ApniMaa.dll
 F:\Freelance\apnimaa\ApniMaa\obj\Debug\ApniMaa.pdb
+D:\Freelance_Projects\ApniMaa\ApniMaa\obj\Debug\ApniMaa.csprojResolveAssemblyReference.cache
 D:\Freelance_Projects\ApniMaa\ApniMaa\bin\ApniMaa.dll.config
 D:\Freelance_Projects\ApniMaa\ApniMaa\bin\ApniMaa.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa\bin\ApniMaa.pdb
@@ -229,6 +230,5 @@ D:\Freelance_Projects\ApniMaa\ApniMaa\bin\EntityFramework.SqlServer.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa\bin\Microsoft.AspNet.Identity.Core.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa\bin\Microsoft.AspNet.Identity.EntityFramework.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa\bin\ApniMaa.Globalization.pdb
-D:\Freelance_Projects\ApniMaa\ApniMaa\obj\Debug\ApniMaa.csprojResolveAssemblyReference.cache
 D:\Freelance_Projects\ApniMaa\ApniMaa\obj\Debug\ApniMaa.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa\obj\Debug\ApniMaa.pdb

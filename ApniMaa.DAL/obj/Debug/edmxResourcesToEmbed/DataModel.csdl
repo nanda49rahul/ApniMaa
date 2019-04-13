@@ -1081,6 +1081,16 @@
       <End Role="Users" EntitySet="Users" />
       <End Role="UserLoginSessions" EntitySet="UserLoginSessions" />
     </AssociationSet>
+    <EntitySet Name="Categories" EntityType="ApniMaaDBModel.Category" />
+    <EntitySet Name="Dishes" EntityType="ApniMaaDBModel.Dish" />
+    <AssociationSet Name="FK_dbo_Dishes_dbo_Category_CategoryId" Association="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Dish" EntitySet="Dishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId" Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
+      <End Role="Dish" EntitySet="Dishes" />
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+    </AssociationSet>
     <EntitySet Name="UserTbls" EntityType="ApniMaaDBModel.UserTbl" />
     <AssociationSet Name="FK_dbo_Cart_dbo_UserTbl_UserId" Association="ApniMaaDBModel.FK_dbo_Cart_dbo_UserTbl_UserId">
       <End Role="UserTbl" EntitySet="UserTbls" />
@@ -1122,33 +1132,75 @@
       <End Role="UserTbl" EntitySet="UserTbls" />
       <End Role="UserLoginSession" EntitySet="UserLoginSessions" />
     </AssociationSet>
-    <EntitySet Name="Categories" EntityType="ApniMaaDBModel.Category" />
-    <EntitySet Name="Dishes" EntityType="ApniMaaDBModel.Dish" />
-    <AssociationSet Name="FK_dbo_Dishes_dbo_Category_CategoryId" Association="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId">
-      <End Role="Category" EntitySet="Categories" />
-      <End Role="Dish" EntitySet="Dishes" />
-    </AssociationSet>
-    <AssociationSet Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId" Association="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
-      <End Role="Dish" EntitySet="Dishes" />
-      <End Role="MotherDish" EntitySet="MotherDishes" />
-    </AssociationSet>
   </EntityContainer>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Dishes" Relationship="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Category" ToRole="Dish" />
+  </EntityType>
+  <EntityType Name="Dish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Category" Relationship="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Dish" ToRole="Category" />
+    <NavigationProperty Name="MotherDishes" Relationship="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="Dish" ToRole="MotherDish" />
+  </EntityType>
+  <Association Name="FK_dbo_Dishes_dbo_Category_CategoryId">
+    <End Type="ApniMaaDBModel.Category" Role="Category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaDBModel.Dish" Role="Dish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dish">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
+    <End Type="ApniMaaDBModel.Dish" Role="Dish" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaDBModel.MotherDish" Role="MotherDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDish">
+        <PropertyRef Name="DishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityType Name="UserTbl">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="FirstName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="LastName" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Email" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Phone" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="OTP" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="Password" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
-    <Property Name="City" Type="Int32" Nullable="false" />
-    <Property Name="Province" Type="Int32" Nullable="false" />
-    <Property Name="Address" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Longitute" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="Latitute" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="Int32" />
+    <Property Name="Province" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Latitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="RoleId" Type="Int32" />
     <Property Name="Status" Type="Int32" Nullable="false" />
     <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
@@ -1298,58 +1350,6 @@
       </Principal>
       <Dependent Role="UserLoginSession">
         <PropertyRef Name="UserId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <EntityType Name="Category">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
-    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Dishes" Relationship="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Category" ToRole="Dish" />
-  </EntityType>
-  <EntityType Name="Dish">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="CategoryId" Type="Int32" Nullable="false" />
-    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
-    <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
-    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="Category" Relationship="ApniMaaDBModel.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Dish" ToRole="Category" />
-    <NavigationProperty Name="MotherDishes" Relationship="ApniMaaDBModel.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="Dish" ToRole="MotherDish" />
-  </EntityType>
-  <Association Name="FK_dbo_Dishes_dbo_Category_CategoryId">
-    <End Type="ApniMaaDBModel.Category" Role="Category" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Type="ApniMaaDBModel.Dish" Role="Dish" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Category">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="Dish">
-        <PropertyRef Name="CategoryId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
-    <End Type="ApniMaaDBModel.Dish" Role="Dish" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Type="ApniMaaDBModel.MotherDish" Role="MotherDish" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Dish">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="MotherDish">
-        <PropertyRef Name="DishId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

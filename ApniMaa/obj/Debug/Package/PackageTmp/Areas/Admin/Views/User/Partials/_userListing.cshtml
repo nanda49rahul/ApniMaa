@@ -1,0 +1,28 @@
+﻿@model PagingResult<UserModel>
+
+    @if (Model.List != null && Model.List.Count > 0)
+    {
+        foreach (var item in Model.List)
+        {
+            <tr class="odd gradeX">
+                <td>@item.FirstName</td>
+                <td> @item.LastName</td>
+                <td>
+                    @item.Email
+                </td>
+
+                @*<td class="center">@item.date.ToShortDateString()</td>*@
+                <td class="center">
+                <a class="btn btn-primary btn-xs" href="@Url.Action("UpdateUserDetails", "user", new { area = "Admin", userId = @item.UserID })" data-original-title="Edit" data-toggle="tooltip"><i class="fa fa-pencil"></i></a> 
+                    <a data-userid="@item.UserID" class="btn btn-danger btn-xs deleteUser" href="javascript:void(0);" data-original-title="Remove" data-toggle="tooltip"><i class="fa fa-times"></i></a></td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr class="odd gradeX">
+            <td colspan="4">No Record Found</td>
+        </tr>
+    }
+
+
