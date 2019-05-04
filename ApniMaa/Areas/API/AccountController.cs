@@ -39,7 +39,7 @@ namespace ApniMaa.Areas.API
             var result = _userManager.GenrateGuestId();
             if (result.Status == ActionStatus.Successfull)
             {
-                return CreateResponseSuccess(result.Message);
+                return CreateResponseSuccess(result.Message,result.Object);
             }
             else
             {
@@ -56,7 +56,7 @@ namespace ApniMaa.Areas.API
         {
             if (model == null)
                 throw new HttpResponseException(new HttpResponseMessage() { StatusCode = HttpStatusCode.Unauthorized, Content = new StringContent("Please provide the login credentials.") });
-            var result = _userManager.OTPLogin(model);
+            var result = _userManager.PhoneLogin(model);
             if(result.Status==ActionStatus.Successfull)
             {
                 return CreateResponseSuccess(result.Message);
@@ -106,7 +106,7 @@ namespace ApniMaa.Areas.API
                 });
 
             var result = _userManager.RegisterUser(model);
-            if (result != null)
+            if (result.Status == ActionStatus.Successfull)
             {
                 var token = CreateNewSession(result.Object.UserID);
                 result.Object.SessionId = Guid.Parse(token);
@@ -158,6 +158,7 @@ namespace ApniMaa.Areas.API
             return token;
         }
 
+        [SkipAuthorization]
         [System.Web.Http.HttpPost]
         public HttpResponseMessage UpdateUserProfile(UserModel model)
         {
@@ -174,7 +175,8 @@ namespace ApniMaa.Areas.API
             }
         }
 
-        [System.Web.Http.HttpPost]
+        [SkipAuthorization]
+        [System.Web.Http.HttpGet]
         public HttpResponseMessage GetUserProfile(int Id)
         {
 

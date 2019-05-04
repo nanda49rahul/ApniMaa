@@ -47,19 +47,25 @@ namespace ApniMaa.BLL.Managers
 
                 if (exists != null)
                 {
-                    //DEV
-                    const string accountSid = "ACa8fc7a52b4ee46f45cfc07c1cccf5137";
-                    const string authToken = "3c83a5093211b78584f34265691163dd";
+                    
                     //LIVE
                     //const string accountSid = "ACa8fc7a52b4ee46f45cfc07c1cccf5137";
                     //const string authToken = "3c83a5093211b78584f34265691163dd";
                     exists.OTP = UtilitiesHelp.GenerateOTP();
                     Context.SaveChanges();
+
+                    //DEV
+                    const string accountSid = "AC3d3a026d31db3d33865fbf53259a0000";
+                    const string authToken = "685ce72fc4d6b7c61d9804802de34c81";
+                    //LIVE
+                    //const string accountSid = "ACa8fc7a52b4ee46f45cfc07c1cccf5137";
+                    //const string authToken = "3c83a5093211b78584f34265691163dd";
+
                     TwilioClient.Init(accountSid, authToken);
 
                     var message = MessageResource.Create(
                         body: "OTP for ApniMaa app is ." + exists.OTP,
-                        from: new Twilio.Types.PhoneNumber("+12013717756"),
+                        from: new Twilio.Types.PhoneNumber("+12063374541"),
                         to: new Twilio.Types.PhoneNumber("+91" + exists.Phone)
                     );
                     res.Status = ActionStatus.Successfull;
@@ -228,8 +234,8 @@ namespace ApniMaa.BLL.Managers
                     Context.SaveChanges();
 
                     //DEV
-                    const string accountSid = "ACa8fc7a52b4ee46f45cfc07c1cccf5137";
-                    const string authToken = "3c83a5093211b78584f34265691163dd";
+                    const string accountSid = "AC3d3a026d31db3d33865fbf53259a0000";
+                    const string authToken = "685ce72fc4d6b7c61d9804802de34c81";
                     //LIVE
                     //const string accountSid = "ACa8fc7a52b4ee46f45cfc07c1cccf5137";
                     //const string authToken = "3c83a5093211b78584f34265691163dd";
@@ -238,7 +244,7 @@ namespace ApniMaa.BLL.Managers
 
                     var message = MessageResource.Create(
                         body: "OTP for ApniMaa app is ." + _user.OTP,
-                        from: new Twilio.Types.PhoneNumber("+12013717756"),
+                        from: new Twilio.Types.PhoneNumber("+12063374541"),
                         to: new Twilio.Types.PhoneNumber("+91" + _user.Phone)
                     );
                     res.Object = new UserModel(_user);
@@ -277,6 +283,8 @@ namespace ApniMaa.BLL.Managers
                             _mother.ApplicationNo = UtilitiesHelp.GenerateApplicationNo();
                             _mother.UserId = user.Id;
                             _mother.WalletAmount = 0;
+                            _mother.Commision = 0;
+                            _mother.Ratings = 0;
                             Context.MotherTbls.Add(_mother);
                             Context.SaveChanges();
                             res.Object = new UserModel(user);

@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class AdminUser
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public AdminUser()
         {
             this.UserAssignedModules = new HashSet<UserAssignedModule>();
@@ -39,6 +40,7 @@ namespace ApniMaa.DAL
         public string ForgotPassword { get; set; }
         public Nullable<bool> IsPermissonUpdated { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserAssignedModule> UserAssignedModules { get; set; }
     }
 }

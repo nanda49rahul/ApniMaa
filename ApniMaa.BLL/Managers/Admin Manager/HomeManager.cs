@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using ApniMaa.BLL.Models;
 using System.Linq.Dynamic;
 using ApniMaa.DAL;
- 
+
 using System.Dynamic;
 using System.IO;
 using ApniMaa.BLL.Common;
@@ -21,6 +21,7 @@ using PagedList;
 using ApniMaa.Services;
 using Twilio;
 using Twilio.Rest.Api.V2010.Account;
+using ApniMaa.BLL.Models.Admin_Models;
 
 namespace ApniMaa.BLL.Managers
 {
@@ -37,12 +38,13 @@ namespace ApniMaa.BLL.Managers
             this.emailProvider = emailProvider;
             
         }
-        ActionOutput<List<Category>> IHomeManager.GetCategoryList()
+        ActionOutput<List<CategoryListingModel>> IHomeManager.GetCategoryList()
         {
-            ActionOutput<List<Category>> res = new ActionOutput<List<Category>>();
+            ActionOutput<List<CategoryListingModel>> res = new ActionOutput<List<CategoryListingModel>>();
             try
             {
-                res.Object = Context.Categories.Where(p => p.IsDeleted == false).ToList();
+                var cat = Context.Categories.Where(p => p.IsDeleted == false).ToList();
+                res.Object = cat.Select(p => new CategoryListingModel(p)).ToList();
                 res.Message = "Categories fetched successfully";
                 res.Status = ActionStatus.Successfull;
             }
@@ -58,7 +60,15 @@ namespace ApniMaa.BLL.Managers
             ActionOutput<List<MotherDish>> res = new ActionOutput<List<MotherDish>>();
             try
             {
-                var data = (from m in Context.MotherTbls join u in Context.UserTbls on m.UserId equals (u.Id) where (u.Status == (int)UserStatuss.Verified || u.Status == (int)UserStatuss.Subscribed) && UtilitiesHelp.HaversineDistance(new LatLng(Convert.ToDouble(u.Latitute), Convert.ToDouble(u.Longitute)), new LatLng(Latitute, Longitute)) >= 5 select m).ToList();
+                var datas = (from m in Context.MotherTbls join u in Context.UserTbls on m.UserId equals (u.Id) where (u.Status == (int)UserStatuss.Approved || u.Status == (int)UserStatuss.Subscribed)  select new {m,u}).ToList();
+                var data = new List<MotherTbl>();
+                foreach (var item in datas)
+                {
+                    if(UtilitiesHelp.HaversineDistance(new LatLng(Convert.ToDouble(item.u.Latitute), Convert.ToDouble(item.u.Longitute)), new LatLng(Latitute, Longitute)) <= 5)
+                    {
+                        data.Add(item.m);
+                    }
+                }
                 var DaySchedule = Context.MotherDailySchedules.Where(p => p.Date == ReqDate).AsQueryable();
 
                 if (AvailabiltyTypes == (int)AvailibiltyType.Dinner)
@@ -137,7 +147,15 @@ namespace ApniMaa.BLL.Managers
             ActionOutput<List<MotherModel>> res = new ActionOutput<List<MotherModel>>();
             try
             {
-                var data = (from m in Context.MotherTbls join u in Context.UserTbls on m.UserId equals (u.Id) where (u.Status == (int)UserStatuss.Verified || u.Status == (int)UserStatuss.Subscribed) && UtilitiesHelp.HaversineDistance(new LatLng(Convert.ToDouble(u.Latitute),Convert.ToDouble(u.Longitute)), new LatLng(Latitute,Longitute)) >= 5 select m).ToList();
+                var datas = (from m in Context.MotherTbls join u in Context.UserTbls on m.UserId equals (u.Id) where (u.Status == (int)UserStatuss.Approved || u.Status == (int)UserStatuss.Subscribed) select new { m, u}).ToList();
+                var data = new List<MotherTbl>();
+                foreach (var item in datas)
+                {
+                    if (UtilitiesHelp.HaversineDistance(new LatLng(Convert.ToDouble(item.u.Latitute), Convert.ToDouble(item.u.Longitute)), new LatLng(Latitute, Longitute)) <= 5)
+                    {
+                        data.Add(item.m);
+                    }
+                }
                 var DaySchedule = Context.MotherDailySchedules.Where(p => p.Date == ReqDate).AsQueryable();
                
                 if(AvailabiltyTypes==(int)AvailibiltyType.Dinner)
@@ -217,7 +235,15 @@ namespace ApniMaa.BLL.Managers
             ActionOutput<List<MotherDish>> res = new ActionOutput<List<MotherDish>>();
             try
             {
-                var data = (from m in Context.MotherTbls join u in Context.UserTbls on m.UserId equals (u.Id) where (u.Status == (int)UserStatuss.Verified || u.Status == (int)UserStatuss.Subscribed) && UtilitiesHelp.HaversineDistance(new LatLng(Convert.ToDouble(u.Latitute), Convert.ToDouble(u.Longitute)), new LatLng(Latitute, Longitute)) >= 5 select m).ToList();
+                var datas = (from m in Context.MotherTbls join u in Context.UserTbls on m.UserId equals (u.Id) where (u.Status == (int)UserStatuss.Approved || u.Status == (int)UserStatuss.Subscribed)  select new { m, u }).ToList();
+                var data = new List<MotherTbl>();
+                foreach (var item in datas)
+                {
+                    if (UtilitiesHelp.HaversineDistance(new LatLng(Convert.ToDouble(item.u.Latitute), Convert.ToDouble(item.u.Longitute)), new LatLng(Latitute, Longitute)) <= 5)
+                    {
+                        data.Add(item.m);
+                    }
+                }
                 var DaySchedule = Context.MotherDailySchedules.Where(p => p.Date == ReqDate).AsQueryable();
 
                 if (AvailabiltyTypes == (int)AvailibiltyType.Dinner)

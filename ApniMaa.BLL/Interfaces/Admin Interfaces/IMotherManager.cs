@@ -13,7 +13,7 @@ namespace ApniMaa.BLL.Interfaces
     {
         ActionOutput<List<MotherQuestion>> GetMotherQuestions();
         ActionOutput SaveMotherAnswers(List<MotherAnswer> model);
-        ActionOutput<MotherModel> UpdateMotherProfile(MotherModel model);
+        ActionOutput<MotherListingModel> UpdateMotherProfile(MotherModel model);
         ActionOutput<MotherModel> GetMotherProfile(int Id);
         ActionOutput<MotherScheduleModel> GetMotherDailySchedule(int Id);
         ActionOutput UpdateMotherDailySchedule(MotherScheduleModel model);

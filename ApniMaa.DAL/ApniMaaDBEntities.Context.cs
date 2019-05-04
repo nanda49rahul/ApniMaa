@@ -28,10 +28,12 @@ namespace ApniMaa.DAL
         public virtual DbSet<Achievement> Achievements { get; set; }
         public virtual DbSet<AdminUser> AdminUsers { get; set; }
         public virtual DbSet<Cart> Carts { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
         public virtual DbSet<City> Cities { get; set; }
         public virtual DbSet<CMSPage> CMSPages { get; set; }
         public virtual DbSet<Country> Countries { get; set; }
         public virtual DbSet<Coupon> Coupons { get; set; }
+        public virtual DbSet<Dish> Dishes { get; set; }
         public virtual DbSet<EmailTemplate> EmailTemplates { get; set; }
         public virtual DbSet<ErrorLog> ErrorLogs { get; set; }
         public virtual DbSet<Favourite> Favourites { get; set; }
@@ -52,7 +54,6 @@ namespace ApniMaa.DAL
         public virtual DbSet<MotherOrderDetail> MotherOrderDetails { get; set; }
         public virtual DbSet<MotherQuestion> MotherQuestions { get; set; }
         public virtual DbSet<MotherStatement> MotherStatements { get; set; }
-        public virtual DbSet<MotherTbl> MotherTbls { get; set; }
         public virtual DbSet<Notificationss> Notificationsses { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
         public virtual DbSet<OTP> OTPs { get; set; }
@@ -64,10 +65,9 @@ namespace ApniMaa.DAL
         public virtual DbSet<UserAddressTbl> UserAddressTbls { get; set; }
         public virtual DbSet<UserAssignedModule> UserAssignedModules { get; set; }
         public virtual DbSet<UserEnquiry> UserEnquiries { get; set; }
-        public virtual DbSet<UserLoginSession> UserLoginSessions { get; set; }
         public virtual DbSet<User> Users { get; set; }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Dish> Dishes { get; set; }
         public virtual DbSet<UserTbl> UserTbls { get; set; }
+        public virtual DbSet<UserLoginSession> UserLoginSessions { get; set; }
+        public virtual DbSet<MotherTbl> MotherTbls { get; set; }
     }
 }

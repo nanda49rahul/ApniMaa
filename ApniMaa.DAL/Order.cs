@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class Order
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Order()
         {
             this.MortherOrders = new HashSet<MortherOrder>();
@@ -33,8 +34,10 @@ namespace ApniMaa.DAL
         public decimal DiscountAmount { get; set; }
     
         public virtual Guest Guest { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MortherOrder> MortherOrders { get; set; }
-        public virtual ICollection<PaymentDetail> PaymentDetails { get; set; }
         public virtual UserTbl UserTbl { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PaymentDetail> PaymentDetails { get; set; }
     }
 }

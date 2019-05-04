@@ -26,7 +26,6 @@ namespace ApniMaa.DAL
         public Nullable<int> DeviceType { get; set; }
         public string TokenVOIP { get; set; }
     
-        public virtual User User { get; set; }
         public virtual UserTbl UserTbl { get; set; }
     }
 }

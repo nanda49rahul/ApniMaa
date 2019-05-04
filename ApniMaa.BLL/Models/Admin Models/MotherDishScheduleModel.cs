@@ -21,6 +21,7 @@ namespace ApniMaa.BLL.Models
         public int Type { get; set; }
         public bool Availabilty { get; set; }
 
+        public int UserId { get; set; }
         public MotherDish motherdish { get; set; }
       
         public MotherDishScheduleModel() { }
@@ -36,5 +37,8 @@ namespace ApniMaa.BLL.Models
         }
     }
 
-
+    public class MotherDishScheduleListModel
+    {
+        public List<MotherDishScheduleModel> list { get; set; }
+    }
 }

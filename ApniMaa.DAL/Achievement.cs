@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class Achievement
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Achievement()
         {
             this.UserAchievements = new HashSet<UserAchievement>();
@@ -23,6 +24,7 @@ namespace ApniMaa.DAL
         public string Title { get; set; }
         public int Points { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserAchievement> UserAchievements { get; set; }
     }
 }

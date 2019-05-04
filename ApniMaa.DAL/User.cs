@@ -14,10 +14,10 @@ namespace ApniMaa.DAL
     
     public partial class User
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
             this.QueuedPushNotifications = new HashSet<QueuedPushNotification>();
-            this.UserLoginSessions = new HashSet<UserLoginSession>();
         }
     
         public int UserID { get; set; }
@@ -32,7 +32,7 @@ namespace ApniMaa.DAL
         public bool IsDeleted { get; set; }
         public Nullable<System.DateTime> DeletedOn { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<QueuedPushNotification> QueuedPushNotifications { get; set; }
-        public virtual ICollection<UserLoginSession> UserLoginSessions { get; set; }
     }
 }

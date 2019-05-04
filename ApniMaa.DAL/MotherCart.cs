@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class MotherCart
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MotherCart()
         {
             this.MotherCartDetails = new HashSet<MotherCartDetail>();
@@ -30,7 +31,8 @@ namespace ApniMaa.DAL
         public int OrderStatus { get; set; }
     
         public virtual Cart Cart { get; set; }
-        public virtual MotherTbl MotherTbl { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MotherCartDetail> MotherCartDetails { get; set; }
+        public virtual MotherTbl MotherTbl { get; set; }
     }
 }

@@ -15,6 +15,7 @@ using System.Web;
 using System.Web.Http;
 using System.Linq;
 using System.Web.Mvc;
+using ApniMaa.DAL;
 
 namespace ApniMaa.Areas.API
 {
@@ -39,7 +40,7 @@ namespace ApniMaa.Areas.API
             if (result.Status == ActionStatus.Successfull)
             {
                 
-                return new JsonContent(result.Message, Status.Success, new { user = result.Object }).ConvertToHttpResponseOK();
+                return new JsonContent(result.Message, Status.Success,  result.Object ).ConvertToHttpResponseOK();
             }
             else
             {
@@ -47,22 +48,23 @@ namespace ApniMaa.Areas.API
             }
         }
 
-        //[System.Web.Http.HttpPost]
-        //public HttpResponseMessage SaveMotherAnswers(List<MotherAnswer> model)
-        //{
+        [System.Web.Http.HttpPost]
+        public HttpResponseMessage SaveMotherAnswers(MotherAnswerList model)
+        {
 
-        //    var result = _motherManager.SaveMotherAnswers(model);
-        //    if (result.Status == ActionStatus.Successfull)
-        //    {
+            var result = _motherManager.SaveMotherAnswers(model.list);
+            if (result.Status == ActionStatus.Successfull)
+            {
 
-        //        return new JsonContent(result.Message, Status.Success).ConvertToHttpResponseOK();
-        //    }
-        //    else
-        //    {
-        //        return new JsonContent(result.Message, Status.Failed).ConvertToHttpResponseOK();
-        //    }
-        //}
+                return new JsonContent(result.Message, Status.Success).ConvertToHttpResponseOK();
+            }
+            else
+            {
+                return new JsonContent(result.Message, Status.Failed).ConvertToHttpResponseOK();
+            }
+        }
 
+        [SkipAuthorization]
         [System.Web.Http.HttpPost]
         public HttpResponseMessage UpdateMotherProfile(MotherModel model)
         {
@@ -128,10 +130,10 @@ namespace ApniMaa.Areas.API
         }
 
         [System.Web.Http.HttpPost]
-        public HttpResponseMessage UpdateMotherDishDailySchedule(List<MotherDishScheduleModel> model)
+        public HttpResponseMessage UpdateMotherDishDailySchedule(MotherDishScheduleListModel model)
         {
 
-            var result = _motherManager.UpdateMotherDishDailySchedule(model);
+            var result = _motherManager.UpdateMotherDishDailySchedule(model.list);
             if (result.Status == ActionStatus.Successfull)
             {
 

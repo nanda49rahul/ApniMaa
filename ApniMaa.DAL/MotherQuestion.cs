@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class MotherQuestion
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MotherQuestion()
         {
             this.MotherAnswers = new HashSet<MotherAnswer>();
@@ -25,6 +26,7 @@ namespace ApniMaa.DAL
         public bool IsDeleted { get; set; }
         public System.DateTime CreatedOn { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MotherAnswer> MotherAnswers { get; set; }
     }
 }
