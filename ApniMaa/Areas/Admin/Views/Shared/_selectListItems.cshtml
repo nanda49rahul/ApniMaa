@@ -1,0 +1,11 @@
+﻿@model List<SelectListItem>
+
+@if (Model.Where(x => x.Selected == true).Any() == false)
+{
+    <option selected value="">--Select--</option>
+}
+@foreach (var item in Model)
+{
+    <option @(Model.Count()==1 ? "Selected" : "") value="@item.Value" >@item.Text</option>
+}
+

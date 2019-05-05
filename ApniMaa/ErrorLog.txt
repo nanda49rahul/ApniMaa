@@ -1625,3 +1625,333 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
 
 
+No property or field 'CreatedOn' exists in type 'Order'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedOn' exists in type 'Order'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedOn' exists in type 'Order'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedOn' exists in type 'Order'
+http://jsonformat.com/
+
+
+
+No property or field 'CreatedOn' exists in type 'Order'
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The partial view '_AddNewDishPartial' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/user/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.ascx
+~/Views/user/_AddNewDishPartial.aspx
+~/Views/user/_AddNewDishPartial.ascx
+~/Views/Shared/_AddNewDishPartial.aspx
+~/Views/Shared/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/user/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/user/_AddNewDishPartial.vbhtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.vbhtml
+~/Views/user/_AddNewDishPartial.cshtml
+~/Views/user/_AddNewDishPartial.vbhtml
+~/Views/Shared/_AddNewDishPartial.cshtml
+~/Views/Shared/_AddNewDishPartial.vbhtml
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult UpdateUserDetails(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The partial view '_AddNewDishPartial' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/user/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.ascx
+~/Views/user/_AddNewDishPartial.aspx
+~/Views/user/_AddNewDishPartial.ascx
+~/Views/Shared/_AddNewDishPartial.aspx
+~/Views/Shared/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/user/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/user/_AddNewDishPartial.vbhtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.vbhtml
+~/Views/user/_AddNewDishPartial.cshtml
+~/Views/user/_AddNewDishPartial.vbhtml
+~/Views/Shared/_AddNewDishPartial.cshtml
+~/Views/Shared/_AddNewDishPartial.vbhtml
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The partial view '_AddNewDishPartial' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/user/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.ascx
+~/Views/user/_AddNewDishPartial.aspx
+~/Views/user/_AddNewDishPartial.ascx
+~/Views/Shared/_AddNewDishPartial.aspx
+~/Views/Shared/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/user/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/user/_AddNewDishPartial.vbhtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.vbhtml
+~/Views/user/_AddNewDishPartial.cshtml
+~/Views/user/_AddNewDishPartial.vbhtml
+~/Views/Shared/_AddNewDishPartial.cshtml
+~/Views/Shared/_AddNewDishPartial.vbhtml
+http://jsonformat.com/
+
+
+
+The parameters dictionary contains a null entry for parameter 'UserId' of non-nullable type 'System.Int32' for method 'System.Web.Mvc.ActionResult UpdateUserDetails(Int32)' in 'ApniMaa.Areas.Admin.Controllers.UserController'. An optional parameter must be a reference type, a nullable type, or be declared as an optional parameter.
+Parameter name: parameters
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+The partial view '_AddNewDishPartial' was not found or no view engine supports the searched locations. The following locations were searched:
+~/Areas/Admin/Views/user/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/user/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.aspx
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.ascx
+~/Views/user/_AddNewDishPartial.aspx
+~/Views/user/_AddNewDishPartial.ascx
+~/Views/Shared/_AddNewDishPartial.aspx
+~/Views/Shared/_AddNewDishPartial.ascx
+~/Areas/Admin/Views/user/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/user/_AddNewDishPartial.vbhtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.cshtml
+~/Areas/Admin/Views/Shared/_AddNewDishPartial.vbhtml
+~/Views/user/_AddNewDishPartial.cshtml
+~/Views/user/_AddNewDishPartial.vbhtml
+~/Views/Shared/_AddNewDishPartial.cshtml
+~/Views/Shared/_AddNewDishPartial.vbhtml
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml(55): error CS1061: 'ApniMaa.BLL.Models.AddDishForMotherModel' does not contain a definition for 'CategoryList' and no extension method 'CategoryList' accepting a first argument of type 'ApniMaa.BLL.Models.AddDishForMotherModel' could be found (are you missing a using directive or an assembly reference?)
+http://jsonformat.com/
+
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ApniMaa.Areas.API.CartController.RemoveDishFromCart(Int32 ID) in d:\Freelance_Projects\ApniMaa\ApniMaa\Areas\API\CartController.cs:line 42
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+
+

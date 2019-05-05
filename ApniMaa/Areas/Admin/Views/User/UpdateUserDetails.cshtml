@@ -68,6 +68,8 @@
                         {
                             <div class="ibox-content">
                                 @{Html.RenderAction("_AddDishPartial", "User");}
+                                
+                                @Html.Partial("Partials/_AddNewDishPartial", new AddDishModel())
 
                                 @if (Model.RoleId == (int)UserRoleTypes.Mother)
                                 {

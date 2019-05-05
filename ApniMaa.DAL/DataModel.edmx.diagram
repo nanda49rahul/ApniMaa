@@ -20,18 +20,18 @@
         <EntityTypeShape EntityType="ApniMaaDBModel.Module" Width="1.5" PointX="8.75" PointY="8.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MortherOrder" Width="1.5" PointX="5.25" PointY="36.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherAnswer" Width="1.5" PointX="8.25" PointY="39.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherBankDetail" Width="1.5" PointX="5.25" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherBankDetail" Width="2.375" PointX="5.25" PointY="41.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherCart" Width="1.5" PointX="11.25" PointY="35.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherCartDetail" Width="1.5" PointX="13.5" PointY="36.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherCartDetail" Width="2.125" PointX="13.5" PointY="36.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherCoupon" Width="1.5" PointX="8.25" PointY="36.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDailySchedule" Width="1.5" PointX="5.25" PointY="47.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDailySchedule" Width="2.25" PointX="5.25" PointY="47.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherDish" Width="1.5" PointX="8.25" PointY="42.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDishDailySchedule" Width="1.5" PointX="10.5" PointY="43.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDishReview" Width="1.5" PointX="6" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDishDailySchedule" Width="2.25" PointX="10.5" PointY="43.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherDishReview" Width="2.125" PointX="6" PointY="26.5" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherGallery" Width="1.5" PointX="5.25" PointY="55.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherOrderDetail" Width="1.5" PointX="13.5" PointY="40.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherOrderDetail" Width="2.25" PointX="13.5" PointY="40.375" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherQuestion" Width="1.5" PointX="6" PointY="19.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.MotherStatement" Width="1.5" PointX="5.25" PointY="58.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.MotherStatement" Width="2.375" PointX="5.25" PointY="58.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.MotherTbl" Width="1.5" PointX="3" PointY="37.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.Notificationss" Width="1.5" PointX="3" PointY="31.875" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.Order" Width="1.5" PointX="9" PointY="31" IsExpanded="true" />
@@ -40,7 +40,7 @@
         <EntityTypeShape EntityType="ApniMaaDBModel.Province" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.PushNotificationsMessageLog" Width="1.5" PointX="9.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.QueuedPushNotification" Width="1.5" PointX="9" PointY="21.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="ApniMaaDBModel.UserAchievement" Width="1.5" PointX="3" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ApniMaaDBModel.UserAchievement" Width="2.25" PointX="3" PointY="28.875" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.UserAddressTbl" Width="1.5" PointX="3" PointY="54.25" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.UserAssignedModule" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
         <EntityTypeShape EntityType="ApniMaaDBModel.UserEnquiry" Width="1.5" PointX="3" PointY="57.75" IsExpanded="true" />

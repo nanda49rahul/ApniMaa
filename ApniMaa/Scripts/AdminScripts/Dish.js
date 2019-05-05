@@ -3,6 +3,7 @@
     $("#AddDishBtn").on("click", function () {
         return Dish.AddDish($(this));
     });
+
     $("#updateDish").on("click", function () {
         return Dish.UpdateDish($(this));
     });

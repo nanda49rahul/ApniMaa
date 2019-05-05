@@ -65,6 +65,13 @@
                 </ul>
             </li>
 
+            <li class="@(ViewBag.SelectedTab == SelectedAdminTab.Order ? "active" : "")">
+                <a href="#"><i class="fa fa-user"></i> <span class="nav-label">Manage Orders</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="/Admin/Order/ManageOrders">Order</a></li>
+                </ul>
+            </li>
+
 
             @*<li>
                 <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning float-right">16/24</span></a>

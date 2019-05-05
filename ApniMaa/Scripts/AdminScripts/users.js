@@ -8,6 +8,11 @@
         return Users.UpdateUser($(this));
     });
 
+    $("#AddDishBtn").on("click", function () {
+        debugger;
+        return Users.AddDish($(this));
+    });
+
     $(document).on("click", ".deleteUser", function () {
         return Users.DeleteUser($(this));
     });
@@ -58,6 +63,7 @@ var Users = {
             Paging();
         }
     },
+
     AddUser: function (sender) {
         $.ajaxExt({
             url: baseUrl + '/Admin/User/AddUserDetails',
@@ -81,6 +87,36 @@ var Users = {
         });
      
     },
+
+    AddDish: function (sender) {
+        GetUpdatedDishList();
+        $.ajaxExt({
+            url: baseUrl + '/Dish/AddDish',
+            type: 'POST',
+            validate: true,
+            showErrorMessage: true,
+            messageControl: $('div.messageAlert'),
+            formToValidate: $("#AddDishForm"),
+            formToPost: $("#AddDishForm"),
+            isAjaxForm: true,
+            showThrobber: true,
+            button: $(sender),
+            throbberPosition: { my: "left center", at: "right center", of: $(sender) },
+            success: function (results, message) {
+                $.ShowMessage($('div.messageAlert'), message, MessageType.Success);
+                $('#AddDishForm #CategoryId').val('');
+                $('#AddDishForm #Name').val('');
+                $('#AddDishForm #Description').val('');
+
+                //setTimeout(function () {
+                //    window.location.href = '/Admin/Dish/ManageDish';
+                //}, 1500);
+
+            }
+        });
+
+    },
+
     UpdateUser: function (sender) {
        
         $.ajaxExt({
@@ -237,4 +273,40 @@ function GetDishAddedByAdmin(id) {
 
         }
     });
+}
+
+function GetUpdatedDishList() {
+    //$('#MotherDishListing tbody').html('<td colspan="2"><center><img src="/Content/images/loader.GIF" style="margin-top:50px;" /></center><td>');
+    $.ajaxExt({
+        type: "POST",
+        validate: false,
+        messageControl: null,
+        showThrobber: false,
+        url: baseUrl + '/Admin/User/GetUpdatedDishList',
+        data: {},
+        success: function (results) {
+            debugger;
+
+        }
+    });
+}
+
+function GetUpdatedDishList() {
+    $.ajaxExt({
+        type: "POST",
+        validate: false,
+        data: {},
+        messageControl: null,
+        showThrobber: false,
+        //throbberPosition: { my: "left center", at: "right center", of: sender, offset: "5 0" },
+        url: baseUrl + '/Admin/User/GetUpdatedDishList',
+        success: function (results, message) {
+            debugger;
+            $('#AddDishForMotherForm #DishId').html(results[0]);
+
+
+        }
+    });
+
+
 }

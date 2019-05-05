@@ -216,10 +216,12 @@
     <Compile Include="Areas\Admin\Controllers\CMSController.cs" />
     <Compile Include="Areas\Admin\Controllers\EmailTemplateController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Admin\Controllers\OrderController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserController.cs" />
     <Compile Include="Areas\API\AccountController.cs" />
     <Compile Include="Areas\API\aAccountController==.cs" />
     <Compile Include="Areas\API\BaseAPIController.cs" />
+    <Compile Include="Areas\API\CartController.cs" />
     <Compile Include="Areas\API\HomeController.cs" />
     <Compile Include="Areas\API\MotherController.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
@@ -3775,6 +3777,16 @@
     <Content Include="Areas\Admin\Views\User\UpdateUserDetails.cshtml" />
     <Content Include="Areas\Admin\Views\User\Partials\_AddDishPartial.cshtml" />
     <Content Include="Areas\Admin\Views\User\Partials\_MotherDishListing.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\AddUser.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\ManageOrders.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Partials\_AddDishPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Partials\_MotherDishListing.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Partials\_SearchFilter.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\Partials\_orderListing.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\ResetPassword.cshtml" />
+    <Content Include="Areas\Admin\Views\Order\UpdateUserDetails.cshtml" />
+    <Content Include="Areas\Admin\Views\User\Partials\_AddNewDishPartial.cshtml" />
+    <Content Include="Areas\Admin\Views\Shared\_selectListItems.cshtml" />
     <None Include="Areas\Admin\Views\web.config====" />
     <Content Include="Areas\Admin\Views\Shared\_AdminLayOut.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_beforeLoginAdminLayout.cshtml" />
@@ -4233,7 +4245,9 @@
     <Content Include="Scripts\UserDefinedScripts\paging.js" />
     <Content Include="Scripts\UserDefinedScripts\requiredIf.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -4267,6 +4281,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\API\Views\Cart\" />
     <Folder Include="Content\themes\ckeditor.new\plugins\NewFolder1\" />
     <Folder Include="Content\themes\ckeditor\plugins\NewFolder1\" />
     <Folder Include="Content\themes\jquery.upload\server\node\public\files\thumbnail\" />

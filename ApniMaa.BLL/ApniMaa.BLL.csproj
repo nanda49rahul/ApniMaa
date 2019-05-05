@@ -165,7 +165,9 @@
     <Compile Include="Interfaces\Admin Interfaces\IDishManager.cs" />
     <Compile Include="Interfaces\Admin Interfaces\IHomeManager.cs" />
     <Compile Include="Interfaces\Admin Interfaces\IMotherManager.cs" />
+    <Compile Include="Interfaces\Admin Interfaces\IOrderManager.cs" />
     <Compile Include="Interfaces\Admin Interfaces\IUserManager.cs" />
+    <Compile Include="Interfaces\Api Interfaces\ICartManager.cs" />
     <Compile Include="Interfaces\Common Interfaces\IEmailProvider.cs" />
     <Compile Include="Interfaces\Common Interfaces\ISelectListManager.cs" />
     <Compile Include="Interfaces\ICMSManager.cs" />
@@ -176,7 +178,9 @@
     <Compile Include="Managers\Admin Manager\DishManager.cs" />
     <Compile Include="Managers\Admin Manager\HomeManager.cs" />
     <Compile Include="Managers\Admin Manager\MotherManager.cs" />
+    <Compile Include="Managers\Admin Manager\OrderManager .cs" />
     <Compile Include="Managers\Admin Manager\UserManager.cs" />
+    <Compile Include="Managers\Api Manager\CartManager.cs" />
     <Compile Include="Managers\ApiPagingResult.cs" />
     <Compile Include="Managers\BaseManager.cs" />
     <Compile Include="Managers\CMSManager.cs" />
@@ -222,6 +226,7 @@
     <Compile Include="Models\Admin Models\SectionReportModel.cs" />
     <Compile Include="Models\Admin Models\TransactionDetailsModel.cs" />
     <Compile Include="Models\Admin Models\TypeModel.cs" />
+    <Compile Include="Models\Admin Models\OrderModels.cs" />
     <Compile Include="Models\Admin Models\UserModel.cs" />
     <Compile Include="Models\Admin Models\VehicleDetailsModel.cs" />
     <Compile Include="Models\Admin Models\VINResponseModel.cs" />
@@ -236,6 +241,7 @@
     <Compile Include="Models\Modules.cs" />
     <Compile Include="Models\ProspectModels.cs" />
     <Compile Include="Models\RatingMatrixModel.cs" />
+    <Compile Include="Models\WebApi\CartModels.cs" />
     <Compile Include="Models\WebApi\ApiUserModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

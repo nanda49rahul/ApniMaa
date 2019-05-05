@@ -175,7 +175,7 @@ namespace ApniMaa.Attributes
                 var baseController = (BaseAPIController)actionContext.ControllerContext.Controller;
                 var skipAuthorization = actionContext.ActionDescriptor.GetCustomAttributes<SkipAuthorization>().Any();
                 var skipAuthentication = actionContext.ActionDescriptor.GetCustomAttributes<SkipAuthentication>().Any();
-                var sessionToken = actionContext.Request.Headers.Any(m => m.Key == "SessionId") ? actionContext.Request.Headers.GetValues("SessionId").FirstOrDefault() : null;
+                var sessionToken = actionContext.Request.Headers.Any(m => m.Key == " ") ? actionContext.Request.Headers.GetValues("SessionId").FirstOrDefault() : null;
                 var UniqueDeviceId = actionContext.Request.Headers.Any(m => m.Key == "UniqueDeviceId") ? actionContext.Request.Headers.GetValues("UniqueDeviceId").FirstOrDefault() : null;
 
 

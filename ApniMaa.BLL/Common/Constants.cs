@@ -21,6 +21,7 @@ namespace ApniMaa.BLL.Models
         public const string Category = "Category";
         public const string Dashboard = "Dashboard";
         public const string Dish = "Dish";
+        public const string Order = "Order";
         public const string CMSManager = "CMSManager";
         public const string Templates = "Templates";
       

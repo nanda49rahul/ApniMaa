@@ -73,6 +73,20 @@ namespace ApniMaa.Areas.Admin.Controllers
         }
 
         [HttpPost, AjaxOnly, Public]
+        public JsonResult GetUpdatedDishList()
+        {
+            var result = _SelectListManager.GetDishList();
+            List<string> resultString = new List<string>();
+            resultString.Add(RenderRazorViewToString("_selectListItems", result));
+
+            return Json(new ActionOutput
+            {
+                Status = ActionStatus.Successfull,
+                Results = resultString,
+            }, JsonRequestBehavior.AllowGet);
+        }
+
+        [HttpPost, AjaxOnly, Public]
         public JsonResult UpdateUserDetails(UserDetailModel model)
         {
             var result = _userManager.UpdateUserDetails(model);
