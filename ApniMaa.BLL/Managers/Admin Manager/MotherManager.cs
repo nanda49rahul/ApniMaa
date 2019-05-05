@@ -81,10 +81,10 @@ namespace ApniMaa.BLL.Managers
             return res;
         }
 
-        ActionOutput<MotherModel> IMotherManager.UpdateMotherProfile(MotherModel model)
+        ActionOutput<MotherListingModel> IMotherManager.UpdateMotherProfile(MotherModel model)
         {
-            ActionOutput<MotherModel> res = new ActionOutput<MotherModel>();
-            MotherModel resModel = new MotherModel();
+            ActionOutput<MotherListingModel> res = new ActionOutput<MotherListingModel>();
+            MotherListingModel resModel = new MotherListingModel();
             try
             {
                 var existss = Context.UserTbls.Where(p => p.Id == model.user.Id).FirstOrDefault();
@@ -98,7 +98,7 @@ namespace ApniMaa.BLL.Managers
                     existss.City = model.user.City;
                     existss.Email = model.user.Email;
                     existss.FirstName = model.user.FirstName;
-                    resModel.user = existss;
+                    resModel.user = new UserModel(existss);
                      var exists = Context.MotherTbls.Where(p => p.Id == model.mother.Id).FirstOrDefault();
                     if (exists != null)
                     {
@@ -111,10 +111,11 @@ namespace ApniMaa.BLL.Managers
                         exists.LOfflineTime = model.mother.LOfflineTime;
                         exists.ProfilePhoto = model.mother.ProfilePhoto;
                         exists.Ratings = (model.mother.Ratings != null) ? model.mother.Ratings : 0;
-                        resModel.mother = exists;
+                        resModel.mother = new MotherListModel(exists);
                         var dishes = Context.MotherDishes.Where(p => p.MotherId == exists.Id).ToList();
                         if (dishes != null)
                         {
+                            var dellist = new List<MotherDish>();
                             foreach (var item in dishes)
                             {
                                 int counter = 0;
@@ -123,7 +124,7 @@ namespace ApniMaa.BLL.Managers
                                     if (mitem.DishId == item.DishId)
                                     {
                                         counter = 1;
-                                        model.dish.Remove(mitem);
+                                        dellist.Add(mitem);
                                     }
                                 }
                                 if (counter == 0)
@@ -132,6 +133,11 @@ namespace ApniMaa.BLL.Managers
                                 }
 
                             }
+                            foreach (var itemsss in dellist)
+                            {
+                                model.dish.Remove(itemsss);
+                            }
+                           
                             Context.SaveChanges();
                             List<MotherDish> _list = new List<MotherDish>();
                             foreach (var item in model.dish)
@@ -170,7 +176,7 @@ namespace ApniMaa.BLL.Managers
                             Context.MotherDishes.AddRange(_list);
                             Context.SaveChanges();
                         }
-                        resModel.dish = model.dish;
+                        resModel.dish = model.dish.Select(p=>new MotherDishModel(p)).ToList();
                         res.Status = ActionStatus.Successfull;
                         res.Message = "Mother Details updated successfully.";
                         res.Object = resModel;
@@ -321,6 +327,7 @@ namespace ApniMaa.BLL.Managers
             }
             return res;
         }
+       
         ActionOutput IMotherManager.UpdateMotherDailySchedule(MotherScheduleModel model)
         {
             ActionOutput res = new ActionOutput();
@@ -391,10 +398,13 @@ namespace ApniMaa.BLL.Managers
                             list.Add(mdds);
 
                         }
-                        Context.MotherDishDailySchedules.AddRange(list);
-                        Context.SaveChanges();
-                        var listt = (from p in Context.MotherDishDailySchedules join m in Context.MotherDishes on p.MotherDishId equals (m.Id) join mo in Context.MotherTbls on m.MotherId equals (mo.Id) where mo.UserId == Id && p.Date == DateTime.Now select new MotherDishScheduleModel(p)).ToList();
-                        res.Object = listt;
+                        if (list.Count != 0)
+                        {
+                            Context.MotherDishDailySchedules.AddRange(list);
+                            Context.SaveChanges();
+                        }
+                        var listt = (from p in Context.MotherDishDailySchedules join m in Context.MotherDishes on p.MotherDishId equals (m.Id) join mo in Context.MotherTbls on m.MotherId equals (mo.Id) where mo.UserId == Id && p.Date == DateTime.Now select p).ToList();
+                        res.Object = listt.Select(p=>new MotherDishScheduleModel(p)).ToList();
                         res.Status = ActionStatus.Successfull;
                         res.Message = "Mother's Daily Dish Scheduled fetched Successfully.";
                     }
@@ -418,15 +428,18 @@ namespace ApniMaa.BLL.Managers
             }
             return res;
         }
+
+        
         ActionOutput IMotherManager.UpdateMotherDishDailySchedule(List<MotherDishScheduleModel> model)
         {
             ActionOutput res = new ActionOutput();
             try
             {
-                var dishsch = (from p in Context.MotherDishDailySchedules join m in Context.MotherDishes on p.MotherDishId equals (m.Id) join mo in Context.MotherTbls on m.MotherId equals (mo.Id) where mo.UserId == model.FirstOrDefault().motherdish.MotherTbl.UserId && p.Date == DateTime.Now select p).ToList();
+                int UserId = model.FirstOrDefault().UserId;
+                var dishsch = (from p in Context.MotherDishDailySchedules join m in Context.MotherDishes on p.MotherDishId equals (m.Id) join mo in Context.MotherTbls on m.MotherId equals (mo.Id) where mo.UserId == UserId && p.Date == DateTime.Now select p).ToList();
                 if (dishsch.Count <= 0)
                 {
-                    var MotherDetails = Context.MotherTbls.Where(p => p.UserId == model.FirstOrDefault().motherdish.MotherTbl.UserId).FirstOrDefault();
+                    var MotherDetails = Context.MotherTbls.Where(p => p.UserId == UserId).FirstOrDefault();
                     if (MotherDetails != null)
                     {
                         List<MotherDishDailySchedule> list = new List<MotherDishDailySchedule>();

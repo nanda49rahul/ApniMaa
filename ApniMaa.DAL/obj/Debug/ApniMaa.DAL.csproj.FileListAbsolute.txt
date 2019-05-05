@@ -18,6 +18,16 @@ F:\Freelance\apnimaa\ApniMaa.DAL\bin\Debug\EntityFramework.SqlServer.xml
 F:\Freelance\apnimaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.csprojResolveAssemblyReference.cache
 F:\Freelance\apnimaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.dll
 F:\Freelance\apnimaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.pdb
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\ApniMaa.DAL.dll.config
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\ApniMaa.DAL.dll
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\ApniMaa.DAL.pdb
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.dll
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.SqlServer.dll
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.xml
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.SqlServer.xml
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.csprojResolveAssemblyReference.cache
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.dll
+F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.pdb
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\ApniMaa.DAL.dll.config
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\ApniMaa.DAL.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\ApniMaa.DAL.pdb
@@ -25,6 +35,6 @@ D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.SqlServer.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.xml
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.csprojResolveAssemblyReference.cache
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.dll
 D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.pdb
-D:\Freelance_Projects\ApniMaa\ApniMaa.DAL\obj\Debug\ApniMaa.DAL.csprojResolveAssemblyReference.cache

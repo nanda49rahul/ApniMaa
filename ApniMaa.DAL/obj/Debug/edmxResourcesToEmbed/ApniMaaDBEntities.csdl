@@ -1,0 +1,1338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ApniMaaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Achievement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserAchievements" Relationship="Self.FK_dbo_UserAchievements_dbo__AchievementId" FromRole="Achievements" ToRole="UserAchievements" />
+  </EntityType>
+  <EntityType Name="AdminUser">
+    <Key>
+      <PropertyRef Name="AdminUserId" />
+    </Key>
+    <Property Name="AdminUserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="IsSuperAdmin" Type="Boolean" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <Property Name="Token" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ForgotPassword" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="IsPermissonUpdated" Type="Boolean" />
+    <NavigationProperty Name="UserAssignedModules" Relationship="Self.FK__UserAssig__Admin__4CA06362" FromRole="AdminUsers" ToRole="UserAssignedModules" />
+  </EntityType>
+  <EntityType Name="Cart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="GuestId" Type="Int32" />
+    <Property Name="Subtotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Tax" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Packing" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <Property Name="CouponId" Type="Int32" />
+    <Property Name="DiscountAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Guest" Relationship="Self.FK_dbo_Cart_dbo_Guests_GuestId" FromRole="Cart" ToRole="Guest" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_Cart_dbo_UserTbl_UserId" FromRole="Cart" ToRole="UserTbl" />
+    <NavigationProperty Name="MotherCarts" Relationship="Self.FK_dbo_MotherCart_dbo_Orders_OrderId" FromRole="Cart" ToRole="MotherCart" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Dishes" Relationship="Self.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Category" ToRole="Dishes" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProvinceId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastModified" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Province" Relationship="Self.FK_dbo_City_dbo_Province_ProvinceId" FromRole="City" ToRole="Province" />
+  </EntityType>
+  <EntityType Name="CMSPage">
+    <Key>
+      <PropertyRef Name="PageId" />
+    </Key>
+    <Property Name="PageId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PageName" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PageTitle" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+    <Property Name="PageContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MetaTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="MetaKeywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="MetaDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryID" />
+    </Key>
+    <Property Name="CountryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CountryName" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="CountryShortCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Coupon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="1" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Discount" Type="Int32" Nullable="false" />
+    <Property Name="CouponType" Type="Int32" Nullable="false" />
+    <Property Name="MinOrderValue" Type="Int32" Nullable="false" />
+    <Property Name="IsAvailableForAll" Type="Boolean" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Enddate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="AvailType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MotherCoupons" Relationship="Self.FK_dbo_MotherCoupons_dbo_Coupons_CouponId" FromRole="Coupons" ToRole="MotherCoupons" />
+  </EntityType>
+  <EntityType Name="Dish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryId" Type="Int32" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="70" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_dbo_Dishes_dbo_Category_CategoryId" FromRole="Dishes" ToRole="Category" />
+    <NavigationProperty Name="MotherDishes" Relationship="Self.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="Dishes" ToRole="MotherDish" />
+  </EntityType>
+  <EntityType Name="EmailTemplate">
+    <Key>
+      <PropertyRef Name="TemplateId" />
+    </Key>
+    <Property Name="TemplateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TemplateName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmailSubject" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="TemplateContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TemplateStatus" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UpdatedOn" Type="DateTime" Precision="3" />
+    <Property Name="TemplateType" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ErrorLog">
+    <Key>
+      <PropertyRef Name="ErrorLogID" />
+    </Key>
+    <Property Name="ErrorLogID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Message" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="StackTrace" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="InnerException" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LoggedInDetails" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="QueryData" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="FormData" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="RouteData" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="LoggedAt" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Favourite">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_Favourites_dbo__UserId" FromRole="Favourites" ToRole="UserTbl" />
+  </EntityType>
+  <EntityType Name="Guest">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="City" Type="Int32" />
+    <Property Name="Province" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Latitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK_dbo_Cart_dbo_Guests_GuestId" FromRole="Guest" ToRole="Cart" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_dbo_Orders_dbo_Guests_GuestId" FromRole="Guest" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Level">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Points" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Module">
+    <Key>
+      <PropertyRef Name="ModuleId" />
+    </Key>
+    <Property Name="ModuleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ModuleName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="ControllerName" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsAdmin" Type="Boolean" />
+    <Property Name="IsSubUser" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MortherOrder">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="Subtotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Tax" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Packing" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MotherOrderDetails" Relationship="Self.FK_dbo_MotherOrderDetails_dbo_Orders_MotherOrderId" FromRole="MortherOrders" ToRole="MotherOrderDetails" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_dbo_MotherOrders_dbo_Orders_OrderId" FromRole="MortherOrders" ToRole="Orders" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherOrders_dbo_MotherTbl_MotherId" FromRole="MortherOrder" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherAnswer">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="QuestionId" Type="Int32" Nullable="false" />
+    <Property Name="Answer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="MotherQuestion" Relationship="Self.FK_dbo_MotherAnswers_dbo_MotherQuestions_QuestionId" FromRole="MotherAnswers" ToRole="MotherQuestions" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherAnswers_dbo_Mother_MotherId" FromRole="MotherAnswer" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherBankDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="AccountNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="BankName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AccountHolderName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IFSC_Code" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherBankDetails_dbo_Mother_MotherId" FromRole="MotherBankDetail" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherCart">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="CartId" Type="Int32" Nullable="false" />
+    <Property Name="Subtotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Tax" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Packing" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Cart" Relationship="Self.FK_dbo_MotherCart_dbo_Orders_OrderId" FromRole="MotherCart" ToRole="Cart" />
+    <NavigationProperty Name="MotherCartDetails" Relationship="Self.FK_dbo_MotherCartDetails_dbo_MotherCart_MothercartId" FromRole="MotherCart" ToRole="MotherCartDetails" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherCart_dbo_MotherTbl_MotherId" FromRole="MotherCart" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherCartDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherCartId" Type="Int32" Nullable="false" />
+    <Property Name="MotherDishId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MotherCart" Relationship="Self.FK_dbo_MotherCartDetails_dbo_MotherCart_MothercartId" FromRole="MotherCartDetails" ToRole="MotherCart" />
+    <NavigationProperty Name="MotherDish" Relationship="Self.FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId" FromRole="MotherCartDetails" ToRole="MotherDish" />
+  </EntityType>
+  <EntityType Name="MotherCoupon">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="CouponId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Coupon" Relationship="Self.FK_dbo_MotherCoupons_dbo_Coupons_CouponId" FromRole="MotherCoupons" ToRole="Coupons" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherCoupons_dbo_MotherTbl_MotherId" FromRole="MotherCoupon" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherDailySchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Availabilty" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_Favourites_dbo__MotherId" FromRole="MotherDailySchedule" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherDish">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="DishId" Type="Int32" Nullable="false" />
+    <Property Name="Limit" Type="Int32" Nullable="false" />
+    <Property Name="Price" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="IsMainDish" Type="Boolean" Nullable="false" />
+    <Property Name="IsSignatureDish" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Dish" Relationship="Self.FK_dbo_MotherDishes_dbo_DishesTbl_DishId" FromRole="MotherDish" ToRole="Dishes" />
+    <NavigationProperty Name="MotherCartDetails" Relationship="Self.FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId" FromRole="MotherDish" ToRole="MotherCartDetails" />
+    <NavigationProperty Name="MotherDishDailySchedules" Relationship="Self.FK_dbo_MotherDish_dbo__MotherDishId" FromRole="MotherDish" ToRole="MotherDishDailySchedule" />
+    <NavigationProperty Name="MotherDishReviews" Relationship="Self.FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId" FromRole="MotherDish" ToRole="MotherDishReviews" />
+    <NavigationProperty Name="MotherOrderDetails" Relationship="Self.FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId" FromRole="MotherDish" ToRole="MotherOrderDetails" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherDishes_dbo_MotherTbl_MotherId" FromRole="MotherDish" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherDishDailySchedule">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherDishId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="Type" Type="Int32" Nullable="false" />
+    <Property Name="Availabilty" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="MotherDish" Relationship="Self.FK_dbo_MotherDish_dbo__MotherDishId" FromRole="MotherDishDailySchedule" ToRole="MotherDish" />
+  </EntityType>
+  <EntityType Name="MotherDishReview">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherDishId" Type="Int32" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Review" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image1" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image2" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image3" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="MotherDish" Relationship="Self.FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId" FromRole="MotherDishReviews" ToRole="MotherDish" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_MotherDishReviews_dbo_UserTbl_UserId" FromRole="MotherDishReviews" ToRole="UserTbl" />
+  </EntityType>
+  <EntityType Name="MotherGallery">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="Caption" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Image" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherGallery_dbo_MotherTbl_MotherId" FromRole="MotherGallery" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="MotherOrderDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherOrderId" Type="Int32" Nullable="false" />
+    <Property Name="MotherDishId" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="MortherOrder" Relationship="Self.FK_dbo_MotherOrderDetails_dbo_Orders_MotherOrderId" FromRole="MotherOrderDetails" ToRole="MortherOrders" />
+    <NavigationProperty Name="MotherDish" Relationship="Self.FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId" FromRole="MotherOrderDetails" ToRole="MotherDish" />
+  </EntityType>
+  <EntityType Name="MotherQuestion">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Question" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Answertype" Type="Boolean" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="MotherAnswers" Relationship="Self.FK_dbo_MotherAnswers_dbo_MotherQuestions_QuestionId" FromRole="MotherQuestions" ToRole="MotherAnswers" />
+  </EntityType>
+  <EntityType Name="MotherStatement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MotherId" Type="Int32" Nullable="false" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="TransactionNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AmountReceived" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Remarks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="MotherTbl" Relationship="ApniMaaModel.FK_dbo_MotherStatement_dbo_MotherTbl_MotherId" FromRole="MotherStatement" ToRole="MotherTbl" />
+  </EntityType>
+  <EntityType Name="Notificationss">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NotificationType" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_Notifications_dbo_UserTbl_UserId" FromRole="Notificationss" ToRole="UserTbl" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" />
+    <Property Name="GuestId" Type="Int32" />
+    <Property Name="Subtotal" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Tax" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Packing" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Delivery" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="Total" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="OrderStatus" Type="Int32" Nullable="false" />
+    <Property Name="CouponId" Type="Int32" />
+    <Property Name="DiscountAmount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <NavigationProperty Name="Guest" Relationship="Self.FK_dbo_Orders_dbo_Guests_GuestId" FromRole="Orders" ToRole="Guest" />
+    <NavigationProperty Name="MortherOrders" Relationship="Self.FK_dbo_MotherOrders_dbo_Orders_OrderId" FromRole="Orders" ToRole="MortherOrders" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_Orders_dbo_UserTbl_UserId" FromRole="Orders" ToRole="UserTbl" />
+    <NavigationProperty Name="PaymentDetails" Relationship="Self.FK_dbo_PaymentDetails_dbo_Orders_OrderId" FromRole="Orders" ToRole="PaymentDetails" />
+  </EntityType>
+  <EntityType Name="OTP">
+    <Key>
+      <PropertyRef Name="OTPId" />
+    </Key>
+    <Property Name="OTPId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="OTPCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="PaymentDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="OrderId" Type="Int32" Nullable="false" />
+    <Property Name="TransactionId" Type="Int32" Nullable="false" />
+    <Property Name="Mode" Type="Int32" Nullable="false" />
+    <Property Name="InvoiceNo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="InvoiceLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Order" Relationship="Self.FK_dbo_PaymentDetails_dbo_Orders_OrderId" FromRole="PaymentDetails" ToRole="Orders" />
+  </EntityType>
+  <EntityType Name="Province">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="lastModified" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Cities" Relationship="Self.FK_dbo_City_dbo_Province_ProvinceId" FromRole="Province" ToRole="City" />
+  </EntityType>
+  <EntityType Name="PushNotificationsMessageLog">
+    <Key>
+      <PropertyRef Name="PushNotificationsMessageLogsId" />
+    </Key>
+    <Property Name="PushNotificationsMessageLogsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DeviceToken" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DeviceType" Type="Int32" Nullable="false" />
+    <Property Name="DeviceID" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="DateProcessed" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="FKReceiverUserId" Type="Int32" />
+    <Property Name="FKQueuedPushNotificationsId" Type="Int32" />
+    <Property Name="ErrorMessage" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="JsonData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QueuedPushNotification">
+    <Key>
+      <PropertyRef Name="QueuedPushNotificationsId" />
+    </Key>
+    <Property Name="QueuedPushNotificationsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NotificationType" Type="Int32" Nullable="false" />
+    <Property Name="Message" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Badge" Type="Int32" Nullable="false" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="DateCreated" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateProcessed" Type="DateTime" Precision="3" />
+    <Property Name="JsonData" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FKSenderUserId" Type="Int32" />
+    <Property Name="FKReceiverUserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="Self.FK_QueuedPushNotifications_ID" FromRole="QueuedPushNotifications" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="UserAchievement">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="AchievementId" Type="Int32" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Achievement" Relationship="Self.FK_dbo_UserAchievements_dbo__AchievementId" FromRole="UserAchievements" ToRole="Achievements" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_UserAchievements_dbo__UserId" FromRole="UserAchievements" ToRole="UserTbl" />
+  </EntityType>
+  <EntityType Name="UserAddressTbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="City" Type="Int32" Nullable="false" />
+    <Property Name="Province" Type="Int32" Nullable="false" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Longitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Latitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="NickName" Type="Int32" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_UserAddress_dbo_User_UserId" FromRole="UserAddressTbl" ToRole="UserTbl" />
+  </EntityType>
+  <EntityType Name="UserAssignedModule">
+    <Key>
+      <PropertyRef Name="UserAssignedModuleId" />
+    </Key>
+    <Property Name="UserAssignedModuleId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AdminUserID" Type="Int32" />
+    <Property Name="ModuleId" Type="Int32" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreatedBy" Type="Int32" />
+    <Property Name="UpdatedDate" Type="DateTime" Precision="0" />
+    <Property Name="UpdatedBy" Type="Int32" />
+    <Property Name="IsDeleted" Type="Boolean" />
+    <NavigationProperty Name="AdminUser" Relationship="Self.FK__UserAssig__Admin__4CA06362" FromRole="UserAssignedModules" ToRole="AdminUsers" />
+  </EntityType>
+  <EntityType Name="UserEnquiry">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Reply" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IsReplied" Type="Boolean" Nullable="false" />
+    <Property Name="IsResolved" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="UserTbl" Relationship="Self.FK_dbo_UserEnquiry_dbo_UserTbl_UserId" FromRole="UserEnquiry" ToRole="UserTbl" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="UserType" Type="Int32" Nullable="false" />
+    <Property Name="LastLogin" Type="DateTime" Precision="3" />
+    <Property Name="LastLogout" Type="DateTime" Precision="3" />
+    <Property Name="CreatedAt" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsDeleted" Type="Boolean" Nullable="false" />
+    <Property Name="DeletedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="QueuedPushNotifications" Relationship="Self.FK_QueuedPushNotifications_ID" FromRole="Users" ToRole="QueuedPushNotifications" />
+  </EntityType>
+  <EntityType Name="UserTbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="OTP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="City" Type="Int32" />
+    <Property Name="Province" Type="Int32" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Longitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Latitute" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="RoleId" Type="Int32" />
+    <Property Name="Status" Type="Int32" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Carts" Relationship="Self.FK_dbo_Cart_dbo_UserTbl_UserId" FromRole="UserTbl" ToRole="Cart" />
+    <NavigationProperty Name="Favourites" Relationship="Self.FK_dbo_Favourites_dbo__UserId" FromRole="UserTbl" ToRole="Favourites" />
+    <NavigationProperty Name="MotherDishReviews" Relationship="Self.FK_dbo_MotherDishReviews_dbo_UserTbl_UserId" FromRole="UserTbl" ToRole="MotherDishReviews" />
+    <NavigationProperty Name="Notificationsses" Relationship="Self.FK_dbo_Notifications_dbo_UserTbl_UserId" FromRole="UserTbl" ToRole="Notificationss" />
+    <NavigationProperty Name="Orders" Relationship="Self.FK_dbo_Orders_dbo_UserTbl_UserId" FromRole="UserTbl" ToRole="Orders" />
+    <NavigationProperty Name="UserAchievements" Relationship="Self.FK_dbo_UserAchievements_dbo__UserId" FromRole="UserTbl" ToRole="UserAchievements" />
+    <NavigationProperty Name="UserAddressTbls" Relationship="Self.FK_dbo_UserAddress_dbo_User_UserId" FromRole="UserTbl" ToRole="UserAddressTbl" />
+    <NavigationProperty Name="UserEnquiries" Relationship="Self.FK_dbo_UserEnquiry_dbo_UserTbl_UserId" FromRole="UserTbl" ToRole="UserEnquiry" />
+    <NavigationProperty Name="UserLoginSessions" Relationship="ApniMaaModel.FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId" FromRole="UserTbl" ToRole="UserLoginSession" />
+    <NavigationProperty Name="MotherTbls" Relationship="ApniMaaModel.FK_dbo_MotherTbl_dbo_User_UserId" FromRole="UserTbl" ToRole="MotherTbl" />
+  </EntityType>
+  <Association Name="FK_dbo_UserAchievements_dbo__AchievementId">
+    <End Role="Achievements" Type="Self.Achievement" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserAchievements" Type="Self.UserAchievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Achievements">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserAchievements">
+        <PropertyRef Name="AchievementId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__UserAssig__Admin__4CA06362">
+    <End Role="AdminUsers" Type="Self.AdminUser" Multiplicity="0..1" />
+    <End Role="UserAssignedModules" Type="Self.UserAssignedModule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AdminUsers">
+        <PropertyRef Name="AdminUserId" />
+      </Principal>
+      <Dependent Role="UserAssignedModules">
+        <PropertyRef Name="AdminUserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Cart_dbo_Guests_GuestId">
+    <End Role="Guest" Type="Self.Guest" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Guest">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="GuestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Cart_dbo_UserTbl_UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Cart" Type="Self.Cart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Cart">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherCart_dbo_Orders_OrderId">
+    <End Role="Cart" Type="Self.Cart" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherCart" Type="Self.MotherCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherCart">
+        <PropertyRef Name="CartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Dishes_dbo_Category_CategoryId">
+    <End Role="Category" Type="Self.Category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Dishes" Type="Self.Dish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Dishes">
+        <PropertyRef Name="CategoryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_City_dbo_Province_ProvinceId">
+    <End Role="Province" Type="Self.Province" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Province">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="ProvinceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherCoupons_dbo_Coupons_CouponId">
+    <End Role="Coupons" Type="Self.Coupon" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherCoupons" Type="Self.MotherCoupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Coupons">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherCoupons">
+        <PropertyRef Name="CouponId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
+    <End Role="Dishes" Type="Self.Dish" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherDish" Type="Self.MotherDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Dishes">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDish">
+        <PropertyRef Name="DishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Favourites_dbo__UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Favourites" Type="Self.Favourite" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Favourites">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_Guests_GuestId">
+    <End Role="Guest" Type="Self.Guest" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Guest">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="GuestId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherOrderDetails_dbo_Orders_MotherOrderId">
+    <End Role="MortherOrders" Type="Self.MortherOrder" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherOrderDetails" Type="Self.MotherOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MortherOrders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherOrderDetails">
+        <PropertyRef Name="MotherOrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherOrders_dbo_Orders_OrderId">
+    <End Role="Orders" Type="Self.Order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MortherOrders" Type="Self.MortherOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MortherOrders">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherAnswers_dbo_MotherQuestions_QuestionId">
+    <End Role="MotherQuestions" Type="Self.MotherQuestion" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherAnswers" Type="Self.MotherAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherQuestions">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherAnswers">
+        <PropertyRef Name="QuestionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherCartDetails_dbo_MotherCart_MothercartId">
+    <End Role="MotherCart" Type="Self.MotherCart" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherCartDetails" Type="Self.MotherCartDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherCart">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherCartDetails">
+        <PropertyRef Name="MotherCartId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId">
+    <End Role="MotherDish" Type="Self.MotherDish" Multiplicity="1" />
+    <End Role="MotherCartDetails" Type="Self.MotherCartDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherDish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherCartDetails">
+        <PropertyRef Name="MotherDishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDish_dbo__MotherDishId">
+    <End Role="MotherDish" Type="Self.MotherDish" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherDishDailySchedule" Type="Self.MotherDishDailySchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherDish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDishDailySchedule">
+        <PropertyRef Name="MotherDishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId">
+    <End Role="MotherDish" Type="Self.MotherDish" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="MotherDishReviews" Type="Self.MotherDishReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherDish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDishReviews">
+        <PropertyRef Name="MotherDishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId">
+    <End Role="MotherDish" Type="Self.MotherDish" Multiplicity="1" />
+    <End Role="MotherOrderDetails" Type="Self.MotherOrderDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherDish">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherOrderDetails">
+        <PropertyRef Name="MotherDishId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDishReviews_dbo_UserTbl_UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="1" />
+    <End Role="MotherDishReviews" Type="Self.MotherDishReview" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDishReviews">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Notifications_dbo_UserTbl_UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Notificationss" Type="Self.Notificationss" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Notificationss">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Orders_dbo_UserTbl_UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Orders" Type="Self.Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Orders">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_PaymentDetails_dbo_Orders_OrderId">
+    <End Role="Orders" Type="Self.Order" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="PaymentDetails" Type="Self.PaymentDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Orders">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PaymentDetails">
+        <PropertyRef Name="OrderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_QueuedPushNotifications_ID">
+    <End Role="Users" Type="Self.User" Multiplicity="1" />
+    <End Role="QueuedPushNotifications" Type="Self.QueuedPushNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="QueuedPushNotifications">
+        <PropertyRef Name="FKReceiverUserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_UserAchievements_dbo__UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserAchievements" Type="Self.UserAchievement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserAchievements">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_UserAddress_dbo_User_UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserAddressTbl" Type="Self.UserAddressTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserAddressTbl">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_UserEnquiry_dbo_UserTbl_UserId">
+    <End Role="UserTbl" Type="Self.UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="UserEnquiry" Type="Self.UserEnquiry" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserEnquiry">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ApniMaaDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Achievements" EntityType="Self.Achievement" />
+    <EntitySet Name="AdminUsers" EntityType="Self.AdminUser" />
+    <EntitySet Name="Carts" EntityType="Self.Cart" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="CMSPages" EntityType="Self.CMSPage" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Coupons" EntityType="Self.Coupon" />
+    <EntitySet Name="Dishes" EntityType="Self.Dish" />
+    <EntitySet Name="EmailTemplates" EntityType="Self.EmailTemplate" />
+    <EntitySet Name="ErrorLogs" EntityType="Self.ErrorLog" />
+    <EntitySet Name="Favourites" EntityType="Self.Favourite" />
+    <EntitySet Name="Guests" EntityType="Self.Guest" />
+    <EntitySet Name="Levels" EntityType="Self.Level" />
+    <EntitySet Name="Modules" EntityType="Self.Module" />
+    <EntitySet Name="MortherOrders" EntityType="Self.MortherOrder" />
+    <EntitySet Name="MotherAnswers" EntityType="Self.MotherAnswer" />
+    <EntitySet Name="MotherBankDetails" EntityType="Self.MotherBankDetail" />
+    <EntitySet Name="MotherCarts" EntityType="Self.MotherCart" />
+    <EntitySet Name="MotherCartDetails" EntityType="Self.MotherCartDetail" />
+    <EntitySet Name="MotherCoupons" EntityType="Self.MotherCoupon" />
+    <EntitySet Name="MotherDailySchedules" EntityType="Self.MotherDailySchedule" />
+    <EntitySet Name="MotherDishes" EntityType="Self.MotherDish" />
+    <EntitySet Name="MotherDishDailySchedules" EntityType="Self.MotherDishDailySchedule" />
+    <EntitySet Name="MotherDishReviews" EntityType="Self.MotherDishReview" />
+    <EntitySet Name="MotherGalleries" EntityType="Self.MotherGallery" />
+    <EntitySet Name="MotherOrderDetails" EntityType="Self.MotherOrderDetail" />
+    <EntitySet Name="MotherQuestions" EntityType="Self.MotherQuestion" />
+    <EntitySet Name="MotherStatements" EntityType="Self.MotherStatement" />
+    <EntitySet Name="Notificationsses" EntityType="Self.Notificationss" />
+    <EntitySet Name="Orders" EntityType="Self.Order" />
+    <EntitySet Name="OTPs" EntityType="Self.OTP" />
+    <EntitySet Name="PaymentDetails" EntityType="Self.PaymentDetail" />
+    <EntitySet Name="Provinces" EntityType="Self.Province" />
+    <EntitySet Name="PushNotificationsMessageLogs" EntityType="Self.PushNotificationsMessageLog" />
+    <EntitySet Name="QueuedPushNotifications" EntityType="Self.QueuedPushNotification" />
+    <EntitySet Name="UserAchievements" EntityType="Self.UserAchievement" />
+    <EntitySet Name="UserAddressTbls" EntityType="Self.UserAddressTbl" />
+    <EntitySet Name="UserAssignedModules" EntityType="Self.UserAssignedModule" />
+    <EntitySet Name="UserEnquiries" EntityType="Self.UserEnquiry" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserTbls" EntityType="Self.UserTbl" />
+    <AssociationSet Name="FK_dbo_UserAchievements_dbo__AchievementId" Association="Self.FK_dbo_UserAchievements_dbo__AchievementId">
+      <End Role="Achievements" EntitySet="Achievements" />
+      <End Role="UserAchievements" EntitySet="UserAchievements" />
+    </AssociationSet>
+    <AssociationSet Name="FK__UserAssig__Admin__4CA06362" Association="Self.FK__UserAssig__Admin__4CA06362">
+      <End Role="AdminUsers" EntitySet="AdminUsers" />
+      <End Role="UserAssignedModules" EntitySet="UserAssignedModules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Cart_dbo_Guests_GuestId" Association="Self.FK_dbo_Cart_dbo_Guests_GuestId">
+      <End Role="Guest" EntitySet="Guests" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Cart_dbo_UserTbl_UserId" Association="Self.FK_dbo_Cart_dbo_UserTbl_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="Cart" EntitySet="Carts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherCart_dbo_Orders_OrderId" Association="Self.FK_dbo_MotherCart_dbo_Orders_OrderId">
+      <End Role="Cart" EntitySet="Carts" />
+      <End Role="MotherCart" EntitySet="MotherCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Dishes_dbo_Category_CategoryId" Association="Self.FK_dbo_Dishes_dbo_Category_CategoryId">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Dishes" EntitySet="Dishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_City_dbo_Province_ProvinceId" Association="Self.FK_dbo_City_dbo_Province_ProvinceId">
+      <End Role="Province" EntitySet="Provinces" />
+      <End Role="City" EntitySet="Cities" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherCoupons_dbo_Coupons_CouponId" Association="Self.FK_dbo_MotherCoupons_dbo_Coupons_CouponId">
+      <End Role="Coupons" EntitySet="Coupons" />
+      <End Role="MotherCoupons" EntitySet="MotherCoupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDishes_dbo_DishesTbl_DishId" Association="Self.FK_dbo_MotherDishes_dbo_DishesTbl_DishId">
+      <End Role="Dishes" EntitySet="Dishes" />
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Favourites_dbo__UserId" Association="Self.FK_dbo_Favourites_dbo__UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="Favourites" EntitySet="Favourites" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_Guests_GuestId" Association="Self.FK_dbo_Orders_dbo_Guests_GuestId">
+      <End Role="Guest" EntitySet="Guests" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherOrderDetails_dbo_Orders_MotherOrderId" Association="Self.FK_dbo_MotherOrderDetails_dbo_Orders_MotherOrderId">
+      <End Role="MortherOrders" EntitySet="MortherOrders" />
+      <End Role="MotherOrderDetails" EntitySet="MotherOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherOrders_dbo_Orders_OrderId" Association="Self.FK_dbo_MotherOrders_dbo_Orders_OrderId">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="MortherOrders" EntitySet="MortherOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherAnswers_dbo_MotherQuestions_QuestionId" Association="Self.FK_dbo_MotherAnswers_dbo_MotherQuestions_QuestionId">
+      <End Role="MotherQuestions" EntitySet="MotherQuestions" />
+      <End Role="MotherAnswers" EntitySet="MotherAnswers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherCartDetails_dbo_MotherCart_MothercartId" Association="Self.FK_dbo_MotherCartDetails_dbo_MotherCart_MothercartId">
+      <End Role="MotherCart" EntitySet="MotherCarts" />
+      <End Role="MotherCartDetails" EntitySet="MotherCartDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId" Association="Self.FK_dbo_MotherCartDetails_dbo_MotherDish_MotherDishId">
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+      <End Role="MotherCartDetails" EntitySet="MotherCartDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDish_dbo__MotherDishId" Association="Self.FK_dbo_MotherDish_dbo__MotherDishId">
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+      <End Role="MotherDishDailySchedule" EntitySet="MotherDishDailySchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId" Association="Self.FK_dbo_MotherDishReviews_dbo_MotherDish_MotherDishId">
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+      <End Role="MotherDishReviews" EntitySet="MotherDishReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId" Association="Self.FK_dbo_MotherOrderDetails_dbo_MotherDish_MotherDishId">
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+      <End Role="MotherOrderDetails" EntitySet="MotherOrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDishReviews_dbo_UserTbl_UserId" Association="Self.FK_dbo_MotherDishReviews_dbo_UserTbl_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="MotherDishReviews" EntitySet="MotherDishReviews" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Notifications_dbo_UserTbl_UserId" Association="Self.FK_dbo_Notifications_dbo_UserTbl_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="Notificationss" EntitySet="Notificationsses" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Orders_dbo_UserTbl_UserId" Association="Self.FK_dbo_Orders_dbo_UserTbl_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="Orders" EntitySet="Orders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_PaymentDetails_dbo_Orders_OrderId" Association="Self.FK_dbo_PaymentDetails_dbo_Orders_OrderId">
+      <End Role="Orders" EntitySet="Orders" />
+      <End Role="PaymentDetails" EntitySet="PaymentDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_QueuedPushNotifications_ID" Association="Self.FK_QueuedPushNotifications_ID">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="QueuedPushNotifications" EntitySet="QueuedPushNotifications" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_UserAchievements_dbo__UserId" Association="Self.FK_dbo_UserAchievements_dbo__UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="UserAchievements" EntitySet="UserAchievements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_UserAddress_dbo_User_UserId" Association="Self.FK_dbo_UserAddress_dbo_User_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="UserAddressTbl" EntitySet="UserAddressTbls" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_UserEnquiry_dbo_UserTbl_UserId" Association="Self.FK_dbo_UserEnquiry_dbo_UserTbl_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="UserEnquiry" EntitySet="UserEnquiries" />
+    </AssociationSet>
+    <EntitySet Name="UserLoginSessions" EntityType="ApniMaaModel.UserLoginSession" />
+    <AssociationSet Name="FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId" Association="ApniMaaModel.FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="UserLoginSession" EntitySet="UserLoginSessions" />
+    </AssociationSet>
+    <EntitySet Name="MotherTbls" EntityType="ApniMaaModel.MotherTbl" />
+    <AssociationSet Name="FK_dbo_MotherOrders_dbo_MotherTbl_MotherId" Association="ApniMaaModel.FK_dbo_MotherOrders_dbo_MotherTbl_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MortherOrder" EntitySet="MortherOrders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherAnswers_dbo_Mother_MotherId" Association="ApniMaaModel.FK_dbo_MotherAnswers_dbo_Mother_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherAnswer" EntitySet="MotherAnswers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherBankDetails_dbo_Mother_MotherId" Association="ApniMaaModel.FK_dbo_MotherBankDetails_dbo_Mother_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherBankDetail" EntitySet="MotherBankDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherCart_dbo_MotherTbl_MotherId" Association="ApniMaaModel.FK_dbo_MotherCart_dbo_MotherTbl_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherCart" EntitySet="MotherCarts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherCoupons_dbo_MotherTbl_MotherId" Association="ApniMaaModel.FK_dbo_MotherCoupons_dbo_MotherTbl_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherCoupon" EntitySet="MotherCoupons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_Favourites_dbo__MotherId" Association="ApniMaaModel.FK_dbo_Favourites_dbo__MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherDailySchedule" EntitySet="MotherDailySchedules" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherDishes_dbo_MotherTbl_MotherId" Association="ApniMaaModel.FK_dbo_MotherDishes_dbo_MotherTbl_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherDish" EntitySet="MotherDishes" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherGallery_dbo_MotherTbl_MotherId" Association="ApniMaaModel.FK_dbo_MotherGallery_dbo_MotherTbl_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherGallery" EntitySet="MotherGalleries" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherStatement_dbo_MotherTbl_MotherId" Association="ApniMaaModel.FK_dbo_MotherStatement_dbo_MotherTbl_MotherId">
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+      <End Role="MotherStatement" EntitySet="MotherStatements" />
+    </AssociationSet>
+    <AssociationSet Name="FK_dbo_MotherTbl_dbo_User_UserId" Association="ApniMaaModel.FK_dbo_MotherTbl_dbo_User_UserId">
+      <End Role="UserTbl" EntitySet="UserTbls" />
+      <End Role="MotherTbl" EntitySet="MotherTbls" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="UserLoginSession">
+    <Key>
+      <PropertyRef Name="UserLoginSessionID" />
+    </Key>
+    <Property Name="UserLoginSessionID" Type="Guid" Nullable="false" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="LoggedInTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="LoggedOutTime" Type="DateTime" Precision="3" />
+    <Property Name="SessionExpired" Type="Boolean" Nullable="false" />
+    <Property Name="LastActivityTime" Type="DateTime" Precision="3" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="UniqueDeviceId" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DeviceToken" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="DeviceType" Type="Int32" />
+    <Property Name="TokenVOIP" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserTbl" Relationship="ApniMaaModel.FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId" FromRole="UserLoginSession" ToRole="UserTbl" />
+  </EntityType>
+  <Association Name="FK_dbo_UserLogginSessions_dbo_UserTbl_MotherId">
+    <End Type="ApniMaaModel.UserTbl" Role="UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.UserLoginSession" Role="UserLoginSession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="UserLoginSession">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="MotherTbl">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="ApplicationNo" Type="String" Nullable="false" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Ratings" Type="Int32" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LOfflineTime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DOfflineTime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LDeliveryTime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DDeliveryTime" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProfilePhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CoverPhoto" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Commision" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <Property Name="WalletAmount" Type="Decimal" Nullable="false" Precision="18" Scale="2" />
+    <NavigationProperty Name="MortherOrders" Relationship="ApniMaaModel.FK_dbo_MotherOrders_dbo_MotherTbl_MotherId" FromRole="MotherTbl" ToRole="MortherOrder" />
+    <NavigationProperty Name="MotherAnswers" Relationship="ApniMaaModel.FK_dbo_MotherAnswers_dbo_Mother_MotherId" FromRole="MotherTbl" ToRole="MotherAnswer" />
+    <NavigationProperty Name="MotherBankDetails" Relationship="ApniMaaModel.FK_dbo_MotherBankDetails_dbo_Mother_MotherId" FromRole="MotherTbl" ToRole="MotherBankDetail" />
+    <NavigationProperty Name="MotherCarts" Relationship="ApniMaaModel.FK_dbo_MotherCart_dbo_MotherTbl_MotherId" FromRole="MotherTbl" ToRole="MotherCart" />
+    <NavigationProperty Name="MotherCoupons" Relationship="ApniMaaModel.FK_dbo_MotherCoupons_dbo_MotherTbl_MotherId" FromRole="MotherTbl" ToRole="MotherCoupon" />
+    <NavigationProperty Name="MotherDailySchedules" Relationship="ApniMaaModel.FK_dbo_Favourites_dbo__MotherId" FromRole="MotherTbl" ToRole="MotherDailySchedule" />
+    <NavigationProperty Name="MotherDishes" Relationship="ApniMaaModel.FK_dbo_MotherDishes_dbo_MotherTbl_MotherId" FromRole="MotherTbl" ToRole="MotherDish" />
+    <NavigationProperty Name="MotherGalleries" Relationship="ApniMaaModel.FK_dbo_MotherGallery_dbo_MotherTbl_MotherId" FromRole="MotherTbl" ToRole="MotherGallery" />
+    <NavigationProperty Name="MotherStatements" Relationship="ApniMaaModel.FK_dbo_MotherStatement_dbo_MotherTbl_MotherId" FromRole="MotherTbl" ToRole="MotherStatement" />
+    <NavigationProperty Name="UserTbl" Relationship="ApniMaaModel.FK_dbo_MotherTbl_dbo_User_UserId" FromRole="MotherTbl" ToRole="UserTbl" />
+  </EntityType>
+  <Association Name="FK_dbo_MotherOrders_dbo_MotherTbl_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1" />
+    <End Type="ApniMaaModel.MortherOrder" Role="MortherOrder" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MortherOrder">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherAnswers_dbo_Mother_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherAnswer" Role="MotherAnswer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherAnswer">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherBankDetails_dbo_Mother_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherBankDetail" Role="MotherBankDetail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherBankDetail">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherCart_dbo_MotherTbl_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1" />
+    <End Type="ApniMaaModel.MotherCart" Role="MotherCart" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherCart">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherCoupons_dbo_MotherTbl_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherCoupon" Role="MotherCoupon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherCoupon">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_Favourites_dbo__MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherDailySchedule" Role="MotherDailySchedule" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDailySchedule">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherDishes_dbo_MotherTbl_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherDish" Role="MotherDish" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherDish">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherGallery_dbo_MotherTbl_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherGallery" Role="MotherGallery" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherGallery">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherStatement_dbo_MotherTbl_MotherId">
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherStatement" Role="MotherStatement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MotherTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherStatement">
+        <PropertyRef Name="MotherId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_dbo_MotherTbl_dbo_User_UserId">
+    <End Type="ApniMaaModel.UserTbl" Role="UserTbl" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Type="ApniMaaModel.MotherTbl" Role="MotherTbl" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserTbl">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MotherTbl">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

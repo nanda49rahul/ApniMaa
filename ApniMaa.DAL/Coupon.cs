@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class Coupon
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Coupon()
         {
             this.MotherCoupons = new HashSet<MotherCoupon>();
@@ -29,6 +30,7 @@ namespace ApniMaa.DAL
         public System.DateTime Enddate { get; set; }
         public int AvailType { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MotherCoupon> MotherCoupons { get; set; }
     }
 }

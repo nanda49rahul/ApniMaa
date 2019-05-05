@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class MotherDish
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MotherDish()
         {
             this.MotherCartDetails = new HashSet<MotherCartDetail>();
@@ -33,11 +34,15 @@ namespace ApniMaa.DAL
         public bool IsMainDish { get; set; }
         public bool IsSignatureDish { get; set; }
     
-        public virtual ICollection<MotherCartDetail> MotherCartDetails { get; set; }
-        public virtual ICollection<MotherDishDailySchedule> MotherDishDailySchedules { get; set; }
-        public virtual MotherTbl MotherTbl { get; set; }
-        public virtual ICollection<MotherDishReview> MotherDishReviews { get; set; }
-        public virtual ICollection<MotherOrderDetail> MotherOrderDetails { get; set; }
         public virtual Dish Dish { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MotherCartDetail> MotherCartDetails { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MotherDishDailySchedule> MotherDishDailySchedules { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MotherDishReview> MotherDishReviews { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MotherOrderDetail> MotherOrderDetails { get; set; }
+        public virtual MotherTbl MotherTbl { get; set; }
     }
 }

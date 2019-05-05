@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class Province
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Province()
         {
             this.Cities = new HashSet<City>();
@@ -25,6 +26,7 @@ namespace ApniMaa.DAL
         public System.DateTime CreatedDate { get; set; }
         public System.DateTime lastModified { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<City> Cities { get; set; }
     }
 }

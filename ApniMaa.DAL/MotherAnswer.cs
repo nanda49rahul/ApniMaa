@@ -19,7 +19,12 @@ namespace ApniMaa.DAL
         public int QuestionId { get; set; }
         public string Answer { get; set; }
     
-        public virtual MotherTbl MotherTbl { get; set; }
         public virtual MotherQuestion MotherQuestion { get; set; }
+        public virtual MotherTbl MotherTbl { get; set; }
+    }
+
+    public class MotherAnswerList
+    {
+        public List<MotherAnswer> list { get; set; }
     }
 }

@@ -40,7 +40,7 @@ namespace ApniMaa.Areas.API
             if (result.Status == ActionStatus.Successfull)
             {
 
-                return new JsonContent(result.Message, Status.Success, new { user = result.Object }).ConvertToHttpResponseOK();
+                return new JsonContent(result.Message, Status.Success, result.Object ).ConvertToHttpResponseOK();
             }
             else
             {
@@ -50,14 +50,14 @@ namespace ApniMaa.Areas.API
 
         [SkipAuthorization]
         [System.Web.Http.HttpGet]
-        public HttpResponseMessage GetCategoryList(double Longitute, double Latitute, DateTime ReqDate, int CategoryId, int AvailabiltyType)
+        public HttpResponseMessage GetAmazingDishes(double Longitute, double Latitute, DateTime ReqDate, int CategoryId, int AvailabiltyType)
         {
 
             var result = _homeManager.GetAmazingDishesList(Longitute,Latitute,ReqDate,CategoryId,AvailabiltyType);
             if (result.Status == ActionStatus.Successfull)
             {
 
-                return new JsonContent(result.Message, Status.Success, new { user = result.Object }).ConvertToHttpResponseOK();
+                return new JsonContent(result.Message, Status.Success, result.Object ).ConvertToHttpResponseOK();
             }
             else
             {
@@ -73,7 +73,7 @@ namespace ApniMaa.Areas.API
             if (result.Status == ActionStatus.Successfull)
             {
 
-                return new JsonContent(result.Message, Status.Success, new { user = result.Object }).ConvertToHttpResponseOK();
+                return new JsonContent(result.Message, Status.Success, result.Object ).ConvertToHttpResponseOK();
             }
             else
             {
@@ -90,7 +90,7 @@ namespace ApniMaa.Areas.API
             if (result.Status == ActionStatus.Successfull)
             {
 
-                return new JsonContent(result.Message, Status.Success, new { user = result.Object }).ConvertToHttpResponseOK();
+                return new JsonContent(result.Message, Status.Success, result.Object ).ConvertToHttpResponseOK();
             }
             else
             {

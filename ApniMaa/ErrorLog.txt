@@ -1625,6 +1625,7 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
 
 
+<<<<<<< HEAD
 No property or field 'CreatedOn' exists in type 'Order'
 http://jsonformat.com/
 
@@ -1799,6 +1800,481 @@ http://jsonformat.com/
 Object reference not set to an instance of an object.
 http://jsonformat.com/
 
+=======
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Areas.API.AccountController.CreateNewSession(Int32 userId) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 156
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Areas.API.AccountController.CreateNewSession(Int32 userId) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 156
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Areas.API.AccountController.CreateNewSession(Int32 userId) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 156
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+The given header was not found.
+http://jsonformat.com/
+System.InvalidOperationException: The given header was not found.
+   at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
+   at ApniMaa.Areas.API.AccountController.CreateNewSession(Int32 userId) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 156
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Object reference not set to an instance of an object.
+http://jsonformat.com/
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ApniMaa.Areas.API.AccountController.RegisterUser(RegisterModel model) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\AccountController.cs:line 111
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result.user[0].Dishes[0]'.
+http://jsonformat.com/
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result.user[0].Dishes[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at ApniMaa.Framework.Api.JsonContent..ctor(String message, Int32 status, Object data, String token, Nullable`1 verified) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.Framework\Api\JsonContent.cs:line 19
+   at ApniMaa.Areas.API.HomeController.GetCategoryList() in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\HomeController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result.user[0].Dishes[0]'.
+http://jsonformat.com/
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result.user[0].Dishes[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at ApniMaa.Framework.Api.JsonContent..ctor(String message, Int32 status, Object data, String token, Nullable`1 verified) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.Framework\Api\JsonContent.cs:line 19
+   at ApniMaa.Areas.API.HomeController.GetCategoryList() in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\HomeController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result[0].Dishes[0]'.
+http://jsonformat.com/
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result[0].Dishes[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at ApniMaa.Framework.Api.JsonContent..ctor(String message, Int32 status, Object data, String token, Nullable`1 verified) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.Framework\Api\JsonContent.cs:line 19
+   at ApniMaa.Areas.API.HomeController.GetCategoryList() in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\HomeController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+
+
+Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result[0].Dishes[0]'.
+http://jsonformat.com/
+Newtonsoft.Json.JsonSerializationException: Self referencing loop detected for property 'Category' with type 'System.Data.Entity.DynamicProxies.Category_AAEA38A4F557024A6A0664DBE69A51A5CEF1FF042EA428B13D8311AD9E87750C'. Path 'result[0].Dishes[0]'.
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CheckForCircularReference(JsonWriter writer, Object value, JsonProperty property, JsonContract contract, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonConvert.SerializeObjectInternal(Object value, Type type, JsonSerializer jsonSerializer)
+   at Newtonsoft.Json.JsonConvert.SerializeObject(Object value)
+   at ApniMaa.Framework.Api.JsonContent..ctor(String message, Int32 status, Object data, String token, Nullable`1 verified) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa.Framework\Api\JsonContent.cs:line 19
+   at ApniMaa.Areas.API.HomeController.GetCategoryList() in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Areas\API\HomeController.cs:line 43
+   at lambda_method(Closure , Object , Object[] )
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.Execute(Object instance, Object[] arguments)
+   at System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Web.Http.Filters.ActionFilterAttribute.<CallOnActionExecutedAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Filters.AuthorizationFilterAttribute.<ExecuteAuthorizationFilterAsyncCore>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
 
 
 Value cannot be null.
@@ -1807,7 +2283,165 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1816,7 +2450,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1825,7 +2463,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1834,7 +2476,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1843,7 +2489,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1852,7 +2502,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1861,7 +2515,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1870,7 +2528,11 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 
 Value cannot be null.
@@ -1879,6 +2541,7 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
 
 
@@ -1923,6 +2586,8 @@ System.NullReferenceException: Object reference not set to an instance of an obj
    at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
    at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
    at System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
 
 
 Value cannot be null.
@@ -1931,6 +2596,17 @@ http://jsonformat.com/
 System.ArgumentNullException: Value cannot be null.
 Parameter name: g
    at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+<<<<<<< HEAD
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
 
 
@@ -1953,5 +2629,35 @@ http://jsonformat.com/
 System.InvalidOperationException: The given header was not found.
    at System.Net.Http.Headers.HttpHeaders.GetValues(String name)
    at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in d:\Freelance_Projects\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 185
+=======
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+
+
+Value cannot be null.
+Parameter name: g
+http://jsonformat.com/
+System.ArgumentNullException: Value cannot be null.
+Parameter name: g
+   at System.Guid..ctor(String g)
+   at ApniMaa.Attributes.CheckAuthorizationAttribute.OnAuthorization(HttpActionContext actionContext) in F:\Freelance\apnimaa\apnimaa\ApniMaa\ApniMaa\Attributes\Attribute.cs:line 226
+>>>>>>> 0cba225e214979df276ab49358238166c6ebabd8
 
 

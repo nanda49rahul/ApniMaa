@@ -14,18 +14,19 @@ namespace ApniMaa.DAL
     
     public partial class UserTbl
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public UserTbl()
         {
             this.Carts = new HashSet<Cart>();
             this.Favourites = new HashSet<Favourite>();
             this.MotherDishReviews = new HashSet<MotherDishReview>();
-            this.MotherTbls = new HashSet<MotherTbl>();
             this.Notificationsses = new HashSet<Notificationss>();
             this.Orders = new HashSet<Order>();
             this.UserAchievements = new HashSet<UserAchievement>();
             this.UserAddressTbls = new HashSet<UserAddressTbl>();
             this.UserEnquiries = new HashSet<UserEnquiry>();
             this.UserLoginSessions = new HashSet<UserLoginSession>();
+            this.MotherTbls = new HashSet<MotherTbl>();
         }
     
         public int Id { get; set; }
@@ -44,15 +45,25 @@ namespace ApniMaa.DAL
         public int Status { get; set; }
         public System.DateTime CreatedOn { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Cart> Carts { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Favourite> Favourites { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MotherDishReview> MotherDishReviews { get; set; }
-        public virtual ICollection<MotherTbl> MotherTbls { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Notificationss> Notificationsses { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserAchievement> UserAchievements { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserAddressTbl> UserAddressTbls { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserEnquiry> UserEnquiries { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<UserLoginSession> UserLoginSessions { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<MotherTbl> MotherTbls { get; set; }
     }
 }

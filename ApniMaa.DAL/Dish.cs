@@ -14,6 +14,7 @@ namespace ApniMaa.DAL
     
     public partial class Dish
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Dish()
         {
             this.MotherDishes = new HashSet<MotherDish>();
@@ -27,6 +28,7 @@ namespace ApniMaa.DAL
         public System.DateTime CreatedDate { get; set; }
     
         public virtual Category Category { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MotherDish> MotherDishes { get; set; }
     }
 }
